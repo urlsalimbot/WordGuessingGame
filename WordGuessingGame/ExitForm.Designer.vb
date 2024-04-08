@@ -63,6 +63,7 @@ Partial Class ExitForm
         Controls.Add(Label1)
         Controls.Add(Button2)
         Controls.Add(Button1)
+        FormBorderStyle = FormBorderStyle.None
         MaximizeBox = False
         MinimizeBox = False
         Name = "ExitForm"
