@@ -94,7 +94,7 @@ Partial Class TitleForm
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(Button2)
         GroupBox1.Controls.Add(Button3)
-        GroupBox1.Location = New Point(9, 8)
+        GroupBox1.Location = New Point(318, 219)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(163, 144)
         GroupBox1.TabIndex = 10
@@ -110,12 +110,11 @@ Partial Class TitleForm
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.Controls.Add(GroupBox1)
         GroupBox2.Controls.Add(Button5)
         GroupBox2.Controls.Add(Button4)
         GroupBox2.Controls.Add(TextBox1)
         GroupBox2.Enabled = False
-        GroupBox2.Location = New Point(313, 183)
+        GroupBox2.Location = New Point(308, 162)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(182, 156)
         GroupBox2.TabIndex = 11
@@ -149,6 +148,7 @@ Partial Class TitleForm
         ClientSize = New Size(800, 402)
         Controls.Add(LinkLabel1)
         Controls.Add(Label1)
+        Controls.Add(GroupBox1)
         Controls.Add(GroupBox2)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "TitleForm"
