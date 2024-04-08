@@ -21,4 +21,4 @@
 - api for word-checking will be provided by https://dictionaryapi.dev/
 - due to the nature of the word-checking, the game will be online only.
 - JSON will be used to store and track local scores. (no plans for remote scores database)
-- Tooltips to be added. (Adviser suggestion)
+- Clue/Tooltips to be added. (Adviser suggestion)

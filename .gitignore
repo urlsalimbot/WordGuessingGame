@@ -1,4 +1,4 @@
 .vs
-WordGuessingGame/bin
-WordGuessingGame/obj
-WordGuessingGame/MyProject
+WordGuessingGame/bin/*
+WordGuessingGame/obj/*
+WordGuessingGame/MyProject/*

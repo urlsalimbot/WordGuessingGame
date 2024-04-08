@@ -22,79 +22,91 @@ Partial Class TitleForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 56.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(21, 61)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(758, 100)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Word Guessing Game"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel1.Location = New System.Drawing.Point(21, 346)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(85, 21)
-        Me.LinkLabel1.TabIndex = 1
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Repository"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(316, 215)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 60)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Start Game"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(334, 281)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(116, 40)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Options"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(334, 327)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(116, 40)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Exit Game"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'TitleForm
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.Label1)
-        Me.Name = "TitleForm"
-        Me.Text = "Form1"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Label1 = New Label()
+        LinkLabel1 = New LinkLabel()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
+        GroupBox1 = New GroupBox()
+        GroupBox1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(30, 128)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(758, 100)
+        Label1.TabIndex = 0
+        Label1.Text = "Word Guessing Game"
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
+        LinkLabel1.Location = New Point(30, 353)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(85, 21)
+        LinkLabel1.TabIndex = 1
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Repository"
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.Location = New Point(330, 231)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(148, 60)
+        Button1.TabIndex = 2
+        Button1.Text = "Start Game"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.Location = New Point(346, 297)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(116, 40)
+        Button2.TabIndex = 3
+        Button2.Text = "Options"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.Location = New Point(346, 343)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(116, 40)
+        Button3.TabIndex = 4
+        Button3.Text = "Exit Game"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(Button1)
+        GroupBox1.Controls.Add(LinkLabel1)
+        GroupBox1.Controls.Add(Button3)
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Controls.Add(Button2)
+        GroupBox1.Location = New Point(-9, -12)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(816, 470)
+        GroupBox1.TabIndex = 5
+        GroupBox1.TabStop = False
+        ' 
+        ' TitleForm
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(GroupBox1)
+        Name = "TitleForm"
+        Text = "Form1"
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
+        ResumeLayout(False)
 
     End Sub
 
@@ -103,5 +115,6 @@ Partial Class TitleForm
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents GroupBox1 As GroupBox
 
 End Class
