@@ -39,9 +39,10 @@ Partial Class TitleForm
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point)
-        Button1.Location = New Point(6, 22)
+        Button1.Location = New Point(7, 29)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(148, 39)
+        Button1.Size = New Size(169, 52)
         Button1.TabIndex = 7
         Button1.Text = "Start Game"
         Button1.UseVisualStyleBackColor = True
@@ -51,9 +52,9 @@ Partial Class TitleForm
         LinkLabel1.AutoSize = True
         LinkLabel1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
-        LinkLabel1.Location = New Point(45, 296)
+        LinkLabel1.Location = New Point(51, 395)
         LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(85, 21)
+        LinkLabel1.Size = New Size(106, 28)
         LinkLabel1.TabIndex = 6
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Repository"
@@ -61,9 +62,10 @@ Partial Class TitleForm
         ' Button3
         ' 
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button3.Location = New Point(22, 105)
+        Button3.Location = New Point(25, 140)
+        Button3.Margin = New Padding(3, 4, 3, 4)
         Button3.Name = "Button3"
-        Button3.Size = New Size(116, 32)
+        Button3.Size = New Size(133, 43)
         Button3.TabIndex = 9
         Button3.Text = "Exit Game"
         Button3.UseVisualStyleBackColor = True
@@ -72,9 +74,9 @@ Partial Class TitleForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(21, 66)
+        Label1.Location = New Point(27, 88)
         Label1.Name = "Label1"
-        Label1.Size = New Size(758, 100)
+        Label1.Size = New Size(951, 125)
         Label1.TabIndex = 5
         Label1.Text = "Word Guessing Game"
         Label1.TextAlign = ContentAlignment.MiddleCenter
@@ -82,9 +84,10 @@ Partial Class TitleForm
         ' Button2
         ' 
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button2.Location = New Point(22, 67)
+        Button2.Location = New Point(25, 89)
+        Button2.Margin = New Padding(3, 4, 3, 4)
         Button2.Name = "Button2"
-        Button2.Size = New Size(116, 32)
+        Button2.Size = New Size(133, 43)
         Button2.TabIndex = 8
         Button2.Text = "Options"
         Button2.UseVisualStyleBackColor = True
@@ -94,18 +97,21 @@ Partial Class TitleForm
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(Button2)
         GroupBox1.Controls.Add(Button3)
-        GroupBox1.Location = New Point(318, 219)
+        GroupBox1.Location = New Point(390, 292)
+        GroupBox1.Margin = New Padding(3, 4, 3, 4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(163, 144)
+        GroupBox1.Padding = New Padding(3, 4, 3, 4)
+        GroupBox1.Size = New Size(186, 192)
         GroupBox1.TabIndex = 10
         GroupBox1.TabStop = False
         ' 
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox1.Location = New Point(6, 22)
+        TextBox1.Location = New Point(7, 29)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(170, 32)
+        TextBox1.Size = New Size(194, 39)
         TextBox1.TabIndex = 11
         ' 
         ' GroupBox2
@@ -114,9 +120,11 @@ Partial Class TitleForm
         GroupBox2.Controls.Add(Button4)
         GroupBox2.Controls.Add(TextBox1)
         GroupBox2.Enabled = False
-        GroupBox2.Location = New Point(308, 162)
+        GroupBox2.Location = New Point(379, 266)
+        GroupBox2.Margin = New Padding(3, 4, 3, 4)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(182, 156)
+        GroupBox2.Padding = New Padding(3, 4, 3, 4)
+        GroupBox2.Size = New Size(208, 208)
         GroupBox2.TabIndex = 11
         GroupBox2.TabStop = False
         GroupBox2.Visible = False
@@ -124,9 +132,10 @@ Partial Class TitleForm
         ' Button5
         ' 
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button5.Location = New Point(17, 115)
+        Button5.Location = New Point(19, 153)
+        Button5.Margin = New Padding(3, 4, 3, 4)
         Button5.Name = "Button5"
-        Button5.Size = New Size(148, 30)
+        Button5.Size = New Size(169, 40)
         Button5.TabIndex = 12
         Button5.Text = "Cancel"
         Button5.UseVisualStyleBackColor = True
@@ -134,23 +143,25 @@ Partial Class TitleForm
         ' Button4
         ' 
         Button4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button4.Location = New Point(17, 60)
+        Button4.Location = New Point(19, 80)
+        Button4.Margin = New Padding(3, 4, 3, 4)
         Button4.Name = "Button4"
-        Button4.Size = New Size(148, 49)
+        Button4.Size = New Size(169, 65)
         Button4.TabIndex = 7
         Button4.Text = "Enter Username"
         Button4.UseVisualStyleBackColor = True
         ' 
         ' TitleForm
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 402)
+        ClientSize = New Size(993, 536)
         Controls.Add(LinkLabel1)
         Controls.Add(Label1)
         Controls.Add(GroupBox1)
         Controls.Add(GroupBox2)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Margin = New Padding(3, 4, 3, 4)
         Name = "TitleForm"
         RightToLeft = RightToLeft.No
         Text = "Form1"
