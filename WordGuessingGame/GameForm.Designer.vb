@@ -57,7 +57,7 @@ Partial Class GameForm
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Button1.Location = New Point(222, 240)
         Button1.Name = "Button1"
         Button1.Size = New Size(47, 56)
@@ -67,9 +67,10 @@ Partial Class GameForm
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(222, 160)
+        TextBox1.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox1.Location = New Point(222, 76)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
+        TextBox1.Size = New Size(100, 107)
         TextBox1.TabIndex = 1
         ' 
         ' Button2
@@ -299,33 +300,37 @@ Partial Class GameForm
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(337, 160)
+        TextBox2.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox2.Location = New Point(328, 76)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
+        TextBox2.Size = New Size(100, 107)
         TextBox2.TabIndex = 27
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(443, 160)
+        TextBox3.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox3.Location = New Point(434, 76)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
+        TextBox3.Size = New Size(100, 107)
         TextBox3.TabIndex = 28
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(549, 160)
+        TextBox4.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox4.Location = New Point(540, 76)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(100, 23)
+        TextBox4.Size = New Size(100, 107)
         TextBox4.TabIndex = 29
         ' 
         ' TextBox5
         ' 
-        TextBox5.Location = New Point(655, 160)
+        TextBox5.Font = New Font("Segoe UI", 56F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox5.Location = New Point(646, 76)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(100, 23)
+        TextBox5.Size = New Size(100, 107)
         TextBox5.TabIndex = 30
         ' 
-        ' Form1
+        ' GameForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -362,7 +367,7 @@ Partial Class GameForm
         Controls.Add(Button2)
         Controls.Add(TextBox1)
         Controls.Add(Button1)
-        Name = "Form1"
+        Name = "GameForm"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()
