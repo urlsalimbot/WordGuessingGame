@@ -13,8 +13,6 @@ Public Class TitleForm
         Process.Start(New ProcessStartInfo("www.github.com/urlsalimbot/WordGuessingGame") With {.UseShellExecute = True})
     End Sub
 
-
-
     'RETURN TO MAIN MENU
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         ToggleVis(GroupBox1)
@@ -29,6 +27,5 @@ Public Class TitleForm
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         e.Cancel = Not ExitProg()
     End Sub
-
 End Class
 
