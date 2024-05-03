@@ -30,5 +30,12 @@ Public Class TitleForm
         e.Cancel = Not ExitProg()
     End Sub
 
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+
+    End Sub
 End Class
 
