@@ -34,3 +34,5 @@ C:\Users\HP\Source\Repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug
 C:\Users\HP\Source\Repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.pdb
 C:\Users\HP\Source\Repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\ref\WordGuessingGame.dll
+C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.GameForm1.resources
+C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.Resources.resources
