@@ -1,7 +1,8 @@
-﻿Module Helper
+﻿Imports System.DirectoryServices.ActiveDirectory
+
+Module Helper
 
     Public Sub ToggleVis(item As Control)
-        item.Enabled = Not item.Enabled
         item.Visible = Not item.Visible
     End Sub
 
@@ -32,9 +33,22 @@
         Next
     End Sub
 
-    Public Sub clearDisp(items As List(Of TextBox), used As Int32)
-        For i As Int32 = 0 To used - 1
-            ToggleVis(items(i))
+    Public Sub clearDisp(items As List(Of TextBox))
+        For Each item In items
+            item.Visible = False
+            item.Text = ""
+            item.BackColor = SystemColors.Window
+        Next
+    End Sub
+
+    Public Sub dispText(items As List(Of TextBox), display As String, range As Int32, len As Int32)
+        For index As Int32 = 0 To len - 1
+            Dim tempbox As TextBox = items(index + ((range - 1) * len))
+            If index < display.Length Then
+                tempbox.Text = display(index)
+            Else
+                tempbox.Text = ""
+            End If
         Next
     End Sub
 End Module

@@ -374,6 +374,7 @@ Partial Class GameForm1
         ' 
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox1.BackColor = SystemColors.HighlightText
+        TextBox1.CharacterCasing = CharacterCasing.Upper
         TextBox1.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox1.Location = New Point(315, 36)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
@@ -382,13 +383,14 @@ Partial Class GameForm1
         TextBox1.ReadOnly = True
         TextBox1.Size = New Size(69, 54)
         TextBox1.TabIndex = 26
-        TextBox1.Text = "1"
+        TextBox1.TextAlign = HorizontalAlignment.Center
         TextBox1.Visible = False
         ' 
         ' TextBox2
         ' 
         TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox2.BackColor = SystemColors.HighlightText
+        TextBox2.CharacterCasing = CharacterCasing.Upper
         TextBox2.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox2.Location = New Point(385, 36)
         TextBox2.Margin = New Padding(3, 2, 3, 2)
@@ -397,13 +399,14 @@ Partial Class GameForm1
         TextBox2.ReadOnly = True
         TextBox2.Size = New Size(69, 54)
         TextBox2.TabIndex = 27
-        TextBox2.Text = "2"
+        TextBox2.TextAlign = HorizontalAlignment.Center
         TextBox2.Visible = False
         ' 
         ' TextBox3
         ' 
         TextBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox3.BackColor = SystemColors.HighlightText
+        TextBox3.CharacterCasing = CharacterCasing.Upper
         TextBox3.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox3.Location = New Point(455, 36)
         TextBox3.Margin = New Padding(3, 2, 3, 2)
@@ -412,12 +415,14 @@ Partial Class GameForm1
         TextBox3.ReadOnly = True
         TextBox3.Size = New Size(69, 54)
         TextBox3.TabIndex = 28
+        TextBox3.TextAlign = HorizontalAlignment.Center
         TextBox3.Visible = False
         ' 
         ' TextBox4
         ' 
         TextBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox4.BackColor = SystemColors.HighlightText
+        TextBox4.CharacterCasing = CharacterCasing.Upper
         TextBox4.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox4.Location = New Point(525, 36)
         TextBox4.Margin = New Padding(3, 2, 3, 2)
@@ -426,12 +431,14 @@ Partial Class GameForm1
         TextBox4.ReadOnly = True
         TextBox4.Size = New Size(69, 54)
         TextBox4.TabIndex = 29
+        TextBox4.TextAlign = HorizontalAlignment.Center
         TextBox4.Visible = False
         ' 
         ' TextBox5
         ' 
         TextBox5.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox5.BackColor = SystemColors.HighlightText
+        TextBox5.CharacterCasing = CharacterCasing.Upper
         TextBox5.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox5.Location = New Point(595, 36)
         TextBox5.Margin = New Padding(3, 2, 3, 2)
@@ -440,11 +447,13 @@ Partial Class GameForm1
         TextBox5.ReadOnly = True
         TextBox5.Size = New Size(69, 54)
         TextBox5.TabIndex = 30
+        TextBox5.TextAlign = HorizontalAlignment.Center
         TextBox5.Visible = False
         ' 
         ' MainInptBox
         ' 
         MainInptBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        MainInptBox.BackColor = SystemColors.Window
         MainInptBox.CharacterCasing = CharacterCasing.Lower
         MainInptBox.Location = New Point(53, 495)
         MainInptBox.Name = "MainInptBox"
@@ -467,6 +476,7 @@ Partial Class GameForm1
         ' 
         TextBox6.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox6.BackColor = SystemColors.HighlightText
+        TextBox6.CharacterCasing = CharacterCasing.Upper
         TextBox6.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox6.Location = New Point(315, 94)
         TextBox6.Margin = New Padding(3, 2, 3, 2)
@@ -475,12 +485,14 @@ Partial Class GameForm1
         TextBox6.ReadOnly = True
         TextBox6.Size = New Size(69, 54)
         TextBox6.TabIndex = 26
+        TextBox6.TextAlign = HorizontalAlignment.Center
         TextBox6.Visible = False
         ' 
         ' TextBox7
         ' 
         TextBox7.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox7.BackColor = SystemColors.HighlightText
+        TextBox7.CharacterCasing = CharacterCasing.Upper
         TextBox7.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox7.Location = New Point(385, 94)
         TextBox7.Margin = New Padding(3, 2, 3, 2)
@@ -489,12 +501,14 @@ Partial Class GameForm1
         TextBox7.ReadOnly = True
         TextBox7.Size = New Size(69, 54)
         TextBox7.TabIndex = 27
+        TextBox7.TextAlign = HorizontalAlignment.Center
         TextBox7.Visible = False
         ' 
         ' TextBox8
         ' 
         TextBox8.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox8.BackColor = SystemColors.HighlightText
+        TextBox8.CharacterCasing = CharacterCasing.Upper
         TextBox8.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox8.Location = New Point(455, 94)
         TextBox8.Margin = New Padding(3, 2, 3, 2)
@@ -503,12 +517,14 @@ Partial Class GameForm1
         TextBox8.ReadOnly = True
         TextBox8.Size = New Size(69, 54)
         TextBox8.TabIndex = 28
+        TextBox8.TextAlign = HorizontalAlignment.Center
         TextBox8.Visible = False
         ' 
         ' TextBox9
         ' 
         TextBox9.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox9.BackColor = SystemColors.HighlightText
+        TextBox9.CharacterCasing = CharacterCasing.Upper
         TextBox9.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox9.Location = New Point(525, 94)
         TextBox9.Margin = New Padding(3, 2, 3, 2)
@@ -517,12 +533,14 @@ Partial Class GameForm1
         TextBox9.ReadOnly = True
         TextBox9.Size = New Size(69, 54)
         TextBox9.TabIndex = 29
+        TextBox9.TextAlign = HorizontalAlignment.Center
         TextBox9.Visible = False
         ' 
         ' TextBox10
         ' 
         TextBox10.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox10.BackColor = SystemColors.HighlightText
+        TextBox10.CharacterCasing = CharacterCasing.Upper
         TextBox10.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox10.Location = New Point(595, 94)
         TextBox10.Margin = New Padding(3, 2, 3, 2)
@@ -531,12 +549,14 @@ Partial Class GameForm1
         TextBox10.ReadOnly = True
         TextBox10.Size = New Size(69, 54)
         TextBox10.TabIndex = 30
+        TextBox10.TextAlign = HorizontalAlignment.Center
         TextBox10.Visible = False
         ' 
         ' TextBox11
         ' 
         TextBox11.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox11.BackColor = SystemColors.HighlightText
+        TextBox11.CharacterCasing = CharacterCasing.Upper
         TextBox11.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox11.Location = New Point(315, 152)
         TextBox11.Margin = New Padding(3, 2, 3, 2)
@@ -545,12 +565,14 @@ Partial Class GameForm1
         TextBox11.ReadOnly = True
         TextBox11.Size = New Size(69, 54)
         TextBox11.TabIndex = 26
+        TextBox11.TextAlign = HorizontalAlignment.Center
         TextBox11.Visible = False
         ' 
         ' TextBox12
         ' 
         TextBox12.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox12.BackColor = SystemColors.HighlightText
+        TextBox12.CharacterCasing = CharacterCasing.Upper
         TextBox12.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox12.Location = New Point(385, 152)
         TextBox12.Margin = New Padding(3, 2, 3, 2)
@@ -559,12 +581,14 @@ Partial Class GameForm1
         TextBox12.ReadOnly = True
         TextBox12.Size = New Size(69, 54)
         TextBox12.TabIndex = 27
+        TextBox12.TextAlign = HorizontalAlignment.Center
         TextBox12.Visible = False
         ' 
         ' TextBox13
         ' 
         TextBox13.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox13.BackColor = SystemColors.HighlightText
+        TextBox13.CharacterCasing = CharacterCasing.Upper
         TextBox13.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox13.Location = New Point(455, 152)
         TextBox13.Margin = New Padding(3, 2, 3, 2)
@@ -573,12 +597,14 @@ Partial Class GameForm1
         TextBox13.ReadOnly = True
         TextBox13.Size = New Size(69, 54)
         TextBox13.TabIndex = 28
+        TextBox13.TextAlign = HorizontalAlignment.Center
         TextBox13.Visible = False
         ' 
         ' TextBox14
         ' 
         TextBox14.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox14.BackColor = SystemColors.HighlightText
+        TextBox14.CharacterCasing = CharacterCasing.Upper
         TextBox14.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox14.Location = New Point(525, 152)
         TextBox14.Margin = New Padding(3, 2, 3, 2)
@@ -587,12 +613,14 @@ Partial Class GameForm1
         TextBox14.ReadOnly = True
         TextBox14.Size = New Size(69, 54)
         TextBox14.TabIndex = 29
+        TextBox14.TextAlign = HorizontalAlignment.Center
         TextBox14.Visible = False
         ' 
         ' TextBox15
         ' 
         TextBox15.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox15.BackColor = SystemColors.HighlightText
+        TextBox15.CharacterCasing = CharacterCasing.Upper
         TextBox15.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox15.Location = New Point(595, 152)
         TextBox15.Margin = New Padding(3, 2, 3, 2)
@@ -601,12 +629,14 @@ Partial Class GameForm1
         TextBox15.ReadOnly = True
         TextBox15.Size = New Size(69, 54)
         TextBox15.TabIndex = 30
+        TextBox15.TextAlign = HorizontalAlignment.Center
         TextBox15.Visible = False
         ' 
         ' TextBox16
         ' 
         TextBox16.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox16.BackColor = SystemColors.HighlightText
+        TextBox16.CharacterCasing = CharacterCasing.Upper
         TextBox16.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox16.Location = New Point(315, 210)
         TextBox16.Margin = New Padding(3, 2, 3, 2)
@@ -615,12 +645,14 @@ Partial Class GameForm1
         TextBox16.ReadOnly = True
         TextBox16.Size = New Size(69, 54)
         TextBox16.TabIndex = 26
+        TextBox16.TextAlign = HorizontalAlignment.Center
         TextBox16.Visible = False
         ' 
         ' TextBox17
         ' 
         TextBox17.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox17.BackColor = SystemColors.HighlightText
+        TextBox17.CharacterCasing = CharacterCasing.Upper
         TextBox17.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox17.Location = New Point(385, 210)
         TextBox17.Margin = New Padding(3, 2, 3, 2)
@@ -629,12 +661,14 @@ Partial Class GameForm1
         TextBox17.ReadOnly = True
         TextBox17.Size = New Size(69, 54)
         TextBox17.TabIndex = 27
+        TextBox17.TextAlign = HorizontalAlignment.Center
         TextBox17.Visible = False
         ' 
         ' TextBox18
         ' 
         TextBox18.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox18.BackColor = SystemColors.HighlightText
+        TextBox18.CharacterCasing = CharacterCasing.Upper
         TextBox18.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox18.Location = New Point(455, 210)
         TextBox18.Margin = New Padding(3, 2, 3, 2)
@@ -643,12 +677,14 @@ Partial Class GameForm1
         TextBox18.ReadOnly = True
         TextBox18.Size = New Size(69, 54)
         TextBox18.TabIndex = 28
+        TextBox18.TextAlign = HorizontalAlignment.Center
         TextBox18.Visible = False
         ' 
         ' TextBox19
         ' 
         TextBox19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox19.BackColor = SystemColors.HighlightText
+        TextBox19.CharacterCasing = CharacterCasing.Upper
         TextBox19.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox19.Location = New Point(525, 210)
         TextBox19.Margin = New Padding(3, 2, 3, 2)
@@ -657,12 +693,14 @@ Partial Class GameForm1
         TextBox19.ReadOnly = True
         TextBox19.Size = New Size(69, 54)
         TextBox19.TabIndex = 29
+        TextBox19.TextAlign = HorizontalAlignment.Center
         TextBox19.Visible = False
         ' 
         ' TextBox20
         ' 
         TextBox20.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox20.BackColor = SystemColors.HighlightText
+        TextBox20.CharacterCasing = CharacterCasing.Upper
         TextBox20.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox20.Location = New Point(595, 210)
         TextBox20.Margin = New Padding(3, 2, 3, 2)
@@ -671,12 +709,14 @@ Partial Class GameForm1
         TextBox20.ReadOnly = True
         TextBox20.Size = New Size(69, 54)
         TextBox20.TabIndex = 30
+        TextBox20.TextAlign = HorizontalAlignment.Center
         TextBox20.Visible = False
         ' 
         ' TextBox21
         ' 
         TextBox21.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox21.BackColor = SystemColors.HighlightText
+        TextBox21.CharacterCasing = CharacterCasing.Upper
         TextBox21.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox21.Location = New Point(315, 268)
         TextBox21.Margin = New Padding(3, 2, 3, 2)
@@ -685,12 +725,14 @@ Partial Class GameForm1
         TextBox21.ReadOnly = True
         TextBox21.Size = New Size(69, 54)
         TextBox21.TabIndex = 26
+        TextBox21.TextAlign = HorizontalAlignment.Center
         TextBox21.Visible = False
         ' 
         ' TextBox22
         ' 
         TextBox22.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox22.BackColor = SystemColors.HighlightText
+        TextBox22.CharacterCasing = CharacterCasing.Upper
         TextBox22.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox22.Location = New Point(385, 268)
         TextBox22.Margin = New Padding(3, 2, 3, 2)
@@ -699,12 +741,14 @@ Partial Class GameForm1
         TextBox22.ReadOnly = True
         TextBox22.Size = New Size(69, 54)
         TextBox22.TabIndex = 27
+        TextBox22.TextAlign = HorizontalAlignment.Center
         TextBox22.Visible = False
         ' 
         ' TextBox23
         ' 
         TextBox23.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox23.BackColor = SystemColors.HighlightText
+        TextBox23.CharacterCasing = CharacterCasing.Upper
         TextBox23.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox23.Location = New Point(455, 268)
         TextBox23.Margin = New Padding(3, 2, 3, 2)
@@ -713,12 +757,14 @@ Partial Class GameForm1
         TextBox23.ReadOnly = True
         TextBox23.Size = New Size(69, 54)
         TextBox23.TabIndex = 28
+        TextBox23.TextAlign = HorizontalAlignment.Center
         TextBox23.Visible = False
         ' 
         ' TextBox24
         ' 
         TextBox24.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox24.BackColor = SystemColors.HighlightText
+        TextBox24.CharacterCasing = CharacterCasing.Upper
         TextBox24.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox24.Location = New Point(525, 268)
         TextBox24.Margin = New Padding(3, 2, 3, 2)
@@ -727,12 +773,14 @@ Partial Class GameForm1
         TextBox24.ReadOnly = True
         TextBox24.Size = New Size(69, 54)
         TextBox24.TabIndex = 29
+        TextBox24.TextAlign = HorizontalAlignment.Center
         TextBox24.Visible = False
         ' 
         ' TextBox25
         ' 
         TextBox25.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox25.BackColor = SystemColors.HighlightText
+        TextBox25.CharacterCasing = CharacterCasing.Upper
         TextBox25.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox25.Location = New Point(595, 268)
         TextBox25.Margin = New Padding(3, 2, 3, 2)
@@ -741,6 +789,7 @@ Partial Class GameForm1
         TextBox25.ReadOnly = True
         TextBox25.Size = New Size(69, 54)
         TextBox25.TabIndex = 30
+        TextBox25.TextAlign = HorizontalAlignment.Center
         TextBox25.Visible = False
         ' 
         ' Hint
@@ -761,6 +810,7 @@ Partial Class GameForm1
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(220, 102)
         Panel1.TabIndex = 33
+        Panel1.Visible = False
         ' 
         ' Partbox
         ' 

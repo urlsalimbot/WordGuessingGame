@@ -129,7 +129,6 @@ Partial Class TitleForm
         Panel1.Controls.Add(Button5)
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Button4)
-        Panel1.Enabled = False
         Panel1.Location = New Point(298, 244)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(242, 159)

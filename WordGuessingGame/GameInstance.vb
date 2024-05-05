@@ -74,6 +74,7 @@ Public Class GameInstance
         gform.SuspendLayout()
         gameDisp(gform.textboxes, guessword, myattempt)
         gform.ResumeLayout()
+        gform.PerformLayout()
         MessageBox.Show(guessword)
     End Sub
 
@@ -94,8 +95,9 @@ Public Class GameInstance
         Next
         If myattempt = 3 Then
             gform.SuspendLayout()
-            clearDisp(gform.textboxes, guessword.Length * 3)
+            clearDisp(gform.textboxes)
             gform.ResumeLayout()
+            gform.PerformLayout()
             myattempt = 0
         End If
         myattempt += 1

@@ -221,9 +221,19 @@
 
     Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
         If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gInstance.guessword.Length Then
-            Checker(buttons)
             gInstance.Logic(MainInptBox.Text)
+            MainInptBox.Text = ""
         End If
     End Sub
 
+    Private Sub Hint_Click(sender As Object, e As EventArgs) Handles Hint.Click
+        SuspendLayout()
+        ToggleVis(Panel1)
+        ResumeLayout()
+        PerformLayout()
+    End Sub
+
+    Private Sub MainInptBox_TextChanged(sender As Object, e As EventArgs) Handles MainInptBox.TextChanged
+        dispText(textboxes, MainInptBox.Text, gInstance.myattempt, gInstance.guessword.Length)
+    End Sub
 End Class

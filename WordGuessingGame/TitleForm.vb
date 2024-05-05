@@ -13,6 +13,7 @@ Public Class TitleForm
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim gForm As New GameForm1()
         user = TextBox1.Text
+        TextBox1.Text = ""
         gForm.Show()
         Me.Hide()
     End Sub
@@ -30,7 +31,7 @@ Public Class TitleForm
 
     'EXIT FUNCTION
     Private Sub Button3_MouseDown(sender As Object, e As MouseEventArgs)
-        Close()
+        Close
     End Sub
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
