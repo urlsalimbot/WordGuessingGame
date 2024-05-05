@@ -37,9 +37,5 @@ Public Class TitleForm
         e.Cancel = Not ExitProg()
     End Sub
 
-    Private Sub TitleForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim gameIns As New GameInstance()
-        gameIns.GameInstance()
-    End Sub
 End Class
 

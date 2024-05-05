@@ -7,18 +7,20 @@ Imports System.Text
 
 Public Class GameInstance
     Public dirpath As String = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\WGG")
-    Dim words As New List(Of String)
-    Dim GameOver As Boolean = False
+    Public Property words As New List(Of String)
+    Public Property GameOver As Boolean = False
+    Public Property gform As GameForm1
+    Public Property guessword As String
+    Public Property myattempt As Int32
 
-    Public Sub GameInstance()
-        ' Create new Task.
-        ' ... Use AddressOf to reference a method.
-        Dim init As Task = New Task(AddressOf init)
-        ' Start the task.
-        init.Start()
+    Public Sub GameInstance(gameform As GameForm1)
+        gform = gameform
+        myattempt = 1
+        InitGameIns()
+        MainGameLoop()
     End Sub
 
-    Public Sub Init()
+    Public Async Sub InitGameIns()
         Dim filename, filepath As String
 
         filename = "words.txt"
@@ -60,23 +62,49 @@ Public Class GameInstance
                 End If
             Next
         End Using
+        MessageBox.Show("Get Done")
     End Sub
 
-    Public Async Sub MainLoop()
-        While GameOver = False
+    Public Sub MainGameLoop()
+        'MessageBox.Show(gform.textboxes(0).Name)
+        If myattempt = 1 Then
+            guessword = WordPicker()
+            gform.MainInptBox.MaxLength = guessword.Length
+        End If
+        gform.SuspendLayout()
+        gameDisp(gform.textboxes, guessword, myattempt)
+        gform.ResumeLayout()
+        MessageBox.Show(guessword)
+    End Sub
 
-            Dim guessword = WordPicker()
-
-
-
-            userans = Await GameForm1.MainInptBox.
-
-        End While
+    Public Sub Logic(ans As String)
+        Dim index As Int32
+        For i As Int32 = 0 To guessword.Length - 1
+            index = (i + (myattempt - 1) * guessword.Length)
+            If ans(i) = guessword(i) Then
+                gform.textboxes(index).BackColor = Color.Green
+            Else
+                gform.textboxes(index).BackColor = Color.Red
+                For Each letter In guessword
+                    If ans(i) = letter Then
+                        gform.textboxes(index).BackColor = Color.Yellow
+                    End If
+                Next
+            End If
+        Next
+        If myattempt = 3 Then
+            gform.SuspendLayout()
+            clearDisp(gform.textboxes, guessword.Length * 3)
+            gform.ResumeLayout()
+            myattempt = 0
+        End If
+        myattempt += 1
+        MainGameLoop()
     End Sub
 
     Public Function WordPicker() As String
         Dim rnd = New Random()
-        Dim gameword = words(rnd.Next(0, List1.Count))
+        Dim gameword = words(rnd.Next(0, words.Count))
         Return gameword
     End Function
 

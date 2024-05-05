@@ -32,7 +32,6 @@ Partial Class TitleForm
         Button5 = New Button()
         Panel1 = New Panel()
         Panel2 = New Panel()
-        TextBox2 = New TextBox()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
@@ -148,14 +147,6 @@ Partial Class TitleForm
         Panel2.Size = New Size(200, 182)
         Panel2.TabIndex = 13
         ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(10, 144)
-        TextBox2.Multiline = True
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(259, 159)
-        TextBox2.TabIndex = 14
-        ' 
         ' TitleForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -164,7 +155,6 @@ Partial Class TitleForm
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(899, 494)
-        Controls.Add(TextBox2)
         Controls.Add(LinkLabel1)
         Controls.Add(Panel1)
         Controls.Add(Panel2)
@@ -189,6 +179,5 @@ Partial Class TitleForm
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox2 As TextBox
 
 End Class

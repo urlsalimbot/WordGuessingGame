@@ -23,8 +23,18 @@
         Next
     End Sub
 
-    Public Sub gameDisp(items As List(Of TextBox), word As String)
-
+    Public Sub gameDisp(items As List(Of TextBox), word As String, attempt As Int32)
+        For i As Int16 = 0 To word.Length - 1
+            Dim tempbox As TextBox
+            tempbox = items(i + ((attempt - 1) * word.Length))
+            tempbox.Location = New Size((180 + (tempbox.Size.Width + 15) * (i)), (36 + (tempbox.Size.Height + 20) * (attempt - 1)))
+            tempbox.Visible = True
+        Next
     End Sub
 
+    Public Sub clearDisp(items As List(Of TextBox), used As Int32)
+        For i As Int32 = 0 To used - 1
+            ToggleVis(items(i))
+        Next
+    End Sub
 End Module

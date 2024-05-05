@@ -76,6 +76,11 @@ Partial Class GameForm1
         TextBox23 = New TextBox()
         TextBox24 = New TextBox()
         TextBox25 = New TextBox()
+        Hint = New Button()
+        Panel1 = New Panel()
+        Partbox = New TextBox()
+        definitionBox = New TextBox()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' QBtn
@@ -83,7 +88,7 @@ Partial Class GameForm1
         QBtn.BackColor = Color.Red
         QBtn.BackgroundImage = CType(resources.GetObject("QBtn.BackgroundImage"), Image)
         QBtn.BackgroundImageLayout = ImageLayout.Stretch
-        QBtn.Location = New Point(111, 379)
+        QBtn.Location = New Point(208, 474)
         QBtn.Margin = New Padding(3, 2, 3, 2)
         QBtn.Name = "QBtn"
         QBtn.Size = New Size(52, 44)
@@ -94,7 +99,7 @@ Partial Class GameForm1
         ' 
         WBtn.BackgroundImage = CType(resources.GetObject("WBtn.BackgroundImage"), Image)
         WBtn.BackgroundImageLayout = ImageLayout.Stretch
-        WBtn.Location = New Point(169, 379)
+        WBtn.Location = New Point(266, 474)
         WBtn.Margin = New Padding(3, 2, 3, 2)
         WBtn.Name = "WBtn"
         WBtn.Size = New Size(52, 44)
@@ -105,7 +110,7 @@ Partial Class GameForm1
         ' 
         EBtn.BackgroundImage = CType(resources.GetObject("EBtn.BackgroundImage"), Image)
         EBtn.BackgroundImageLayout = ImageLayout.Stretch
-        EBtn.Location = New Point(227, 379)
+        EBtn.Location = New Point(324, 474)
         EBtn.Margin = New Padding(3, 2, 3, 2)
         EBtn.Name = "EBtn"
         EBtn.Size = New Size(52, 44)
@@ -116,7 +121,7 @@ Partial Class GameForm1
         ' 
         RBtn.BackgroundImage = CType(resources.GetObject("RBtn.BackgroundImage"), Image)
         RBtn.BackgroundImageLayout = ImageLayout.Stretch
-        RBtn.Location = New Point(284, 379)
+        RBtn.Location = New Point(381, 474)
         RBtn.Margin = New Padding(3, 2, 3, 2)
         RBtn.Name = "RBtn"
         RBtn.Size = New Size(52, 44)
@@ -127,7 +132,7 @@ Partial Class GameForm1
         ' 
         TBtn.BackgroundImage = CType(resources.GetObject("TBtn.BackgroundImage"), Image)
         TBtn.BackgroundImageLayout = ImageLayout.Stretch
-        TBtn.Location = New Point(342, 379)
+        TBtn.Location = New Point(439, 474)
         TBtn.Margin = New Padding(3, 2, 3, 2)
         TBtn.Name = "TBtn"
         TBtn.Size = New Size(52, 44)
@@ -138,7 +143,7 @@ Partial Class GameForm1
         ' 
         YBtn.BackgroundImage = CType(resources.GetObject("YBtn.BackgroundImage"), Image)
         YBtn.BackgroundImageLayout = ImageLayout.Stretch
-        YBtn.Location = New Point(400, 379)
+        YBtn.Location = New Point(497, 474)
         YBtn.Margin = New Padding(3, 2, 3, 2)
         YBtn.Name = "YBtn"
         YBtn.Size = New Size(52, 44)
@@ -149,7 +154,7 @@ Partial Class GameForm1
         ' 
         UBtn.BackgroundImage = CType(resources.GetObject("UBtn.BackgroundImage"), Image)
         UBtn.BackgroundImageLayout = ImageLayout.Stretch
-        UBtn.Location = New Point(458, 379)
+        UBtn.Location = New Point(555, 474)
         UBtn.Margin = New Padding(3, 2, 3, 2)
         UBtn.Name = "UBtn"
         UBtn.Size = New Size(52, 44)
@@ -160,7 +165,7 @@ Partial Class GameForm1
         ' 
         IBtn.BackgroundImage = CType(resources.GetObject("IBtn.BackgroundImage"), Image)
         IBtn.BackgroundImageLayout = ImageLayout.Stretch
-        IBtn.Location = New Point(515, 379)
+        IBtn.Location = New Point(612, 474)
         IBtn.Margin = New Padding(3, 2, 3, 2)
         IBtn.Name = "IBtn"
         IBtn.Size = New Size(52, 44)
@@ -171,7 +176,7 @@ Partial Class GameForm1
         ' 
         OBtn.BackgroundImage = CType(resources.GetObject("OBtn.BackgroundImage"), Image)
         OBtn.BackgroundImageLayout = ImageLayout.Stretch
-        OBtn.Location = New Point(573, 379)
+        OBtn.Location = New Point(670, 474)
         OBtn.Margin = New Padding(3, 2, 3, 2)
         OBtn.Name = "OBtn"
         OBtn.Size = New Size(52, 43)
@@ -182,7 +187,7 @@ Partial Class GameForm1
         ' 
         PBtn.BackgroundImage = CType(resources.GetObject("PBtn.BackgroundImage"), Image)
         PBtn.BackgroundImageLayout = ImageLayout.Stretch
-        PBtn.Location = New Point(631, 379)
+        PBtn.Location = New Point(728, 474)
         PBtn.Margin = New Padding(3, 2, 3, 2)
         PBtn.Name = "PBtn"
         PBtn.Size = New Size(52, 43)
@@ -193,7 +198,7 @@ Partial Class GameForm1
         ' 
         ABtn.BackgroundImage = CType(resources.GetObject("ABtn.BackgroundImage"), Image)
         ABtn.BackgroundImageLayout = ImageLayout.Stretch
-        ABtn.Location = New Point(133, 427)
+        ABtn.Location = New Point(230, 522)
         ABtn.Margin = New Padding(3, 2, 3, 2)
         ABtn.Name = "ABtn"
         ABtn.Size = New Size(52, 43)
@@ -204,7 +209,7 @@ Partial Class GameForm1
         ' 
         SBtn.BackgroundImage = CType(resources.GetObject("SBtn.BackgroundImage"), Image)
         SBtn.BackgroundImageLayout = ImageLayout.Stretch
-        SBtn.Location = New Point(191, 427)
+        SBtn.Location = New Point(288, 522)
         SBtn.Margin = New Padding(3, 2, 3, 2)
         SBtn.Name = "SBtn"
         SBtn.Size = New Size(52, 43)
@@ -215,7 +220,7 @@ Partial Class GameForm1
         ' 
         DBtn.BackgroundImage = CType(resources.GetObject("DBtn.BackgroundImage"), Image)
         DBtn.BackgroundImageLayout = ImageLayout.Stretch
-        DBtn.Location = New Point(248, 427)
+        DBtn.Location = New Point(345, 522)
         DBtn.Margin = New Padding(3, 2, 3, 2)
         DBtn.Name = "DBtn"
         DBtn.Size = New Size(52, 43)
@@ -226,7 +231,7 @@ Partial Class GameForm1
         ' 
         FBtn.BackgroundImage = CType(resources.GetObject("FBtn.BackgroundImage"), Image)
         FBtn.BackgroundImageLayout = ImageLayout.Stretch
-        FBtn.Location = New Point(306, 427)
+        FBtn.Location = New Point(403, 522)
         FBtn.Margin = New Padding(3, 2, 3, 2)
         FBtn.Name = "FBtn"
         FBtn.Size = New Size(52, 43)
@@ -237,7 +242,7 @@ Partial Class GameForm1
         ' 
         GBtn.BackgroundImage = CType(resources.GetObject("GBtn.BackgroundImage"), Image)
         GBtn.BackgroundImageLayout = ImageLayout.Stretch
-        GBtn.Location = New Point(364, 427)
+        GBtn.Location = New Point(461, 522)
         GBtn.Margin = New Padding(3, 2, 3, 2)
         GBtn.Name = "GBtn"
         GBtn.Size = New Size(52, 43)
@@ -248,7 +253,7 @@ Partial Class GameForm1
         ' 
         HBtn.BackgroundImage = CType(resources.GetObject("HBtn.BackgroundImage"), Image)
         HBtn.BackgroundImageLayout = ImageLayout.Stretch
-        HBtn.Location = New Point(422, 427)
+        HBtn.Location = New Point(519, 522)
         HBtn.Margin = New Padding(3, 2, 3, 2)
         HBtn.Name = "HBtn"
         HBtn.Size = New Size(52, 43)
@@ -259,7 +264,7 @@ Partial Class GameForm1
         ' 
         JBtn.BackgroundImage = CType(resources.GetObject("JBtn.BackgroundImage"), Image)
         JBtn.BackgroundImageLayout = ImageLayout.Stretch
-        JBtn.Location = New Point(480, 427)
+        JBtn.Location = New Point(577, 522)
         JBtn.Margin = New Padding(3, 2, 3, 2)
         JBtn.Name = "JBtn"
         JBtn.Size = New Size(52, 43)
@@ -270,7 +275,7 @@ Partial Class GameForm1
         ' 
         KBtn.BackgroundImage = CType(resources.GetObject("KBtn.BackgroundImage"), Image)
         KBtn.BackgroundImageLayout = ImageLayout.Stretch
-        KBtn.Location = New Point(537, 427)
+        KBtn.Location = New Point(634, 522)
         KBtn.Margin = New Padding(3, 2, 3, 2)
         KBtn.Name = "KBtn"
         KBtn.Size = New Size(52, 43)
@@ -281,7 +286,7 @@ Partial Class GameForm1
         ' 
         LBtn.BackgroundImage = CType(resources.GetObject("LBtn.BackgroundImage"), Image)
         LBtn.BackgroundImageLayout = ImageLayout.Stretch
-        LBtn.Location = New Point(595, 427)
+        LBtn.Location = New Point(692, 522)
         LBtn.Margin = New Padding(3, 2, 3, 2)
         LBtn.Name = "LBtn"
         LBtn.Size = New Size(52, 43)
@@ -292,7 +297,7 @@ Partial Class GameForm1
         ' 
         ZBtn.BackgroundImage = CType(resources.GetObject("ZBtn.BackgroundImage"), Image)
         ZBtn.BackgroundImageLayout = ImageLayout.Stretch
-        ZBtn.Location = New Point(190, 474)
+        ZBtn.Location = New Point(287, 569)
         ZBtn.Margin = New Padding(3, 2, 3, 2)
         ZBtn.Name = "ZBtn"
         ZBtn.Size = New Size(52, 43)
@@ -303,7 +308,7 @@ Partial Class GameForm1
         ' 
         XBtn.BackgroundImage = CType(resources.GetObject("XBtn.BackgroundImage"), Image)
         XBtn.BackgroundImageLayout = ImageLayout.Stretch
-        XBtn.Location = New Point(248, 474)
+        XBtn.Location = New Point(345, 569)
         XBtn.Margin = New Padding(3, 2, 3, 2)
         XBtn.Name = "XBtn"
         XBtn.Size = New Size(52, 43)
@@ -314,7 +319,7 @@ Partial Class GameForm1
         ' 
         CBtn.BackgroundImage = CType(resources.GetObject("CBtn.BackgroundImage"), Image)
         CBtn.BackgroundImageLayout = ImageLayout.Stretch
-        CBtn.Location = New Point(305, 474)
+        CBtn.Location = New Point(402, 569)
         CBtn.Margin = New Padding(3, 2, 3, 2)
         CBtn.Name = "CBtn"
         CBtn.Size = New Size(52, 43)
@@ -325,7 +330,7 @@ Partial Class GameForm1
         ' 
         VBtn.BackgroundImage = CType(resources.GetObject("VBtn.BackgroundImage"), Image)
         VBtn.BackgroundImageLayout = ImageLayout.Stretch
-        VBtn.Location = New Point(363, 474)
+        VBtn.Location = New Point(460, 569)
         VBtn.Margin = New Padding(3, 2, 3, 2)
         VBtn.Name = "VBtn"
         VBtn.Size = New Size(52, 43)
@@ -336,7 +341,7 @@ Partial Class GameForm1
         ' 
         BBtn.BackgroundImage = CType(resources.GetObject("BBtn.BackgroundImage"), Image)
         BBtn.BackgroundImageLayout = ImageLayout.Stretch
-        BBtn.Location = New Point(421, 474)
+        BBtn.Location = New Point(518, 569)
         BBtn.Margin = New Padding(3, 2, 3, 2)
         BBtn.Name = "BBtn"
         BBtn.Size = New Size(52, 43)
@@ -347,7 +352,7 @@ Partial Class GameForm1
         ' 
         NBtn.BackgroundImage = CType(resources.GetObject("NBtn.BackgroundImage"), Image)
         NBtn.BackgroundImageLayout = ImageLayout.Stretch
-        NBtn.Location = New Point(479, 474)
+        NBtn.Location = New Point(576, 569)
         NBtn.Margin = New Padding(3, 2, 3, 2)
         NBtn.Name = "NBtn"
         NBtn.Size = New Size(52, 43)
@@ -358,7 +363,7 @@ Partial Class GameForm1
         ' 
         MBtn.BackgroundImage = CType(resources.GetObject("MBtn.BackgroundImage"), Image)
         MBtn.BackgroundImageLayout = ImageLayout.Stretch
-        MBtn.Location = New Point(536, 474)
+        MBtn.Location = New Point(633, 569)
         MBtn.Margin = New Padding(3, 2, 3, 2)
         MBtn.Name = "MBtn"
         MBtn.Size = New Size(52, 43)
@@ -370,13 +375,14 @@ Partial Class GameForm1
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox1.BackColor = SystemColors.HighlightText
         TextBox1.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(170, 25)
+        TextBox1.Location = New Point(315, 36)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
         TextBox1.MaxLength = 1
         TextBox1.Name = "TextBox1"
         TextBox1.ReadOnly = True
-        TextBox1.Size = New Size(64, 54)
+        TextBox1.Size = New Size(69, 54)
         TextBox1.TabIndex = 26
+        TextBox1.Text = "1"
         TextBox1.Visible = False
         ' 
         ' TextBox2
@@ -384,13 +390,14 @@ Partial Class GameForm1
         TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox2.BackColor = SystemColors.HighlightText
         TextBox2.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox2.Location = New Point(240, 25)
+        TextBox2.Location = New Point(385, 36)
         TextBox2.Margin = New Padding(3, 2, 3, 2)
         TextBox2.MaxLength = 1
         TextBox2.Name = "TextBox2"
         TextBox2.ReadOnly = True
-        TextBox2.Size = New Size(64, 54)
+        TextBox2.Size = New Size(69, 54)
         TextBox2.TabIndex = 27
+        TextBox2.Text = "2"
         TextBox2.Visible = False
         ' 
         ' TextBox3
@@ -398,12 +405,12 @@ Partial Class GameForm1
         TextBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox3.BackColor = SystemColors.HighlightText
         TextBox3.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(310, 25)
+        TextBox3.Location = New Point(455, 36)
         TextBox3.Margin = New Padding(3, 2, 3, 2)
         TextBox3.MaxLength = 1
         TextBox3.Name = "TextBox3"
         TextBox3.ReadOnly = True
-        TextBox3.Size = New Size(64, 54)
+        TextBox3.Size = New Size(69, 54)
         TextBox3.TabIndex = 28
         TextBox3.Visible = False
         ' 
@@ -412,12 +419,12 @@ Partial Class GameForm1
         TextBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox4.BackColor = SystemColors.HighlightText
         TextBox4.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox4.Location = New Point(380, 25)
+        TextBox4.Location = New Point(525, 36)
         TextBox4.Margin = New Padding(3, 2, 3, 2)
         TextBox4.MaxLength = 1
         TextBox4.Name = "TextBox4"
         TextBox4.ReadOnly = True
-        TextBox4.Size = New Size(64, 54)
+        TextBox4.Size = New Size(69, 54)
         TextBox4.TabIndex = 29
         TextBox4.Visible = False
         ' 
@@ -426,12 +433,12 @@ Partial Class GameForm1
         TextBox5.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox5.BackColor = SystemColors.HighlightText
         TextBox5.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox5.Location = New Point(450, 25)
+        TextBox5.Location = New Point(595, 36)
         TextBox5.Margin = New Padding(3, 2, 3, 2)
         TextBox5.MaxLength = 1
         TextBox5.Name = "TextBox5"
         TextBox5.ReadOnly = True
-        TextBox5.Size = New Size(64, 54)
+        TextBox5.Size = New Size(69, 54)
         TextBox5.TabIndex = 30
         TextBox5.Visible = False
         ' 
@@ -441,14 +448,14 @@ Partial Class GameForm1
         MainInptBox.CharacterCasing = CharacterCasing.Lower
         MainInptBox.Location = New Point(53, 495)
         MainInptBox.Name = "MainInptBox"
-        MainInptBox.Size = New Size(0, 23)
+        MainInptBox.Size = New Size(232, 23)
         MainInptBox.TabIndex = 0
         ' 
         ' Button27
         ' 
         Button27.BackgroundImageLayout = ImageLayout.Stretch
         Button27.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
-        Button27.Location = New Point(689, 379)
+        Button27.Location = New Point(786, 474)
         Button27.Margin = New Padding(3, 2, 3, 2)
         Button27.Name = "Button27"
         Button27.Size = New Size(52, 43)
@@ -461,12 +468,12 @@ Partial Class GameForm1
         TextBox6.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox6.BackColor = SystemColors.HighlightText
         TextBox6.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox6.Location = New Point(170, 83)
+        TextBox6.Location = New Point(315, 94)
         TextBox6.Margin = New Padding(3, 2, 3, 2)
         TextBox6.MaxLength = 1
         TextBox6.Name = "TextBox6"
         TextBox6.ReadOnly = True
-        TextBox6.Size = New Size(64, 54)
+        TextBox6.Size = New Size(69, 54)
         TextBox6.TabIndex = 26
         TextBox6.Visible = False
         ' 
@@ -475,12 +482,12 @@ Partial Class GameForm1
         TextBox7.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox7.BackColor = SystemColors.HighlightText
         TextBox7.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox7.Location = New Point(240, 83)
+        TextBox7.Location = New Point(385, 94)
         TextBox7.Margin = New Padding(3, 2, 3, 2)
         TextBox7.MaxLength = 1
         TextBox7.Name = "TextBox7"
         TextBox7.ReadOnly = True
-        TextBox7.Size = New Size(64, 54)
+        TextBox7.Size = New Size(69, 54)
         TextBox7.TabIndex = 27
         TextBox7.Visible = False
         ' 
@@ -489,12 +496,12 @@ Partial Class GameForm1
         TextBox8.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox8.BackColor = SystemColors.HighlightText
         TextBox8.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox8.Location = New Point(310, 83)
+        TextBox8.Location = New Point(455, 94)
         TextBox8.Margin = New Padding(3, 2, 3, 2)
         TextBox8.MaxLength = 1
         TextBox8.Name = "TextBox8"
         TextBox8.ReadOnly = True
-        TextBox8.Size = New Size(64, 54)
+        TextBox8.Size = New Size(69, 54)
         TextBox8.TabIndex = 28
         TextBox8.Visible = False
         ' 
@@ -503,12 +510,12 @@ Partial Class GameForm1
         TextBox9.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox9.BackColor = SystemColors.HighlightText
         TextBox9.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox9.Location = New Point(380, 83)
+        TextBox9.Location = New Point(525, 94)
         TextBox9.Margin = New Padding(3, 2, 3, 2)
         TextBox9.MaxLength = 1
         TextBox9.Name = "TextBox9"
         TextBox9.ReadOnly = True
-        TextBox9.Size = New Size(64, 54)
+        TextBox9.Size = New Size(69, 54)
         TextBox9.TabIndex = 29
         TextBox9.Visible = False
         ' 
@@ -517,12 +524,12 @@ Partial Class GameForm1
         TextBox10.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox10.BackColor = SystemColors.HighlightText
         TextBox10.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox10.Location = New Point(450, 83)
+        TextBox10.Location = New Point(595, 94)
         TextBox10.Margin = New Padding(3, 2, 3, 2)
         TextBox10.MaxLength = 1
         TextBox10.Name = "TextBox10"
         TextBox10.ReadOnly = True
-        TextBox10.Size = New Size(64, 54)
+        TextBox10.Size = New Size(69, 54)
         TextBox10.TabIndex = 30
         TextBox10.Visible = False
         ' 
@@ -531,12 +538,12 @@ Partial Class GameForm1
         TextBox11.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox11.BackColor = SystemColors.HighlightText
         TextBox11.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox11.Location = New Point(170, 141)
+        TextBox11.Location = New Point(315, 152)
         TextBox11.Margin = New Padding(3, 2, 3, 2)
         TextBox11.MaxLength = 1
         TextBox11.Name = "TextBox11"
         TextBox11.ReadOnly = True
-        TextBox11.Size = New Size(64, 54)
+        TextBox11.Size = New Size(69, 54)
         TextBox11.TabIndex = 26
         TextBox11.Visible = False
         ' 
@@ -545,12 +552,12 @@ Partial Class GameForm1
         TextBox12.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox12.BackColor = SystemColors.HighlightText
         TextBox12.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox12.Location = New Point(240, 141)
+        TextBox12.Location = New Point(385, 152)
         TextBox12.Margin = New Padding(3, 2, 3, 2)
         TextBox12.MaxLength = 1
         TextBox12.Name = "TextBox12"
         TextBox12.ReadOnly = True
-        TextBox12.Size = New Size(64, 54)
+        TextBox12.Size = New Size(69, 54)
         TextBox12.TabIndex = 27
         TextBox12.Visible = False
         ' 
@@ -559,12 +566,12 @@ Partial Class GameForm1
         TextBox13.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox13.BackColor = SystemColors.HighlightText
         TextBox13.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox13.Location = New Point(310, 141)
+        TextBox13.Location = New Point(455, 152)
         TextBox13.Margin = New Padding(3, 2, 3, 2)
         TextBox13.MaxLength = 1
         TextBox13.Name = "TextBox13"
         TextBox13.ReadOnly = True
-        TextBox13.Size = New Size(64, 54)
+        TextBox13.Size = New Size(69, 54)
         TextBox13.TabIndex = 28
         TextBox13.Visible = False
         ' 
@@ -573,12 +580,12 @@ Partial Class GameForm1
         TextBox14.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox14.BackColor = SystemColors.HighlightText
         TextBox14.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox14.Location = New Point(380, 141)
+        TextBox14.Location = New Point(525, 152)
         TextBox14.Margin = New Padding(3, 2, 3, 2)
         TextBox14.MaxLength = 1
         TextBox14.Name = "TextBox14"
         TextBox14.ReadOnly = True
-        TextBox14.Size = New Size(64, 54)
+        TextBox14.Size = New Size(69, 54)
         TextBox14.TabIndex = 29
         TextBox14.Visible = False
         ' 
@@ -587,12 +594,12 @@ Partial Class GameForm1
         TextBox15.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox15.BackColor = SystemColors.HighlightText
         TextBox15.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox15.Location = New Point(450, 141)
+        TextBox15.Location = New Point(595, 152)
         TextBox15.Margin = New Padding(3, 2, 3, 2)
         TextBox15.MaxLength = 1
         TextBox15.Name = "TextBox15"
         TextBox15.ReadOnly = True
-        TextBox15.Size = New Size(64, 54)
+        TextBox15.Size = New Size(69, 54)
         TextBox15.TabIndex = 30
         TextBox15.Visible = False
         ' 
@@ -601,12 +608,12 @@ Partial Class GameForm1
         TextBox16.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox16.BackColor = SystemColors.HighlightText
         TextBox16.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox16.Location = New Point(170, 199)
+        TextBox16.Location = New Point(315, 210)
         TextBox16.Margin = New Padding(3, 2, 3, 2)
         TextBox16.MaxLength = 1
         TextBox16.Name = "TextBox16"
         TextBox16.ReadOnly = True
-        TextBox16.Size = New Size(64, 54)
+        TextBox16.Size = New Size(69, 54)
         TextBox16.TabIndex = 26
         TextBox16.Visible = False
         ' 
@@ -615,12 +622,12 @@ Partial Class GameForm1
         TextBox17.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox17.BackColor = SystemColors.HighlightText
         TextBox17.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox17.Location = New Point(240, 199)
+        TextBox17.Location = New Point(385, 210)
         TextBox17.Margin = New Padding(3, 2, 3, 2)
         TextBox17.MaxLength = 1
         TextBox17.Name = "TextBox17"
         TextBox17.ReadOnly = True
-        TextBox17.Size = New Size(64, 54)
+        TextBox17.Size = New Size(69, 54)
         TextBox17.TabIndex = 27
         TextBox17.Visible = False
         ' 
@@ -629,12 +636,12 @@ Partial Class GameForm1
         TextBox18.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox18.BackColor = SystemColors.HighlightText
         TextBox18.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox18.Location = New Point(310, 199)
+        TextBox18.Location = New Point(455, 210)
         TextBox18.Margin = New Padding(3, 2, 3, 2)
         TextBox18.MaxLength = 1
         TextBox18.Name = "TextBox18"
         TextBox18.ReadOnly = True
-        TextBox18.Size = New Size(64, 54)
+        TextBox18.Size = New Size(69, 54)
         TextBox18.TabIndex = 28
         TextBox18.Visible = False
         ' 
@@ -643,12 +650,12 @@ Partial Class GameForm1
         TextBox19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox19.BackColor = SystemColors.HighlightText
         TextBox19.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox19.Location = New Point(380, 199)
+        TextBox19.Location = New Point(525, 210)
         TextBox19.Margin = New Padding(3, 2, 3, 2)
         TextBox19.MaxLength = 1
         TextBox19.Name = "TextBox19"
         TextBox19.ReadOnly = True
-        TextBox19.Size = New Size(64, 54)
+        TextBox19.Size = New Size(69, 54)
         TextBox19.TabIndex = 29
         TextBox19.Visible = False
         ' 
@@ -657,12 +664,12 @@ Partial Class GameForm1
         TextBox20.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox20.BackColor = SystemColors.HighlightText
         TextBox20.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox20.Location = New Point(450, 199)
+        TextBox20.Location = New Point(595, 210)
         TextBox20.Margin = New Padding(3, 2, 3, 2)
         TextBox20.MaxLength = 1
         TextBox20.Name = "TextBox20"
         TextBox20.ReadOnly = True
-        TextBox20.Size = New Size(64, 54)
+        TextBox20.Size = New Size(69, 54)
         TextBox20.TabIndex = 30
         TextBox20.Visible = False
         ' 
@@ -671,12 +678,12 @@ Partial Class GameForm1
         TextBox21.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox21.BackColor = SystemColors.HighlightText
         TextBox21.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox21.Location = New Point(170, 257)
+        TextBox21.Location = New Point(315, 268)
         TextBox21.Margin = New Padding(3, 2, 3, 2)
         TextBox21.MaxLength = 1
         TextBox21.Name = "TextBox21"
         TextBox21.ReadOnly = True
-        TextBox21.Size = New Size(64, 54)
+        TextBox21.Size = New Size(69, 54)
         TextBox21.TabIndex = 26
         TextBox21.Visible = False
         ' 
@@ -685,12 +692,12 @@ Partial Class GameForm1
         TextBox22.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox22.BackColor = SystemColors.HighlightText
         TextBox22.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox22.Location = New Point(240, 257)
+        TextBox22.Location = New Point(385, 268)
         TextBox22.Margin = New Padding(3, 2, 3, 2)
         TextBox22.MaxLength = 1
         TextBox22.Name = "TextBox22"
         TextBox22.ReadOnly = True
-        TextBox22.Size = New Size(64, 54)
+        TextBox22.Size = New Size(69, 54)
         TextBox22.TabIndex = 27
         TextBox22.Visible = False
         ' 
@@ -699,12 +706,12 @@ Partial Class GameForm1
         TextBox23.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox23.BackColor = SystemColors.HighlightText
         TextBox23.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox23.Location = New Point(310, 257)
+        TextBox23.Location = New Point(455, 268)
         TextBox23.Margin = New Padding(3, 2, 3, 2)
         TextBox23.MaxLength = 1
         TextBox23.Name = "TextBox23"
         TextBox23.ReadOnly = True
-        TextBox23.Size = New Size(64, 54)
+        TextBox23.Size = New Size(69, 54)
         TextBox23.TabIndex = 28
         TextBox23.Visible = False
         ' 
@@ -713,12 +720,12 @@ Partial Class GameForm1
         TextBox24.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox24.BackColor = SystemColors.HighlightText
         TextBox24.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox24.Location = New Point(380, 257)
+        TextBox24.Location = New Point(525, 268)
         TextBox24.Margin = New Padding(3, 2, 3, 2)
         TextBox24.MaxLength = 1
         TextBox24.Name = "TextBox24"
         TextBox24.ReadOnly = True
-        TextBox24.Size = New Size(64, 54)
+        TextBox24.Size = New Size(69, 54)
         TextBox24.TabIndex = 29
         TextBox24.Visible = False
         ' 
@@ -727,14 +734,48 @@ Partial Class GameForm1
         TextBox25.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox25.BackColor = SystemColors.HighlightText
         TextBox25.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox25.Location = New Point(450, 257)
+        TextBox25.Location = New Point(595, 268)
         TextBox25.Margin = New Padding(3, 2, 3, 2)
         TextBox25.MaxLength = 1
         TextBox25.Name = "TextBox25"
         TextBox25.ReadOnly = True
-        TextBox25.Size = New Size(64, 54)
+        TextBox25.Size = New Size(69, 54)
         TextBox25.TabIndex = 30
         TextBox25.Visible = False
+        ' 
+        ' Hint
+        ' 
+        Hint.Location = New Point(74, 410)
+        Hint.Name = "Hint"
+        Hint.Size = New Size(75, 23)
+        Hint.TabIndex = 32
+        Hint.Text = "Hint"
+        Hint.UseVisualStyleBackColor = True
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Transparent
+        Panel1.Controls.Add(Partbox)
+        Panel1.Controls.Add(definitionBox)
+        Panel1.Location = New Point(12, 302)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(220, 102)
+        Panel1.TabIndex = 33
+        ' 
+        ' Partbox
+        ' 
+        Partbox.Location = New Point(14, 9)
+        Partbox.Name = "Partbox"
+        Partbox.Size = New Size(103, 23)
+        Partbox.TabIndex = 1
+        ' 
+        ' definitionBox
+        ' 
+        definitionBox.Location = New Point(14, 38)
+        definitionBox.Multiline = True
+        definitionBox.Name = "definitionBox"
+        definitionBox.Size = New Size(190, 56)
+        definitionBox.TabIndex = 1
         ' 
         ' GameForm1
         ' 
@@ -742,7 +783,9 @@ Partial Class GameForm1
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(836, 556)
+        ClientSize = New Size(1009, 652)
+        Controls.Add(Panel1)
+        Controls.Add(Hint)
         Controls.Add(MainInptBox)
         Controls.Add(TextBox25)
         Controls.Add(TextBox20)
@@ -798,6 +841,8 @@ Partial Class GameForm1
         Controls.Add(QBtn)
         Name = "GameForm1"
         Text = "GameForm"
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -855,4 +900,8 @@ Partial Class GameForm1
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents TextBox24 As TextBox
     Friend WithEvents TextBox25 As TextBox
+    Friend WithEvents Hint As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents definitionBox As TextBox
+    Friend WithEvents Partbox As TextBox
 End Class

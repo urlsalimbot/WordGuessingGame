@@ -1,12 +1,14 @@
 ﻿Public Class GameForm1
     Public Property buttons As New List(Of Button)
+    Public Property textboxes As New List(Of TextBox)
+    Dim gInstance As GameInstance = New GameInstance
 
     Private Sub GameForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim name As String = TitleForm.user
         Me.Focus()
         MainInptBox.Focus()
-        'MessageBox.Show(Button1.Name)
-        Init()
+        InitGameForm()
+        gInstance.GameInstance(Me)
     End Sub
 
     'Return to mainform
@@ -17,7 +19,7 @@
         End If
     End Sub
 
-    Private Sub Init()
+    Private Sub InitGameForm()
         buttons.Add(QBtn)
         buttons.Add(WBtn)
         buttons.Add(EBtn)
@@ -44,6 +46,31 @@
         buttons.Add(BBtn)
         buttons.Add(NBtn)
         buttons.Add(MBtn)
+        textboxes.Add(TextBox1)
+        textboxes.Add(TextBox2)
+        textboxes.Add(TextBox3)
+        textboxes.Add(TextBox4)
+        textboxes.Add(TextBox5)
+        textboxes.Add(TextBox6)
+        textboxes.Add(TextBox7)
+        textboxes.Add(TextBox8)
+        textboxes.Add(TextBox9)
+        textboxes.Add(TextBox10)
+        textboxes.Add(TextBox11)
+        textboxes.Add(TextBox12)
+        textboxes.Add(TextBox13)
+        textboxes.Add(TextBox14)
+        textboxes.Add(TextBox15)
+        textboxes.Add(TextBox16)
+        textboxes.Add(TextBox17)
+        textboxes.Add(TextBox18)
+        textboxes.Add(TextBox19)
+        textboxes.Add(TextBox20)
+        textboxes.Add(TextBox21)
+        textboxes.Add(TextBox22)
+        textboxes.Add(TextBox23)
+        textboxes.Add(TextBox24)
+        textboxes.Add(TextBox25)
     End Sub
 
     'FOCUS TEXTBox
@@ -190,14 +217,13 @@
         MainInptBox.Text += "m"
         MainInptBox_Leave(sender, e)
     End Sub
-
-    Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            Checker(buttons)
-        End If
-    End Sub
-
     'END OF ONSCREEN KEYBOARD
 
+    Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
+        If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gInstance.guessword.Length Then
+            Checker(buttons)
+            gInstance.Logic(MainInptBox.Text)
+        End If
+    End Sub
 
 End Class
