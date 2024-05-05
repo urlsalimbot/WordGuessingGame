@@ -816,6 +816,7 @@ Partial Class GameForm1
         ' 
         Partbox.Location = New Point(14, 9)
         Partbox.Name = "Partbox"
+        Partbox.ReadOnly = True
         Partbox.Size = New Size(103, 23)
         Partbox.TabIndex = 1
         ' 
@@ -824,6 +825,7 @@ Partial Class GameForm1
         definitionBox.Location = New Point(14, 38)
         definitionBox.Multiline = True
         definitionBox.Name = "definitionBox"
+        definitionBox.ReadOnly = True
         definitionBox.Size = New Size(190, 56)
         definitionBox.TabIndex = 1
         ' 

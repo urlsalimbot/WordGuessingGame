@@ -36,3 +36,6 @@ C:\Users\HP\Source\Repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug
 C:\Users\HP\Source\Repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\ref\WordGuessingGame.dll
 C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.GameForm1.resources
 C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.Resources.resources
+C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.vbproj.AssemblyReference.cache
+C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Typw\source\repos\urlsalimbot\WordGuessingGame\WordGuessingGame\obj\Debug\net6.0-windows\WordGuessingGame.vbproj.CopyComplete

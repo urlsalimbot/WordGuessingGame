@@ -1,8 +1,13 @@
-﻿Option Strict On
+﻿Option Strict Off
 
 Imports System.Net.Http
 Imports System.IO
 Imports System.Text
+Imports System.Net
+Imports System.Net.Cache
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Newtonsoft.Json.Linq
+
 
 
 Public Class GameInstance
@@ -44,15 +49,21 @@ Public Class GameInstance
 
     Public Async Sub GetWords(filepath As String)
 
-        Dim url As String = "https://www.mit.edu/~ecprice/wordlist.10000"
+        Dim url As String = "https://raw.githubusercontent.com/lorenbrichter/Words/master/Words/en.txt"
         ' Use HttpClient in Using-statement.
         ' ... Use GetAsync to get the page data.
-        Dim client As HttpClient = New HttpClient()
-        Dim response As HttpResponseMessage = Await client.GetAsync(url)
-        Dim content As HttpContent = response.Content
-        ' Get contents of page as a String.
-        Dim result As String = Await content.ReadAsStringAsync()
-        Dim parts As String() = result.Split(New String() {ControlChars.Lf}, StringSplitOptions.None)
+        Dim request As HttpWebRequest
+        Dim response As HttpWebResponse = Nothing
+        Dim reader As StreamReader
+
+        request = DirectCast(WebRequest.Create(url), HttpWebRequest)
+
+        response = DirectCast(request.GetResponse(), HttpWebResponse)
+        reader = New StreamReader(response.GetResponseStream())
+        Dim rawresp As String
+        rawresp = reader.ReadToEnd()
+
+        Dim parts As String() = rawresp.Split(New String() {ControlChars.Lf}, StringSplitOptions.None)
 
         Using write As StreamWriter = File.CreateText(filepath)
             For Each elem In parts
@@ -107,6 +118,35 @@ Public Class GameInstance
     Public Function WordPicker() As String
         Dim rnd = New Random()
         Dim gameword = words(rnd.Next(0, words.Count))
+        Dim defreq As HttpWebRequest
+        Dim defres As HttpWebResponse = Nothing
+        Dim reader As StreamReader
+
+        defreq = DirectCast(WebRequest.Create("https://api.dictionaryapi.dev/api/v2/entries/en/" + gameword), HttpWebRequest)
+        Try
+            defres = DirectCast(defreq.GetResponse(), HttpWebResponse)
+        Catch ex As System.Net.WebException
+            WordPicker()
+        End Try
+
+        reader = New StreamReader(defres.GetResponseStream())
+
+
+        Dim rawresp As String
+        rawresp = reader.ReadToEnd()
+        'Dim parsejson As JObject = JObject.Parse(rawresp)
+
+        Dim Jword As Newtonsoft.Json.Linq.JArray = Newtonsoft.Json.Linq.JArray.Parse(rawresp)
+        Dim firstObject As JObject = Jword(0)
+        'get meanings
+        Dim getmeanings As JArray = firstObject("meanings")
+        Dim getpart As JObject = getmeanings(0)
+        Dim getDefs As JArray = getpart("definitions")
+        Dim getdef2 As JObject = getDefs(0)
+
+        gform.Partbox.Text = getpart("partOfSpeech").ToString()
+        gform.definitionBox.Text = getdef2("definition").ToString()
+
         Return gameword
     End Function
 
