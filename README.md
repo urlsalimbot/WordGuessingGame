@@ -12,13 +12,14 @@
 
 > To-Do:
 - [ ] Implement user interface
-- [ ] Implement game logic
-- [ ] Implement word selection logic
-- [ ] Implement API call for word checking
+- [x] Implement game logic
+- [x] Implement word selection logic
+- [x] Implement API call for word checking
 - [ ] Debug and Polish
 
 > NOTES
-- api for word-checking will be provided by https://dictionaryapi.dev/
+- api for word-checking by https://dictionaryapi.dev/
+- api for word to be guess are collected from https://www.mit.edu/~ecprice/wordlist.10000
 - due to the nature of the word-checking, the game will be online only.
 - JSON will be used to store and track local scores. (no plans for remote scores database)
 - Clue/Tooltips to be added. (Adviser suggestion)

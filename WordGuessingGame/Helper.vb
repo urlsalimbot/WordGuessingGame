@@ -14,4 +14,17 @@
             Return False
         End If
     End Function
+
+    Public Sub Checker(items As List(Of Button))
+        For Each elem In items
+            If elem.Name = ("Q" + "Btn") Then
+                elem.Visible = False
+            End If
+        Next
+    End Sub
+
+    Public Sub gameDisp(items As List(Of TextBox), word As String)
+
+    End Sub
+
 End Module

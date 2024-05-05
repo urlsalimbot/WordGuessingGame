@@ -32,6 +32,7 @@ Partial Class TitleForm
         Button5 = New Button()
         Panel1 = New Panel()
         Panel2 = New Panel()
+        TextBox2 = New TextBox()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
@@ -95,6 +96,7 @@ Partial Class TitleForm
         TextBox1.ForeColor = Color.CornflowerBlue
         TextBox1.Location = New Point(37, 16)
         TextBox1.Name = "TextBox1"
+        TextBox1.PlaceholderText = "Enter Username"
         TextBox1.Size = New Size(170, 25)
         TextBox1.TabIndex = 11
         ' 
@@ -107,7 +109,7 @@ Partial Class TitleForm
         Button4.Name = "Button4"
         Button4.Size = New Size(148, 49)
         Button4.TabIndex = 7
-        Button4.Text = "Enter Username"
+        Button4.Text = "Confirm"
         Button4.UseVisualStyleBackColor = False
         ' 
         ' Button5
@@ -146,6 +148,14 @@ Partial Class TitleForm
         Panel2.Size = New Size(200, 182)
         Panel2.TabIndex = 13
         ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(10, 144)
+        TextBox2.Multiline = True
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(259, 159)
+        TextBox2.TabIndex = 14
+        ' 
         ' TitleForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -154,9 +164,10 @@ Partial Class TitleForm
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(899, 494)
-        Controls.Add(Panel2)
+        Controls.Add(TextBox2)
         Controls.Add(LinkLabel1)
         Controls.Add(Panel1)
+        Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "TitleForm"
         RightToLeft = RightToLeft.No
@@ -178,5 +189,6 @@ Partial Class TitleForm
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents TextBox2 As TextBox
 
 End Class
