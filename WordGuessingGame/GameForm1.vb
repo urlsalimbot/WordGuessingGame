@@ -1,4 +1,6 @@
-﻿Public Class GameForm1
+﻿Imports System.Linq.Expressions
+
+Public Class GameForm1
     Public Property buttons As New List(Of Button)
     Public Property textboxes As New List(Of TextBox)
     Dim gInstance As GameInstance = New GameInstance
@@ -235,5 +237,9 @@
 
     Private Sub MainInptBox_TextChanged(sender As Object, e As EventArgs) Handles MainInptBox.TextChanged
         dispText(textboxes, MainInptBox.Text, gInstance.myattempt, gInstance.guessword.Length)
+    End Sub
+
+    Private Sub EnterBtn_Click(sender As Object, e As EventArgs) Handles EnterBtn.Click
+        MainInptBox_KeyDown(sender, New KeyEventArgs(Keys.Enter))
     End Sub
 End Class

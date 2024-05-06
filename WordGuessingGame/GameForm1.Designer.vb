@@ -80,6 +80,7 @@ Partial Class GameForm1
         Panel1 = New Panel()
         Partbox = New TextBox()
         definitionBox = New TextBox()
+        EnterBtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -457,7 +458,7 @@ Partial Class GameForm1
         MainInptBox.CharacterCasing = CharacterCasing.Lower
         MainInptBox.Location = New Point(53, 495)
         MainInptBox.Name = "MainInptBox"
-        MainInptBox.Size = New Size(232, 23)
+        MainInptBox.Size = New Size(0, 23)
         MainInptBox.TabIndex = 0
         ' 
         ' Button27
@@ -470,6 +471,7 @@ Partial Class GameForm1
         Button27.Size = New Size(52, 43)
         Button27.TabIndex = 9
         Button27.Text = "<"
+        Button27.UseCompatibleTextRendering = True
         Button27.UseVisualStyleBackColor = True
         ' 
         ' TextBox6
@@ -806,9 +808,9 @@ Partial Class GameForm1
         Panel1.BackColor = Color.Transparent
         Panel1.Controls.Add(Partbox)
         Panel1.Controls.Add(definitionBox)
-        Panel1.Location = New Point(12, 302)
+        Panel1.Location = New Point(12, 210)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(220, 102)
+        Panel1.Size = New Size(220, 194)
         Panel1.TabIndex = 33
         Panel1.Visible = False
         ' 
@@ -826,8 +828,21 @@ Partial Class GameForm1
         definitionBox.Multiline = True
         definitionBox.Name = "definitionBox"
         definitionBox.ReadOnly = True
-        definitionBox.Size = New Size(190, 56)
+        definitionBox.Size = New Size(190, 143)
         definitionBox.TabIndex = 1
+        ' 
+        ' EnterBtn
+        ' 
+        EnterBtn.BackgroundImageLayout = ImageLayout.Stretch
+        EnterBtn.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
+        EnterBtn.Location = New Point(879, 474)
+        EnterBtn.Margin = New Padding(3, 2, 3, 2)
+        EnterBtn.Name = "EnterBtn"
+        EnterBtn.Size = New Size(52, 43)
+        EnterBtn.TabIndex = 9
+        EnterBtn.Text = "↵"
+        EnterBtn.UseCompatibleTextRendering = True
+        EnterBtn.UseVisualStyleBackColor = True
         ' 
         ' GameForm1
         ' 
@@ -880,6 +895,7 @@ Partial Class GameForm1
         Controls.Add(DBtn)
         Controls.Add(SBtn)
         Controls.Add(ABtn)
+        Controls.Add(EnterBtn)
         Controls.Add(Button27)
         Controls.Add(PBtn)
         Controls.Add(OBtn)
@@ -956,4 +972,5 @@ Partial Class GameForm1
     Friend WithEvents Panel1 As Panel
     Friend WithEvents definitionBox As TextBox
     Friend WithEvents Partbox As TextBox
+    Friend WithEvents EnterBtn As Button
 End Class

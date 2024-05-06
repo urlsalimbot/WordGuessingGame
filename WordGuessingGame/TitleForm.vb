@@ -15,6 +15,7 @@ Public Class TitleForm
         user = TextBox1.Text
         TextBox1.Text = ""
         gForm.Show()
+        Button1_Click(sender, e)
         Me.Hide()
     End Sub
 
@@ -25,8 +26,7 @@ Public Class TitleForm
 
     'RETURN TO MAIN MENU
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ToggleVis(Panel2)
-        ToggleVis(Panel1)
+        Button1_Click(sender, e)
     End Sub
 
     'EXIT FUNCTION

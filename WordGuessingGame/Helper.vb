@@ -1,5 +1,4 @@
 ﻿Imports System.DirectoryServices.ActiveDirectory
-
 Module Helper
 
     Public Sub ToggleVis(item As Control)
@@ -24,11 +23,13 @@ Module Helper
         Next
     End Sub
 
-    Public Sub gameDisp(items As List(Of TextBox), word As String, attempt As Int32)
+    Public Sub gameDisp(items As List(Of TextBox), word As String, attempt As Int32, wsize As Int32)
+        Dim anchor As Int32
+        anchor = (wsize - (items(0).Size.Width + 15) * word.Length) / 2
         For i As Int16 = 0 To word.Length - 1
             Dim tempbox As TextBox
             tempbox = items(i + ((attempt - 1) * word.Length))
-            tempbox.Location = New Size((180 + (tempbox.Size.Width + 15) * (i)), (36 + (tempbox.Size.Height + 20) * (attempt - 1)))
+            tempbox.Location = New Size((anchor + (tempbox.Size.Width + 15) * (i)), (36 + (tempbox.Size.Height + 20) * (attempt - 1)))
             tempbox.Visible = True
         Next
     End Sub
