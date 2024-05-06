@@ -458,7 +458,7 @@ Partial Class GameForm1
         MainInptBox.CharacterCasing = CharacterCasing.Lower
         MainInptBox.Location = New Point(53, 495)
         MainInptBox.Name = "MainInptBox"
-        MainInptBox.Size = New Size(0, 23)
+        MainInptBox.Size = New Size(122, 23)
         MainInptBox.TabIndex = 0
         ' 
         ' Button27
@@ -908,6 +908,7 @@ Partial Class GameForm1
         Controls.Add(WBtn)
         Controls.Add(QBtn)
         Name = "GameForm1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "GameForm"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

@@ -160,6 +160,7 @@ Partial Class TitleForm
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "TitleForm"
         RightToLeft = RightToLeft.No
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

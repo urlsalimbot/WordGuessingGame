@@ -31,10 +31,9 @@ Partial Class ExitForm
         ' 
         Button1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
         Button1.ForeColor = Color.Navy
-        Button1.Location = New Point(84, 95)
-        Button1.Margin = New Padding(3, 4, 3, 4)
+        Button1.Location = New Point(74, 71)
         Button1.Name = "Button1"
-        Button1.Size = New Size(59, 54)
+        Button1.Size = New Size(52, 40)
         Button1.TabIndex = 0
         Button1.Text = "Yes"
         Button1.UseVisualStyleBackColor = True
@@ -44,28 +43,27 @@ Partial Class ExitForm
         Button2.BackColor = Color.Transparent
         Button2.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
         Button2.ForeColor = Color.Navy
-        Button2.Location = New Point(175, 95)
-        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Location = New Point(153, 71)
         Button2.Name = "Button2"
-        Button2.Size = New Size(59, 54)
+        Button2.Size = New Size(52, 40)
         Button2.TabIndex = 1
         Button2.Text = "No"
         Button2.UseVisualStyleBackColor = False
         ' 
         ' ExitForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(331, 211)
+        ClientSize = New Size(290, 158)
         Controls.Add(Button2)
         Controls.Add(Button1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 4, 3, 4)
         MaximizeBox = False
         MinimizeBox = False
         Name = "ExitForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Exit?"
         ResumeLayout(False)
     End Sub
