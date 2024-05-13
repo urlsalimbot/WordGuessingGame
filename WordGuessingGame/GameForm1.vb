@@ -82,7 +82,7 @@ Public Class GameForm1
     End Sub
 
     'BACKSPACE
-    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+    Private Sub Button27_Click(sender As Object, e As EventArgs)
         If MainInptBox.Text <> "" Then
             MainInptBox.Text = MainInptBox.Text.Remove(MainInptBox.Text.Length - 1)
         End If

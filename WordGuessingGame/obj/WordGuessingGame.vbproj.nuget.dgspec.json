@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj": {}
+    "C:\\Users\\Typw\\source\\repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj": {
+    "C:\\Users\\Typw\\source\\repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj",
+        "projectUniqueName": "C:\\Users\\Typw\\source\\repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj",
         "projectName": "WordGuessingGame",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\obj\\",
+        "projectPath": "C:\\Users\\Typw\\source\\repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\WordGuessingGame.vbproj",
+        "packagesPath": "C:\\Users\\Typw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Typw\\source\\repos\\urlsalimbot\\WordGuessingGame\\WordGuessingGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Users\\Typw\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Typw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Typw\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +28,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +40,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +70,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

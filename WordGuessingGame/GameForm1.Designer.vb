@@ -55,7 +55,7 @@ Partial Class GameForm1
         TextBox4 = New TextBox()
         TextBox5 = New TextBox()
         MainInptBox = New TextBox()
-        Button27 = New Button()
+        BackSpcButton = New Button()
         TextBox6 = New TextBox()
         TextBox7 = New TextBox()
         TextBox8 = New TextBox()
@@ -86,8 +86,8 @@ Partial Class GameForm1
         ' 
         ' QBtn
         ' 
-        QBtn.BackColor = Color.Red
-        QBtn.BackgroundImage = CType(resources.GetObject("QBtn.BackgroundImage"), Image)
+        QBtn.BackColor = Color.Transparent
+        QBtn.BackgroundImage = My.Resources.Resources.NORM17
         QBtn.BackgroundImageLayout = ImageLayout.Stretch
         QBtn.Location = New Point(208, 474)
         QBtn.Margin = New Padding(3, 2, 3, 2)
@@ -98,278 +98,303 @@ Partial Class GameForm1
         ' 
         ' WBtn
         ' 
-        WBtn.BackgroundImage = CType(resources.GetObject("WBtn.BackgroundImage"), Image)
+        WBtn.BackColor = Color.Transparent
+        WBtn.BackgroundImage = My.Resources.Resources.NORM23
         WBtn.BackgroundImageLayout = ImageLayout.Stretch
         WBtn.Location = New Point(266, 474)
         WBtn.Margin = New Padding(3, 2, 3, 2)
         WBtn.Name = "WBtn"
         WBtn.Size = New Size(52, 44)
         WBtn.TabIndex = 1
-        WBtn.UseVisualStyleBackColor = True
+        WBtn.UseVisualStyleBackColor = False
         ' 
         ' EBtn
         ' 
-        EBtn.BackgroundImage = CType(resources.GetObject("EBtn.BackgroundImage"), Image)
+        EBtn.BackColor = Color.Transparent
+        EBtn.BackgroundImage = My.Resources.Resources.NORM05
         EBtn.BackgroundImageLayout = ImageLayout.Stretch
         EBtn.Location = New Point(324, 474)
         EBtn.Margin = New Padding(3, 2, 3, 2)
         EBtn.Name = "EBtn"
         EBtn.Size = New Size(52, 44)
         EBtn.TabIndex = 2
-        EBtn.UseVisualStyleBackColor = True
+        EBtn.UseVisualStyleBackColor = False
         ' 
         ' RBtn
         ' 
-        RBtn.BackgroundImage = CType(resources.GetObject("RBtn.BackgroundImage"), Image)
+        RBtn.BackColor = Color.Transparent
+        RBtn.BackgroundImage = My.Resources.Resources.NORM18
         RBtn.BackgroundImageLayout = ImageLayout.Stretch
         RBtn.Location = New Point(381, 474)
         RBtn.Margin = New Padding(3, 2, 3, 2)
         RBtn.Name = "RBtn"
         RBtn.Size = New Size(52, 44)
         RBtn.TabIndex = 3
-        RBtn.UseVisualStyleBackColor = True
+        RBtn.UseVisualStyleBackColor = False
         ' 
         ' TBtn
         ' 
-        TBtn.BackgroundImage = CType(resources.GetObject("TBtn.BackgroundImage"), Image)
+        TBtn.BackColor = Color.Transparent
+        TBtn.BackgroundImage = My.Resources.Resources.NORM20
         TBtn.BackgroundImageLayout = ImageLayout.Stretch
         TBtn.Location = New Point(439, 474)
         TBtn.Margin = New Padding(3, 2, 3, 2)
         TBtn.Name = "TBtn"
         TBtn.Size = New Size(52, 44)
         TBtn.TabIndex = 4
-        TBtn.UseVisualStyleBackColor = True
+        TBtn.UseVisualStyleBackColor = False
         ' 
         ' YBtn
         ' 
-        YBtn.BackgroundImage = CType(resources.GetObject("YBtn.BackgroundImage"), Image)
+        YBtn.BackColor = Color.Transparent
+        YBtn.BackgroundImage = My.Resources.Resources.NORM25
         YBtn.BackgroundImageLayout = ImageLayout.Stretch
         YBtn.Location = New Point(497, 474)
         YBtn.Margin = New Padding(3, 2, 3, 2)
         YBtn.Name = "YBtn"
         YBtn.Size = New Size(52, 44)
         YBtn.TabIndex = 5
-        YBtn.UseVisualStyleBackColor = True
+        YBtn.UseVisualStyleBackColor = False
         ' 
         ' UBtn
         ' 
-        UBtn.BackgroundImage = CType(resources.GetObject("UBtn.BackgroundImage"), Image)
+        UBtn.BackColor = Color.Transparent
+        UBtn.BackgroundImage = My.Resources.Resources.NORM21
         UBtn.BackgroundImageLayout = ImageLayout.Stretch
         UBtn.Location = New Point(555, 474)
         UBtn.Margin = New Padding(3, 2, 3, 2)
         UBtn.Name = "UBtn"
         UBtn.Size = New Size(52, 44)
         UBtn.TabIndex = 6
-        UBtn.UseVisualStyleBackColor = True
+        UBtn.UseVisualStyleBackColor = False
         ' 
         ' IBtn
         ' 
-        IBtn.BackgroundImage = CType(resources.GetObject("IBtn.BackgroundImage"), Image)
+        IBtn.BackColor = Color.Transparent
+        IBtn.BackgroundImage = My.Resources.Resources.NORM09
         IBtn.BackgroundImageLayout = ImageLayout.Stretch
         IBtn.Location = New Point(612, 474)
         IBtn.Margin = New Padding(3, 2, 3, 2)
         IBtn.Name = "IBtn"
         IBtn.Size = New Size(52, 44)
         IBtn.TabIndex = 7
-        IBtn.UseVisualStyleBackColor = True
+        IBtn.UseVisualStyleBackColor = False
         ' 
         ' OBtn
         ' 
-        OBtn.BackgroundImage = CType(resources.GetObject("OBtn.BackgroundImage"), Image)
+        OBtn.BackColor = Color.Transparent
+        OBtn.BackgroundImage = My.Resources.Resources.NORM15
         OBtn.BackgroundImageLayout = ImageLayout.Stretch
         OBtn.Location = New Point(670, 474)
         OBtn.Margin = New Padding(3, 2, 3, 2)
         OBtn.Name = "OBtn"
         OBtn.Size = New Size(52, 43)
         OBtn.TabIndex = 8
-        OBtn.UseVisualStyleBackColor = True
+        OBtn.UseVisualStyleBackColor = False
         ' 
         ' PBtn
         ' 
-        PBtn.BackgroundImage = CType(resources.GetObject("PBtn.BackgroundImage"), Image)
+        PBtn.BackColor = Color.Transparent
+        PBtn.BackgroundImage = My.Resources.Resources.NORM16
         PBtn.BackgroundImageLayout = ImageLayout.Stretch
         PBtn.Location = New Point(728, 474)
         PBtn.Margin = New Padding(3, 2, 3, 2)
         PBtn.Name = "PBtn"
         PBtn.Size = New Size(52, 43)
         PBtn.TabIndex = 9
-        PBtn.UseVisualStyleBackColor = True
+        PBtn.UseVisualStyleBackColor = False
         ' 
         ' ABtn
         ' 
-        ABtn.BackgroundImage = CType(resources.GetObject("ABtn.BackgroundImage"), Image)
+        ABtn.BackColor = Color.Transparent
+        ABtn.BackgroundImage = My.Resources.Resources.NORM01
         ABtn.BackgroundImageLayout = ImageLayout.Stretch
         ABtn.Location = New Point(230, 522)
         ABtn.Margin = New Padding(3, 2, 3, 2)
         ABtn.Name = "ABtn"
         ABtn.Size = New Size(52, 43)
         ABtn.TabIndex = 10
-        ABtn.UseVisualStyleBackColor = True
+        ABtn.UseVisualStyleBackColor = False
         ' 
         ' SBtn
         ' 
-        SBtn.BackgroundImage = CType(resources.GetObject("SBtn.BackgroundImage"), Image)
+        SBtn.BackColor = Color.Transparent
+        SBtn.BackgroundImage = My.Resources.Resources.NORM19
         SBtn.BackgroundImageLayout = ImageLayout.Stretch
         SBtn.Location = New Point(288, 522)
         SBtn.Margin = New Padding(3, 2, 3, 2)
         SBtn.Name = "SBtn"
         SBtn.Size = New Size(52, 43)
         SBtn.TabIndex = 11
-        SBtn.UseVisualStyleBackColor = True
+        SBtn.UseVisualStyleBackColor = False
         ' 
         ' DBtn
         ' 
-        DBtn.BackgroundImage = CType(resources.GetObject("DBtn.BackgroundImage"), Image)
+        DBtn.BackColor = Color.Transparent
+        DBtn.BackgroundImage = My.Resources.Resources.NORM04
         DBtn.BackgroundImageLayout = ImageLayout.Stretch
         DBtn.Location = New Point(345, 522)
         DBtn.Margin = New Padding(3, 2, 3, 2)
         DBtn.Name = "DBtn"
         DBtn.Size = New Size(52, 43)
         DBtn.TabIndex = 12
-        DBtn.UseVisualStyleBackColor = True
+        DBtn.UseVisualStyleBackColor = False
         ' 
         ' FBtn
         ' 
-        FBtn.BackgroundImage = CType(resources.GetObject("FBtn.BackgroundImage"), Image)
+        FBtn.BackColor = Color.Transparent
+        FBtn.BackgroundImage = My.Resources.Resources.NORM06
         FBtn.BackgroundImageLayout = ImageLayout.Stretch
         FBtn.Location = New Point(403, 522)
         FBtn.Margin = New Padding(3, 2, 3, 2)
         FBtn.Name = "FBtn"
         FBtn.Size = New Size(52, 43)
         FBtn.TabIndex = 13
-        FBtn.UseVisualStyleBackColor = True
+        FBtn.UseVisualStyleBackColor = False
         ' 
         ' GBtn
         ' 
-        GBtn.BackgroundImage = CType(resources.GetObject("GBtn.BackgroundImage"), Image)
+        GBtn.BackColor = Color.Transparent
+        GBtn.BackgroundImage = My.Resources.Resources.NORM07
         GBtn.BackgroundImageLayout = ImageLayout.Stretch
         GBtn.Location = New Point(461, 522)
         GBtn.Margin = New Padding(3, 2, 3, 2)
         GBtn.Name = "GBtn"
         GBtn.Size = New Size(52, 43)
         GBtn.TabIndex = 14
-        GBtn.UseVisualStyleBackColor = True
+        GBtn.UseVisualStyleBackColor = False
         ' 
         ' HBtn
         ' 
-        HBtn.BackgroundImage = CType(resources.GetObject("HBtn.BackgroundImage"), Image)
+        HBtn.BackColor = Color.Transparent
+        HBtn.BackgroundImage = My.Resources.Resources.NORM08
         HBtn.BackgroundImageLayout = ImageLayout.Stretch
         HBtn.Location = New Point(519, 522)
         HBtn.Margin = New Padding(3, 2, 3, 2)
         HBtn.Name = "HBtn"
         HBtn.Size = New Size(52, 43)
         HBtn.TabIndex = 15
-        HBtn.UseVisualStyleBackColor = True
+        HBtn.UseVisualStyleBackColor = False
         ' 
         ' JBtn
         ' 
-        JBtn.BackgroundImage = CType(resources.GetObject("JBtn.BackgroundImage"), Image)
+        JBtn.BackColor = Color.Transparent
+        JBtn.BackgroundImage = My.Resources.Resources.NORM10
         JBtn.BackgroundImageLayout = ImageLayout.Stretch
         JBtn.Location = New Point(577, 522)
         JBtn.Margin = New Padding(3, 2, 3, 2)
         JBtn.Name = "JBtn"
         JBtn.Size = New Size(52, 43)
         JBtn.TabIndex = 16
-        JBtn.UseVisualStyleBackColor = True
+        JBtn.UseVisualStyleBackColor = False
         ' 
         ' KBtn
         ' 
-        KBtn.BackgroundImage = CType(resources.GetObject("KBtn.BackgroundImage"), Image)
+        KBtn.BackColor = Color.Transparent
+        KBtn.BackgroundImage = My.Resources.Resources.NORM11
         KBtn.BackgroundImageLayout = ImageLayout.Stretch
         KBtn.Location = New Point(634, 522)
         KBtn.Margin = New Padding(3, 2, 3, 2)
         KBtn.Name = "KBtn"
         KBtn.Size = New Size(52, 43)
         KBtn.TabIndex = 17
-        KBtn.UseVisualStyleBackColor = True
+        KBtn.UseVisualStyleBackColor = False
         ' 
         ' LBtn
         ' 
-        LBtn.BackgroundImage = CType(resources.GetObject("LBtn.BackgroundImage"), Image)
+        LBtn.BackColor = Color.Transparent
+        LBtn.BackgroundImage = My.Resources.Resources.NORM12
         LBtn.BackgroundImageLayout = ImageLayout.Stretch
         LBtn.Location = New Point(692, 522)
         LBtn.Margin = New Padding(3, 2, 3, 2)
         LBtn.Name = "LBtn"
         LBtn.Size = New Size(52, 43)
         LBtn.TabIndex = 18
-        LBtn.UseVisualStyleBackColor = True
+        LBtn.UseVisualStyleBackColor = False
         ' 
         ' ZBtn
         ' 
-        ZBtn.BackgroundImage = CType(resources.GetObject("ZBtn.BackgroundImage"), Image)
+        ZBtn.BackColor = Color.Transparent
+        ZBtn.BackgroundImage = My.Resources.Resources.NORM26
         ZBtn.BackgroundImageLayout = ImageLayout.Stretch
         ZBtn.Location = New Point(287, 569)
         ZBtn.Margin = New Padding(3, 2, 3, 2)
         ZBtn.Name = "ZBtn"
         ZBtn.Size = New Size(52, 43)
         ZBtn.TabIndex = 19
-        ZBtn.UseVisualStyleBackColor = True
+        ZBtn.UseVisualStyleBackColor = False
         ' 
         ' XBtn
         ' 
-        XBtn.BackgroundImage = CType(resources.GetObject("XBtn.BackgroundImage"), Image)
+        XBtn.BackColor = Color.Transparent
+        XBtn.BackgroundImage = My.Resources.Resources.NORM24
         XBtn.BackgroundImageLayout = ImageLayout.Stretch
         XBtn.Location = New Point(345, 569)
         XBtn.Margin = New Padding(3, 2, 3, 2)
         XBtn.Name = "XBtn"
         XBtn.Size = New Size(52, 43)
         XBtn.TabIndex = 20
-        XBtn.UseVisualStyleBackColor = True
+        XBtn.UseVisualStyleBackColor = False
         ' 
         ' CBtn
         ' 
-        CBtn.BackgroundImage = CType(resources.GetObject("CBtn.BackgroundImage"), Image)
+        CBtn.BackColor = Color.Transparent
+        CBtn.BackgroundImage = My.Resources.Resources.NORM03
         CBtn.BackgroundImageLayout = ImageLayout.Stretch
         CBtn.Location = New Point(402, 569)
         CBtn.Margin = New Padding(3, 2, 3, 2)
         CBtn.Name = "CBtn"
         CBtn.Size = New Size(52, 43)
         CBtn.TabIndex = 21
-        CBtn.UseVisualStyleBackColor = True
+        CBtn.UseVisualStyleBackColor = False
         ' 
         ' VBtn
         ' 
-        VBtn.BackgroundImage = CType(resources.GetObject("VBtn.BackgroundImage"), Image)
+        VBtn.BackColor = Color.Transparent
+        VBtn.BackgroundImage = My.Resources.Resources.NORM22
         VBtn.BackgroundImageLayout = ImageLayout.Stretch
         VBtn.Location = New Point(460, 569)
         VBtn.Margin = New Padding(3, 2, 3, 2)
         VBtn.Name = "VBtn"
         VBtn.Size = New Size(52, 43)
         VBtn.TabIndex = 22
-        VBtn.UseVisualStyleBackColor = True
+        VBtn.UseVisualStyleBackColor = False
         ' 
         ' BBtn
         ' 
-        BBtn.BackgroundImage = CType(resources.GetObject("BBtn.BackgroundImage"), Image)
+        BBtn.BackColor = Color.Transparent
+        BBtn.BackgroundImage = My.Resources.Resources.NORM02
         BBtn.BackgroundImageLayout = ImageLayout.Stretch
         BBtn.Location = New Point(518, 569)
         BBtn.Margin = New Padding(3, 2, 3, 2)
         BBtn.Name = "BBtn"
         BBtn.Size = New Size(52, 43)
         BBtn.TabIndex = 23
-        BBtn.UseVisualStyleBackColor = True
+        BBtn.UseVisualStyleBackColor = False
         ' 
         ' NBtn
         ' 
-        NBtn.BackgroundImage = CType(resources.GetObject("NBtn.BackgroundImage"), Image)
+        NBtn.BackColor = Color.Transparent
+        NBtn.BackgroundImage = My.Resources.Resources.NORM14
         NBtn.BackgroundImageLayout = ImageLayout.Stretch
         NBtn.Location = New Point(576, 569)
         NBtn.Margin = New Padding(3, 2, 3, 2)
         NBtn.Name = "NBtn"
         NBtn.Size = New Size(52, 43)
         NBtn.TabIndex = 24
-        NBtn.UseVisualStyleBackColor = True
+        NBtn.UseVisualStyleBackColor = False
         ' 
         ' MBtn
         ' 
-        MBtn.BackgroundImage = CType(resources.GetObject("MBtn.BackgroundImage"), Image)
+        MBtn.BackColor = Color.Transparent
+        MBtn.BackgroundImage = My.Resources.Resources.NORM13
         MBtn.BackgroundImageLayout = ImageLayout.Stretch
         MBtn.Location = New Point(633, 569)
         MBtn.Margin = New Padding(3, 2, 3, 2)
         MBtn.Name = "MBtn"
         MBtn.Size = New Size(52, 43)
         MBtn.TabIndex = 25
-        MBtn.UseVisualStyleBackColor = True
+        MBtn.UseVisualStyleBackColor = False
         ' 
         ' TextBox1
         ' 
@@ -461,18 +486,18 @@ Partial Class GameForm1
         MainInptBox.Size = New Size(122, 23)
         MainInptBox.TabIndex = 0
         ' 
-        ' Button27
+        ' BackSpcButton
         ' 
-        Button27.BackgroundImageLayout = ImageLayout.Stretch
-        Button27.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
-        Button27.Location = New Point(786, 474)
-        Button27.Margin = New Padding(3, 2, 3, 2)
-        Button27.Name = "Button27"
-        Button27.Size = New Size(52, 43)
-        Button27.TabIndex = 9
-        Button27.Text = "<"
-        Button27.UseCompatibleTextRendering = True
-        Button27.UseVisualStyleBackColor = True
+        BackSpcButton.BackgroundImage = My.Resources.Resources.BSpaceKeyNorm
+        BackSpcButton.BackgroundImageLayout = ImageLayout.Stretch
+        BackSpcButton.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
+        BackSpcButton.Location = New Point(786, 474)
+        BackSpcButton.Margin = New Padding(3, 2, 3, 2)
+        BackSpcButton.Name = "BackSpcButton"
+        BackSpcButton.Size = New Size(52, 43)
+        BackSpcButton.TabIndex = 9
+        BackSpcButton.UseCompatibleTextRendering = True
+        BackSpcButton.UseVisualStyleBackColor = True
         ' 
         ' TextBox6
         ' 
@@ -833,6 +858,7 @@ Partial Class GameForm1
         ' 
         ' EnterBtn
         ' 
+        EnterBtn.BackgroundImage = My.Resources.Resources.EnterKeyNorm
         EnterBtn.BackgroundImageLayout = ImageLayout.Stretch
         EnterBtn.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
         EnterBtn.Location = New Point(879, 474)
@@ -840,7 +866,6 @@ Partial Class GameForm1
         EnterBtn.Name = "EnterBtn"
         EnterBtn.Size = New Size(52, 43)
         EnterBtn.TabIndex = 9
-        EnterBtn.Text = "↵"
         EnterBtn.UseCompatibleTextRendering = True
         EnterBtn.UseVisualStyleBackColor = True
         ' 
@@ -896,7 +921,7 @@ Partial Class GameForm1
         Controls.Add(SBtn)
         Controls.Add(ABtn)
         Controls.Add(EnterBtn)
-        Controls.Add(Button27)
+        Controls.Add(BackSpcButton)
         Controls.Add(PBtn)
         Controls.Add(OBtn)
         Controls.Add(IBtn)
@@ -948,7 +973,7 @@ Partial Class GameForm1
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents MainInptBox As TextBox
-    Friend WithEvents Button27 As Button
+    Friend WithEvents BackSpcButton As Button
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents TextBox8 As TextBox
