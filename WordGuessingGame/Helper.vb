@@ -15,14 +15,6 @@ Module Helper
         End If
     End Function
 
-    Public Sub Checker(items As List(Of Button))
-        For Each elem In items
-            If elem.Name = ("Q" + "Btn") Then
-                elem.Visible = False
-            End If
-        Next
-    End Sub
-
     Public Sub gameDisp(items As List(Of TextBox), word As String, attempt As Int32, wsize As Int32)
         Dim anchor As Int32
         anchor = (wsize - (items(0).Size.Width + 15) * word.Length) / 2
@@ -41,6 +33,7 @@ Module Helper
             item.BackColor = SystemColors.Window
         Next
     End Sub
+
 
     Public Sub dispText(items As List(Of TextBox), display As String, range As Int32, len As Int32)
         For index As Int32 = 0 To len - 1

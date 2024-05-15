@@ -1,15 +1,9 @@
-﻿Option Strict Off
+﻿Option Strict On
 
 Imports System.Net.Http
 Imports System.IO
-Imports System.Text
 Imports System.Net
-Imports System.Net.Cache
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Newtonsoft.Json.Linq
-Imports System.Runtime.CompilerServices
-
-
 
 Public Class GameInstance
     Public dirpath As String = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\WGG")
@@ -18,16 +12,16 @@ Public Class GameInstance
     Public Property gform As GameForm1
     Public Property guessword As String
     Public Property myattempt As Int32
+    Public Property difficulty As Int32
 
-    Public Sub GameInstance(gameform As GameForm1)
-
+    Public Async Sub GameInstance(gameform As GameForm1, diff As Int32)
         gform = gameform
         myattempt = 1
-        InitGameIns()
-        MainGameLoop()
+        difficulty = diff
+        gform.ContinueBtn.Visible = Await InitGameIns().ConfigureAwait(False)
     End Sub
 
-    Public Async Sub InitGameIns()
+    Public Async Function InitGameIns() As Task(Of Boolean)
         Dim filename, filepath As String
 
         filename = "words.txt"
@@ -38,10 +32,11 @@ Public Class GameInstance
             GetWords(filepath)
         Else
             ReadWords(filepath)
+            Return True
         End If
-    End Sub
+    End Function
 
-    Public Async Sub ReadWords(filepath As String)
+    Public Sub ReadWords(filepath As String)
         Using read As StreamReader = File.OpenText(filepath)
             While read.ReadLine <> ""
                 words.Add(read.ReadLine)
@@ -50,26 +45,25 @@ Public Class GameInstance
     End Sub
 
     Public Async Sub GetWords(filepath As String)
-
         Dim url As String = "https://raw.githubusercontent.com/lorenbrichter/Words/master/Words/en.txt"
         ' Use HttpClient in Using-statement.
         ' ... Use GetAsync to get the page data.
         Dim client As HttpClient = New HttpClient()
-        Dim response As HttpResponseMessage = Await client.GetAsync(url)
+        Dim response As HttpResponseMessage = Await client.GetAsync(url).ConfigureAwait(False)
         Dim content As HttpContent = response.Content
         ' Get contents of page as a String.
-        Dim result As String = Await content.ReadAsStringAsync()
+        Dim result As String = Await content.ReadAsStringAsync().ConfigureAwait(False)
         Dim parts As String() = result.Split(New String() {ControlChars.Lf}, StringSplitOptions.None)
 
         Using write As StreamWriter = File.CreateText(filepath)
             For Each elem In parts
-                If elem.Length > 3 And elem.Length < 9 Then
-                    words.Add(elem.ToString())
+                If elem.Length > 2 And elem.Length < 9 Then
                     write.WriteLine(elem.ToString())
                 End If
             Next
         End Using
         MessageBox.Show("Get Done")
+        InitGameIns()
     End Sub
 
     Public Async Sub MainGameLoop()
@@ -87,7 +81,7 @@ Public Class GameInstance
         'MessageBox.Show(guessword)
     End Sub
 
-    Public Sub Logic(ans As String)
+    Public Sub Checker(ans As String)
         Dim index As Int32
 
         For i As Int32 = 0 To guessword.Length - 1
@@ -108,7 +102,9 @@ Public Class GameInstance
             myattempt = 3
             MessageBox.Show("Answer Correct, You Won!")
         End If
+    End Sub
 
+    Public Sub AttemptCounter(ans As String)
         If myattempt = 3 Then
             gform.SuspendLayout()
             clearDisp(gform.textboxes)
@@ -124,6 +120,11 @@ Public Class GameInstance
     Public Async Function WordPicker() As Task(Of String)
         Dim rnd = New Random()
         Dim gameword = words(rnd.Next(0, words.Count))
+
+        If gameword.Count > difficulty Then
+            Return Nothing
+        End If
+
         Dim url As String = "https://api.dictionaryapi.dev/api/v2/entries/en/" + gameword
         Dim client As HttpClient = New HttpClient()
         Dim response As HttpResponseMessage
@@ -135,19 +136,17 @@ Public Class GameInstance
         End If
 
         Dim content As HttpContent = response.Content
+
         ' Get contents of page as a String.
         Dim result As String = Await content.ReadAsStringAsync()
 
-        Dim Jword As Newtonsoft.Json.Linq.JArray = Newtonsoft.Json.Linq.JArray.Parse(result)
-        Dim firstObject As JObject = Jword(0)
-        'get meanings
-        Dim getmeanings As JArray = firstObject("meanings")
-        Dim getpart As JObject = getmeanings(0)
-        Dim getDefs As JArray = getpart("definitions")
-        Dim getdef2 As JObject = getDefs(0)
+        Dim Jword As JArray = JArray.Parse(result)
+        Dim firstObject As JObject = CType(Jword(0), JObject)
 
-        gform.Partbox.Text = getpart("partOfSpeech").ToString()
-        gform.definitionBox.Text = getdef2("definition").ToString()
+        'get meanings
+        Dim getmeanings As JArray = CType(firstObject("meanings"), JArray)
+
+        gform.partofspeech = getmeanings
 
         Return gameword
     End Function

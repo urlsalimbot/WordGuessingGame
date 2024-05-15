@@ -32,8 +32,13 @@ Partial Class TitleForm
         Button5 = New Button()
         Panel1 = New Panel()
         Panel2 = New Panel()
+        Panel3 = New Panel()
+        Hardrd = New RadioButton()
+        Medrd = New RadioButton()
+        Easyrd = New RadioButton()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
+        Panel3.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
@@ -55,13 +60,14 @@ Partial Class TitleForm
         LinkLabel1.BackColor = Color.Transparent
         LinkLabel1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         LinkLabel1.ForeColor = SystemColors.Control
-        LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
-        LinkLabel1.Location = New Point(10, 360)
+        LinkLabel1.LinkColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
+        LinkLabel1.Location = New Point(22, 422)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(116, 30)
         LinkLabel1.TabIndex = 6
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Repository"
+        LinkLabel1.VisitedLinkColor = Color.Turquoise
         ' 
         ' Button3
         ' 
@@ -146,6 +152,57 @@ Partial Class TitleForm
         Panel2.Size = New Size(200, 182)
         Panel2.TabIndex = 13
         ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.Transparent
+        Panel3.Controls.Add(Hardrd)
+        Panel3.Controls.Add(Medrd)
+        Panel3.Controls.Add(Easyrd)
+        Panel3.Location = New Point(34, 151)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(258, 232)
+        Panel3.TabIndex = 14
+        Panel3.Visible = False
+        ' 
+        ' Hardrd
+        ' 
+        Hardrd.AutoSize = True
+        Hardrd.Font = New Font("Upheaval TT (BRK)", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point)
+        Hardrd.ForeColor = Color.Red
+        Hardrd.Location = New Point(21, 163)
+        Hardrd.Name = "Hardrd"
+        Hardrd.Size = New Size(153, 47)
+        Hardrd.TabIndex = 0
+        Hardrd.TabStop = True
+        Hardrd.Text = "Hard"
+        Hardrd.UseVisualStyleBackColor = True
+        ' 
+        ' Medrd
+        ' 
+        Medrd.AutoSize = True
+        Medrd.Font = New Font("Upheaval TT (BRK)", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point)
+        Medrd.ForeColor = Color.Orange
+        Medrd.Location = New Point(21, 88)
+        Medrd.Name = "Medrd"
+        Medrd.Size = New Size(218, 47)
+        Medrd.TabIndex = 0
+        Medrd.TabStop = True
+        Medrd.Text = "Medium"
+        Medrd.UseVisualStyleBackColor = True
+        ' 
+        ' Easyrd
+        ' 
+        Easyrd.AutoSize = True
+        Easyrd.Font = New Font("Upheaval TT (BRK)", 35.9999962F, FontStyle.Regular, GraphicsUnit.Point)
+        Easyrd.ForeColor = Color.Chartreuse
+        Easyrd.Location = New Point(21, 17)
+        Easyrd.Name = "Easyrd"
+        Easyrd.Size = New Size(155, 47)
+        Easyrd.TabIndex = 0
+        Easyrd.TabStop = True
+        Easyrd.Text = "Easy"
+        Easyrd.UseVisualStyleBackColor = True
+        ' 
         ' TitleForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -154,9 +211,10 @@ Partial Class TitleForm
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(899, 494)
+        Controls.Add(Panel3)
+        Controls.Add(Panel2)
         Controls.Add(LinkLabel1)
         Controls.Add(Panel1)
-        Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "TitleForm"
         RightToLeft = RightToLeft.No
@@ -165,6 +223,8 @@ Partial Class TitleForm
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
 
@@ -179,5 +239,9 @@ Partial Class TitleForm
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Hardrd As RadioButton
+    Friend WithEvents Medrd As RadioButton
+    Friend WithEvents Easyrd As RadioButton
 
 End Class

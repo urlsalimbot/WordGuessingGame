@@ -81,7 +81,10 @@ Partial Class GameForm1
         Partbox = New TextBox()
         definitionBox = New TextBox()
         EnterBtn = New Button()
+        ContinueBtn = New Button()
+        KeyboardPanel = New Panel()
         Panel1.SuspendLayout()
+        KeyboardPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' QBtn
@@ -89,7 +92,7 @@ Partial Class GameForm1
         QBtn.BackColor = Color.Transparent
         QBtn.BackgroundImage = My.Resources.Resources.NORM17
         QBtn.BackgroundImageLayout = ImageLayout.Stretch
-        QBtn.Location = New Point(208, 474)
+        QBtn.Location = New Point(19, 16)
         QBtn.Margin = New Padding(3, 2, 3, 2)
         QBtn.Name = "QBtn"
         QBtn.Size = New Size(52, 44)
@@ -101,7 +104,7 @@ Partial Class GameForm1
         WBtn.BackColor = Color.Transparent
         WBtn.BackgroundImage = My.Resources.Resources.NORM23
         WBtn.BackgroundImageLayout = ImageLayout.Stretch
-        WBtn.Location = New Point(266, 474)
+        WBtn.Location = New Point(77, 16)
         WBtn.Margin = New Padding(3, 2, 3, 2)
         WBtn.Name = "WBtn"
         WBtn.Size = New Size(52, 44)
@@ -113,7 +116,7 @@ Partial Class GameForm1
         EBtn.BackColor = Color.Transparent
         EBtn.BackgroundImage = My.Resources.Resources.NORM05
         EBtn.BackgroundImageLayout = ImageLayout.Stretch
-        EBtn.Location = New Point(324, 474)
+        EBtn.Location = New Point(135, 16)
         EBtn.Margin = New Padding(3, 2, 3, 2)
         EBtn.Name = "EBtn"
         EBtn.Size = New Size(52, 44)
@@ -125,7 +128,7 @@ Partial Class GameForm1
         RBtn.BackColor = Color.Transparent
         RBtn.BackgroundImage = My.Resources.Resources.NORM18
         RBtn.BackgroundImageLayout = ImageLayout.Stretch
-        RBtn.Location = New Point(381, 474)
+        RBtn.Location = New Point(192, 16)
         RBtn.Margin = New Padding(3, 2, 3, 2)
         RBtn.Name = "RBtn"
         RBtn.Size = New Size(52, 44)
@@ -137,7 +140,7 @@ Partial Class GameForm1
         TBtn.BackColor = Color.Transparent
         TBtn.BackgroundImage = My.Resources.Resources.NORM20
         TBtn.BackgroundImageLayout = ImageLayout.Stretch
-        TBtn.Location = New Point(439, 474)
+        TBtn.Location = New Point(250, 16)
         TBtn.Margin = New Padding(3, 2, 3, 2)
         TBtn.Name = "TBtn"
         TBtn.Size = New Size(52, 44)
@@ -149,7 +152,7 @@ Partial Class GameForm1
         YBtn.BackColor = Color.Transparent
         YBtn.BackgroundImage = My.Resources.Resources.NORM25
         YBtn.BackgroundImageLayout = ImageLayout.Stretch
-        YBtn.Location = New Point(497, 474)
+        YBtn.Location = New Point(308, 16)
         YBtn.Margin = New Padding(3, 2, 3, 2)
         YBtn.Name = "YBtn"
         YBtn.Size = New Size(52, 44)
@@ -161,7 +164,7 @@ Partial Class GameForm1
         UBtn.BackColor = Color.Transparent
         UBtn.BackgroundImage = My.Resources.Resources.NORM21
         UBtn.BackgroundImageLayout = ImageLayout.Stretch
-        UBtn.Location = New Point(555, 474)
+        UBtn.Location = New Point(366, 16)
         UBtn.Margin = New Padding(3, 2, 3, 2)
         UBtn.Name = "UBtn"
         UBtn.Size = New Size(52, 44)
@@ -173,7 +176,7 @@ Partial Class GameForm1
         IBtn.BackColor = Color.Transparent
         IBtn.BackgroundImage = My.Resources.Resources.NORM09
         IBtn.BackgroundImageLayout = ImageLayout.Stretch
-        IBtn.Location = New Point(612, 474)
+        IBtn.Location = New Point(423, 16)
         IBtn.Margin = New Padding(3, 2, 3, 2)
         IBtn.Name = "IBtn"
         IBtn.Size = New Size(52, 44)
@@ -185,7 +188,7 @@ Partial Class GameForm1
         OBtn.BackColor = Color.Transparent
         OBtn.BackgroundImage = My.Resources.Resources.NORM15
         OBtn.BackgroundImageLayout = ImageLayout.Stretch
-        OBtn.Location = New Point(670, 474)
+        OBtn.Location = New Point(481, 16)
         OBtn.Margin = New Padding(3, 2, 3, 2)
         OBtn.Name = "OBtn"
         OBtn.Size = New Size(52, 43)
@@ -197,7 +200,7 @@ Partial Class GameForm1
         PBtn.BackColor = Color.Transparent
         PBtn.BackgroundImage = My.Resources.Resources.NORM16
         PBtn.BackgroundImageLayout = ImageLayout.Stretch
-        PBtn.Location = New Point(728, 474)
+        PBtn.Location = New Point(539, 16)
         PBtn.Margin = New Padding(3, 2, 3, 2)
         PBtn.Name = "PBtn"
         PBtn.Size = New Size(52, 43)
@@ -209,7 +212,7 @@ Partial Class GameForm1
         ABtn.BackColor = Color.Transparent
         ABtn.BackgroundImage = My.Resources.Resources.NORM01
         ABtn.BackgroundImageLayout = ImageLayout.Stretch
-        ABtn.Location = New Point(230, 522)
+        ABtn.Location = New Point(41, 64)
         ABtn.Margin = New Padding(3, 2, 3, 2)
         ABtn.Name = "ABtn"
         ABtn.Size = New Size(52, 43)
@@ -221,7 +224,7 @@ Partial Class GameForm1
         SBtn.BackColor = Color.Transparent
         SBtn.BackgroundImage = My.Resources.Resources.NORM19
         SBtn.BackgroundImageLayout = ImageLayout.Stretch
-        SBtn.Location = New Point(288, 522)
+        SBtn.Location = New Point(99, 64)
         SBtn.Margin = New Padding(3, 2, 3, 2)
         SBtn.Name = "SBtn"
         SBtn.Size = New Size(52, 43)
@@ -233,7 +236,7 @@ Partial Class GameForm1
         DBtn.BackColor = Color.Transparent
         DBtn.BackgroundImage = My.Resources.Resources.NORM04
         DBtn.BackgroundImageLayout = ImageLayout.Stretch
-        DBtn.Location = New Point(345, 522)
+        DBtn.Location = New Point(156, 64)
         DBtn.Margin = New Padding(3, 2, 3, 2)
         DBtn.Name = "DBtn"
         DBtn.Size = New Size(52, 43)
@@ -245,7 +248,7 @@ Partial Class GameForm1
         FBtn.BackColor = Color.Transparent
         FBtn.BackgroundImage = My.Resources.Resources.NORM06
         FBtn.BackgroundImageLayout = ImageLayout.Stretch
-        FBtn.Location = New Point(403, 522)
+        FBtn.Location = New Point(214, 64)
         FBtn.Margin = New Padding(3, 2, 3, 2)
         FBtn.Name = "FBtn"
         FBtn.Size = New Size(52, 43)
@@ -257,7 +260,7 @@ Partial Class GameForm1
         GBtn.BackColor = Color.Transparent
         GBtn.BackgroundImage = My.Resources.Resources.NORM07
         GBtn.BackgroundImageLayout = ImageLayout.Stretch
-        GBtn.Location = New Point(461, 522)
+        GBtn.Location = New Point(272, 64)
         GBtn.Margin = New Padding(3, 2, 3, 2)
         GBtn.Name = "GBtn"
         GBtn.Size = New Size(52, 43)
@@ -269,7 +272,7 @@ Partial Class GameForm1
         HBtn.BackColor = Color.Transparent
         HBtn.BackgroundImage = My.Resources.Resources.NORM08
         HBtn.BackgroundImageLayout = ImageLayout.Stretch
-        HBtn.Location = New Point(519, 522)
+        HBtn.Location = New Point(330, 64)
         HBtn.Margin = New Padding(3, 2, 3, 2)
         HBtn.Name = "HBtn"
         HBtn.Size = New Size(52, 43)
@@ -281,7 +284,7 @@ Partial Class GameForm1
         JBtn.BackColor = Color.Transparent
         JBtn.BackgroundImage = My.Resources.Resources.NORM10
         JBtn.BackgroundImageLayout = ImageLayout.Stretch
-        JBtn.Location = New Point(577, 522)
+        JBtn.Location = New Point(388, 64)
         JBtn.Margin = New Padding(3, 2, 3, 2)
         JBtn.Name = "JBtn"
         JBtn.Size = New Size(52, 43)
@@ -293,7 +296,7 @@ Partial Class GameForm1
         KBtn.BackColor = Color.Transparent
         KBtn.BackgroundImage = My.Resources.Resources.NORM11
         KBtn.BackgroundImageLayout = ImageLayout.Stretch
-        KBtn.Location = New Point(634, 522)
+        KBtn.Location = New Point(445, 64)
         KBtn.Margin = New Padding(3, 2, 3, 2)
         KBtn.Name = "KBtn"
         KBtn.Size = New Size(52, 43)
@@ -305,7 +308,7 @@ Partial Class GameForm1
         LBtn.BackColor = Color.Transparent
         LBtn.BackgroundImage = My.Resources.Resources.NORM12
         LBtn.BackgroundImageLayout = ImageLayout.Stretch
-        LBtn.Location = New Point(692, 522)
+        LBtn.Location = New Point(503, 64)
         LBtn.Margin = New Padding(3, 2, 3, 2)
         LBtn.Name = "LBtn"
         LBtn.Size = New Size(52, 43)
@@ -317,7 +320,7 @@ Partial Class GameForm1
         ZBtn.BackColor = Color.Transparent
         ZBtn.BackgroundImage = My.Resources.Resources.NORM26
         ZBtn.BackgroundImageLayout = ImageLayout.Stretch
-        ZBtn.Location = New Point(287, 569)
+        ZBtn.Location = New Point(98, 111)
         ZBtn.Margin = New Padding(3, 2, 3, 2)
         ZBtn.Name = "ZBtn"
         ZBtn.Size = New Size(52, 43)
@@ -329,7 +332,7 @@ Partial Class GameForm1
         XBtn.BackColor = Color.Transparent
         XBtn.BackgroundImage = My.Resources.Resources.NORM24
         XBtn.BackgroundImageLayout = ImageLayout.Stretch
-        XBtn.Location = New Point(345, 569)
+        XBtn.Location = New Point(156, 111)
         XBtn.Margin = New Padding(3, 2, 3, 2)
         XBtn.Name = "XBtn"
         XBtn.Size = New Size(52, 43)
@@ -341,7 +344,7 @@ Partial Class GameForm1
         CBtn.BackColor = Color.Transparent
         CBtn.BackgroundImage = My.Resources.Resources.NORM03
         CBtn.BackgroundImageLayout = ImageLayout.Stretch
-        CBtn.Location = New Point(402, 569)
+        CBtn.Location = New Point(213, 111)
         CBtn.Margin = New Padding(3, 2, 3, 2)
         CBtn.Name = "CBtn"
         CBtn.Size = New Size(52, 43)
@@ -353,7 +356,7 @@ Partial Class GameForm1
         VBtn.BackColor = Color.Transparent
         VBtn.BackgroundImage = My.Resources.Resources.NORM22
         VBtn.BackgroundImageLayout = ImageLayout.Stretch
-        VBtn.Location = New Point(460, 569)
+        VBtn.Location = New Point(271, 111)
         VBtn.Margin = New Padding(3, 2, 3, 2)
         VBtn.Name = "VBtn"
         VBtn.Size = New Size(52, 43)
@@ -365,7 +368,7 @@ Partial Class GameForm1
         BBtn.BackColor = Color.Transparent
         BBtn.BackgroundImage = My.Resources.Resources.NORM02
         BBtn.BackgroundImageLayout = ImageLayout.Stretch
-        BBtn.Location = New Point(518, 569)
+        BBtn.Location = New Point(329, 111)
         BBtn.Margin = New Padding(3, 2, 3, 2)
         BBtn.Name = "BBtn"
         BBtn.Size = New Size(52, 43)
@@ -377,7 +380,7 @@ Partial Class GameForm1
         NBtn.BackColor = Color.Transparent
         NBtn.BackgroundImage = My.Resources.Resources.NORM14
         NBtn.BackgroundImageLayout = ImageLayout.Stretch
-        NBtn.Location = New Point(576, 569)
+        NBtn.Location = New Point(387, 111)
         NBtn.Margin = New Padding(3, 2, 3, 2)
         NBtn.Name = "NBtn"
         NBtn.Size = New Size(52, 43)
@@ -389,7 +392,7 @@ Partial Class GameForm1
         MBtn.BackColor = Color.Transparent
         MBtn.BackgroundImage = My.Resources.Resources.NORM13
         MBtn.BackgroundImageLayout = ImageLayout.Stretch
-        MBtn.Location = New Point(633, 569)
+        MBtn.Location = New Point(444, 111)
         MBtn.Margin = New Padding(3, 2, 3, 2)
         MBtn.Name = "MBtn"
         MBtn.Size = New Size(52, 43)
@@ -481,9 +484,9 @@ Partial Class GameForm1
         MainInptBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         MainInptBox.BackColor = SystemColors.Window
         MainInptBox.CharacterCasing = CharacterCasing.Lower
-        MainInptBox.Location = New Point(53, 495)
+        MainInptBox.Location = New Point(564, 122)
         MainInptBox.Name = "MainInptBox"
-        MainInptBox.Size = New Size(122, 23)
+        MainInptBox.Size = New Size(102, 23)
         MainInptBox.TabIndex = 0
         ' 
         ' BackSpcButton
@@ -491,7 +494,7 @@ Partial Class GameForm1
         BackSpcButton.BackgroundImage = My.Resources.Resources.BSpaceKeyNorm
         BackSpcButton.BackgroundImageLayout = ImageLayout.Stretch
         BackSpcButton.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
-        BackSpcButton.Location = New Point(786, 474)
+        BackSpcButton.Location = New Point(597, 16)
         BackSpcButton.Margin = New Padding(3, 2, 3, 2)
         BackSpcButton.Name = "BackSpcButton"
         BackSpcButton.Size = New Size(52, 43)
@@ -821,7 +824,7 @@ Partial Class GameForm1
         ' 
         ' Hint
         ' 
-        Hint.Location = New Point(74, 410)
+        Hint.Location = New Point(69, 187)
         Hint.Name = "Hint"
         Hint.Size = New Size(75, 23)
         Hint.TabIndex = 32
@@ -833,9 +836,10 @@ Partial Class GameForm1
         Panel1.BackColor = Color.Transparent
         Panel1.Controls.Add(Partbox)
         Panel1.Controls.Add(definitionBox)
+        Panel1.Controls.Add(Hint)
         Panel1.Location = New Point(12, 210)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(220, 194)
+        Panel1.Size = New Size(220, 215)
         Panel1.TabIndex = 33
         Panel1.Visible = False
         ' 
@@ -861,13 +865,62 @@ Partial Class GameForm1
         EnterBtn.BackgroundImage = My.Resources.Resources.EnterKeyNorm
         EnterBtn.BackgroundImageLayout = ImageLayout.Stretch
         EnterBtn.Font = New Font("Segoe UI", 23F, FontStyle.Regular, GraphicsUnit.Point)
-        EnterBtn.Location = New Point(879, 474)
+        EnterBtn.Location = New Point(690, 16)
         EnterBtn.Margin = New Padding(3, 2, 3, 2)
         EnterBtn.Name = "EnterBtn"
         EnterBtn.Size = New Size(52, 43)
         EnterBtn.TabIndex = 9
         EnterBtn.UseCompatibleTextRendering = True
         EnterBtn.UseVisualStyleBackColor = True
+        ' 
+        ' ContinueBtn
+        ' 
+        ContinueBtn.Font = New Font("Upheaval TT (BRK)", 24F, FontStyle.Regular, GraphicsUnit.Point)
+        ContinueBtn.Location = New Point(266, 248)
+        ContinueBtn.Name = "ContinueBtn"
+        ContinueBtn.Size = New Size(456, 67)
+        ContinueBtn.TabIndex = 34
+        ContinueBtn.Text = "Click to Continue"
+        ContinueBtn.UseVisualStyleBackColor = True
+        ContinueBtn.Visible = False
+        ' 
+        ' KeyboardPanel
+        ' 
+        KeyboardPanel.BackColor = Color.Transparent
+        KeyboardPanel.Controls.Add(RBtn)
+        KeyboardPanel.Controls.Add(QBtn)
+        KeyboardPanel.Controls.Add(WBtn)
+        KeyboardPanel.Controls.Add(MainInptBox)
+        KeyboardPanel.Controls.Add(EBtn)
+        KeyboardPanel.Controls.Add(TBtn)
+        KeyboardPanel.Controls.Add(YBtn)
+        KeyboardPanel.Controls.Add(UBtn)
+        KeyboardPanel.Controls.Add(IBtn)
+        KeyboardPanel.Controls.Add(OBtn)
+        KeyboardPanel.Controls.Add(PBtn)
+        KeyboardPanel.Controls.Add(BackSpcButton)
+        KeyboardPanel.Controls.Add(EnterBtn)
+        KeyboardPanel.Controls.Add(ABtn)
+        KeyboardPanel.Controls.Add(SBtn)
+        KeyboardPanel.Controls.Add(DBtn)
+        KeyboardPanel.Controls.Add(FBtn)
+        KeyboardPanel.Controls.Add(GBtn)
+        KeyboardPanel.Controls.Add(HBtn)
+        KeyboardPanel.Controls.Add(JBtn)
+        KeyboardPanel.Controls.Add(KBtn)
+        KeyboardPanel.Controls.Add(LBtn)
+        KeyboardPanel.Controls.Add(ZBtn)
+        KeyboardPanel.Controls.Add(XBtn)
+        KeyboardPanel.Controls.Add(CBtn)
+        KeyboardPanel.Controls.Add(VBtn)
+        KeyboardPanel.Controls.Add(BBtn)
+        KeyboardPanel.Controls.Add(NBtn)
+        KeyboardPanel.Controls.Add(MBtn)
+        KeyboardPanel.Location = New Point(181, 431)
+        KeyboardPanel.Name = "KeyboardPanel"
+        KeyboardPanel.Size = New Size(758, 170)
+        KeyboardPanel.TabIndex = 35
+        KeyboardPanel.Visible = False
         ' 
         ' GameForm1
         ' 
@@ -876,9 +929,9 @@ Partial Class GameForm1
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1009, 652)
+        Controls.Add(KeyboardPanel)
+        Controls.Add(ContinueBtn)
         Controls.Add(Panel1)
-        Controls.Add(Hint)
-        Controls.Add(MainInptBox)
         Controls.Add(TextBox25)
         Controls.Add(TextBox20)
         Controls.Add(TextBox15)
@@ -904,39 +957,13 @@ Partial Class GameForm1
         Controls.Add(TextBox6)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
-        Controls.Add(MBtn)
-        Controls.Add(NBtn)
-        Controls.Add(BBtn)
-        Controls.Add(VBtn)
-        Controls.Add(CBtn)
-        Controls.Add(XBtn)
-        Controls.Add(ZBtn)
-        Controls.Add(LBtn)
-        Controls.Add(KBtn)
-        Controls.Add(JBtn)
-        Controls.Add(HBtn)
-        Controls.Add(GBtn)
-        Controls.Add(FBtn)
-        Controls.Add(DBtn)
-        Controls.Add(SBtn)
-        Controls.Add(ABtn)
-        Controls.Add(EnterBtn)
-        Controls.Add(BackSpcButton)
-        Controls.Add(PBtn)
-        Controls.Add(OBtn)
-        Controls.Add(IBtn)
-        Controls.Add(UBtn)
-        Controls.Add(YBtn)
-        Controls.Add(TBtn)
-        Controls.Add(RBtn)
-        Controls.Add(EBtn)
-        Controls.Add(WBtn)
-        Controls.Add(QBtn)
         Name = "GameForm1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "GameForm"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        KeyboardPanel.ResumeLayout(False)
+        KeyboardPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -999,4 +1026,6 @@ Partial Class GameForm1
     Friend WithEvents definitionBox As TextBox
     Friend WithEvents Partbox As TextBox
     Friend WithEvents EnterBtn As Button
+    Friend WithEvents ContinueBtn As Button
+    Friend WithEvents KeyboardPanel As Panel
 End Class

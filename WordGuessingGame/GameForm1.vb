@@ -1,22 +1,28 @@
-﻿Imports System.Linq.Expressions
+﻿Imports System.Diagnostics.Eventing.Reader
+Imports Newtonsoft.Json.Linq
 
 Public Class GameForm1
     Public Property buttons As New List(Of Button)
     Public Property textboxes As New List(Of TextBox)
+    Public partofspeech As JArray
+    Public definition As JArray
+    Public hintcount As Int16 = 1
+    Public defcount As Int16 = 1
+
     Dim gInstance As GameInstance = New GameInstance
 
     Private Sub GameForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim name As String = TitleForm.user
         Me.Focus()
-        MainInptBox.Focus()
         InitGameForm()
-        gInstance.GameInstance(Me)
+        gInstance.GameInstance(Me, TitleForm.difficulty)
     End Sub
 
     'Return to mainform
     Private Sub GameForm1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         e.Cancel = Not ExitProg()
         If Not e.Cancel Then
+            gInstance = Nothing
             TitleForm.Show()
         End If
     End Sub
@@ -222,24 +228,66 @@ Public Class GameForm1
     'END OF ONSCREEN KEYBOARD
 
     Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
-        If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gInstance.guessword.Length Then
-            gInstance.Logic(MainInptBox.Text)
-            MainInptBox.Text = ""
+        If gInstance.guessword <> Nothing Then
+            If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gInstance.guessword.Length Then
+                gInstance.Checker(MainInptBox.Text)
+                gInstance.AttemptCounter(MainInptBox.Text)
+                MainInptBox.Text = ""
+                hintcount = 1
+                defcount = 1
+            End If
         End If
     End Sub
 
     Private Sub Hint_Click(sender As Object, e As EventArgs) Handles Hint.Click
-        SuspendLayout()
-        ToggleVis(Panel1)
-        ResumeLayout()
-        PerformLayout()
+        'MessageBox.Show(partofspeech.Count)
+        'MessageBox.Show(partofspeech(0)("definitions").Count)
+        Dim hintdepth As Int16 = partofspeech.Count
+        Dim defdepth As Int16 = partofspeech(hintcount - 1)("definitions").Count
+
+        Partbox.Text = partofspeech(hintcount - 1)("partOfSpeech")
+
+        definitionBox.Text = partofspeech(hintcount - 1)("definitions")(defcount - 1)("definition")
+
+
+
+        If (defcount Mod defdepth = 0) Then
+            hintcount = (hintcount + 1) Mod hintdepth
+            If hintcount = 0 Then
+                hintcount = 1
+            End If
+            defcount = 1
+        End If
+
+        If (defcount Mod defdepth <> 0) Then
+            defcount += 1
+        End If
+
     End Sub
 
+    'Display Ans in individual textboxes
     Private Sub MainInptBox_TextChanged(sender As Object, e As EventArgs) Handles MainInptBox.TextChanged
-        dispText(textboxes, MainInptBox.Text, gInstance.myattempt, gInstance.guessword.Length)
+        If gInstance.guessword <> Nothing Then
+            dispText(textboxes, MainInptBox.Text, gInstance.myattempt, gInstance.guessword.Length)
+        End If
     End Sub
 
     Private Sub EnterBtn_Click(sender As Object, e As EventArgs) Handles EnterBtn.Click
         MainInptBox_KeyDown(sender, New KeyEventArgs(Keys.Enter))
+    End Sub
+
+    Private Sub ContinueBtn_Click(sender As Object, e As EventArgs) Handles ContinueBtn.Click
+        gInstance.MainGameLoop()
+        Panel1.Visible = True
+        KeyboardPanel.Visible = True
+        MainInptBox.Focus()
+        ContinueBtn.Visible = False
+    End Sub
+
+    Private Sub BackSpcButton_Click(sender As Object, e As EventArgs) Handles BackSpcButton.Click
+        If MainInptBox.Text <> "" Then
+            MainInptBox.Text = MainInptBox.Text.Substring(0, MainInptBox.Text.Length - 1)
+            MainInptBox_Leave(sender, e)
+        End If
     End Sub
 End Class
