@@ -121,7 +121,7 @@ Public Class GameInstance
         Dim rnd = New Random()
         Dim gameword = words(rnd.Next(0, words.Count))
 
-        If gameword.Count > difficulty Then
+        If gameword.Length > difficulty Then
             Return Nothing
         End If
 
