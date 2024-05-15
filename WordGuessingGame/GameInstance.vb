@@ -6,22 +6,28 @@ Imports System.Net
 Imports Newtonsoft.Json.Linq
 
 Public Class GameInstance
-    Public dirpath As String = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\WGG")
+    Public Property dirpath As String = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\WGG")
     Public Property words As New List(Of String)
     Public Property GameOver As Boolean = False
     Public Property gform As GameForm1
     Public Property guessword As String
-    Public Property myattempt As Int32
-    Public Property difficulty As Int32
+    Public Property myattempt As Integer
+    Public Property difficulty As Integer
+    Public Property games As Integer = 0
+    Public Property win As Boolean = False
+
 
     Public Async Sub GameInstance(gameform As GameForm1, diff As Int32)
+
         gform = gameform
         myattempt = 1
         difficulty = diff
         gform.ContinueBtn.Visible = Await InitGameIns().ConfigureAwait(False)
+
     End Sub
 
     Public Async Function InitGameIns() As Task(Of Boolean)
+
         Dim filename, filepath As String
 
         filename = "words.txt"
@@ -34,6 +40,7 @@ Public Class GameInstance
             ReadWords(filepath)
             Return True
         End If
+
     End Function
 
     Public Sub ReadWords(filepath As String)
@@ -67,7 +74,6 @@ Public Class GameInstance
     End Sub
 
     Public Async Sub MainGameLoop()
-        'MessageBox.Show(gform.textboxes(0).Name)
         If myattempt = 1 Then
             While guessword = Nothing
                 guessword = Await WordPicker()
@@ -78,7 +84,6 @@ Public Class GameInstance
         gameDisp(gform.textboxes, guessword, myattempt, gform.Size.Width)
         gform.ResumeLayout()
         gform.PerformLayout()
-        'MessageBox.Show(guessword)
     End Sub
 
     Public Sub Checker(ans As String)
@@ -99,22 +104,35 @@ Public Class GameInstance
         Next
 
         If ans = guessword Then
-            myattempt = 3
+            myattempt = 5
+            win = True
             MessageBox.Show("Answer Correct, You Won!")
         End If
     End Sub
 
     Public Sub AttemptCounter(ans As String)
-        If myattempt = 3 Then
+
+        If myattempt > 4 Then
             gform.SuspendLayout()
+
+            If Not win Then
+                MessageBox.Show("Sorry, The correct answer is " & guessword)
+
+            End If
+
             clearDisp(gform.textboxes)
+            kbReset(gform.buttons, gform.normpic)
             gform.ResumeLayout()
             gform.PerformLayout()
             myattempt = 0
+            games += 1
+            win = False
             guessword = ""
         End If
+
         myattempt += 1
         MainGameLoop()
+
     End Sub
 
     Public Async Function WordPicker() As Task(Of String)

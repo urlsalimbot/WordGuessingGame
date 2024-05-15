@@ -83,6 +83,31 @@ Partial Class GameForm1
         EnterBtn = New Button()
         ContinueBtn = New Button()
         KeyboardPanel = New Panel()
+        TextBox26 = New TextBox()
+        TextBox27 = New TextBox()
+        TextBox28 = New TextBox()
+        TextBox29 = New TextBox()
+        TextBox30 = New TextBox()
+        TextBox31 = New TextBox()
+        TextBox32 = New TextBox()
+        TextBox33 = New TextBox()
+        TextBox34 = New TextBox()
+        TextBox35 = New TextBox()
+        TextBox36 = New TextBox()
+        TextBox37 = New TextBox()
+        TextBox38 = New TextBox()
+        TextBox39 = New TextBox()
+        TextBox40 = New TextBox()
+        TextBox41 = New TextBox()
+        TextBox42 = New TextBox()
+        TextBox43 = New TextBox()
+        TextBox44 = New TextBox()
+        TextBox45 = New TextBox()
+        TextBox46 = New TextBox()
+        TextBox47 = New TextBox()
+        TextBox48 = New TextBox()
+        TextBox49 = New TextBox()
+        TextBox50 = New TextBox()
         Panel1.SuspendLayout()
         KeyboardPanel.SuspendLayout()
         SuspendLayout()
@@ -405,7 +430,7 @@ Partial Class GameForm1
         TextBox1.BackColor = SystemColors.HighlightText
         TextBox1.CharacterCasing = CharacterCasing.Upper
         TextBox1.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(315, 36)
+        TextBox1.Location = New Point(176, 23)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
         TextBox1.MaxLength = 1
         TextBox1.Name = "TextBox1"
@@ -421,7 +446,7 @@ Partial Class GameForm1
         TextBox2.BackColor = SystemColors.HighlightText
         TextBox2.CharacterCasing = CharacterCasing.Upper
         TextBox2.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox2.Location = New Point(385, 36)
+        TextBox2.Location = New Point(246, 23)
         TextBox2.Margin = New Padding(3, 2, 3, 2)
         TextBox2.MaxLength = 1
         TextBox2.Name = "TextBox2"
@@ -437,7 +462,7 @@ Partial Class GameForm1
         TextBox3.BackColor = SystemColors.HighlightText
         TextBox3.CharacterCasing = CharacterCasing.Upper
         TextBox3.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(455, 36)
+        TextBox3.Location = New Point(316, 23)
         TextBox3.Margin = New Padding(3, 2, 3, 2)
         TextBox3.MaxLength = 1
         TextBox3.Name = "TextBox3"
@@ -453,7 +478,7 @@ Partial Class GameForm1
         TextBox4.BackColor = SystemColors.HighlightText
         TextBox4.CharacterCasing = CharacterCasing.Upper
         TextBox4.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox4.Location = New Point(525, 36)
+        TextBox4.Location = New Point(386, 23)
         TextBox4.Margin = New Padding(3, 2, 3, 2)
         TextBox4.MaxLength = 1
         TextBox4.Name = "TextBox4"
@@ -469,7 +494,7 @@ Partial Class GameForm1
         TextBox5.BackColor = SystemColors.HighlightText
         TextBox5.CharacterCasing = CharacterCasing.Upper
         TextBox5.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox5.Location = New Point(595, 36)
+        TextBox5.Location = New Point(456, 23)
         TextBox5.Margin = New Padding(3, 2, 3, 2)
         TextBox5.MaxLength = 1
         TextBox5.Name = "TextBox5"
@@ -508,7 +533,7 @@ Partial Class GameForm1
         TextBox6.BackColor = SystemColors.HighlightText
         TextBox6.CharacterCasing = CharacterCasing.Upper
         TextBox6.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox6.Location = New Point(315, 94)
+        TextBox6.Location = New Point(176, 81)
         TextBox6.Margin = New Padding(3, 2, 3, 2)
         TextBox6.MaxLength = 1
         TextBox6.Name = "TextBox6"
@@ -524,7 +549,7 @@ Partial Class GameForm1
         TextBox7.BackColor = SystemColors.HighlightText
         TextBox7.CharacterCasing = CharacterCasing.Upper
         TextBox7.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox7.Location = New Point(385, 94)
+        TextBox7.Location = New Point(246, 81)
         TextBox7.Margin = New Padding(3, 2, 3, 2)
         TextBox7.MaxLength = 1
         TextBox7.Name = "TextBox7"
@@ -540,7 +565,7 @@ Partial Class GameForm1
         TextBox8.BackColor = SystemColors.HighlightText
         TextBox8.CharacterCasing = CharacterCasing.Upper
         TextBox8.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox8.Location = New Point(455, 94)
+        TextBox8.Location = New Point(316, 81)
         TextBox8.Margin = New Padding(3, 2, 3, 2)
         TextBox8.MaxLength = 1
         TextBox8.Name = "TextBox8"
@@ -556,7 +581,7 @@ Partial Class GameForm1
         TextBox9.BackColor = SystemColors.HighlightText
         TextBox9.CharacterCasing = CharacterCasing.Upper
         TextBox9.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox9.Location = New Point(525, 94)
+        TextBox9.Location = New Point(386, 81)
         TextBox9.Margin = New Padding(3, 2, 3, 2)
         TextBox9.MaxLength = 1
         TextBox9.Name = "TextBox9"
@@ -572,7 +597,7 @@ Partial Class GameForm1
         TextBox10.BackColor = SystemColors.HighlightText
         TextBox10.CharacterCasing = CharacterCasing.Upper
         TextBox10.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox10.Location = New Point(595, 94)
+        TextBox10.Location = New Point(456, 81)
         TextBox10.Margin = New Padding(3, 2, 3, 2)
         TextBox10.MaxLength = 1
         TextBox10.Name = "TextBox10"
@@ -588,7 +613,7 @@ Partial Class GameForm1
         TextBox11.BackColor = SystemColors.HighlightText
         TextBox11.CharacterCasing = CharacterCasing.Upper
         TextBox11.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox11.Location = New Point(315, 152)
+        TextBox11.Location = New Point(176, 139)
         TextBox11.Margin = New Padding(3, 2, 3, 2)
         TextBox11.MaxLength = 1
         TextBox11.Name = "TextBox11"
@@ -604,7 +629,7 @@ Partial Class GameForm1
         TextBox12.BackColor = SystemColors.HighlightText
         TextBox12.CharacterCasing = CharacterCasing.Upper
         TextBox12.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox12.Location = New Point(385, 152)
+        TextBox12.Location = New Point(246, 139)
         TextBox12.Margin = New Padding(3, 2, 3, 2)
         TextBox12.MaxLength = 1
         TextBox12.Name = "TextBox12"
@@ -620,7 +645,7 @@ Partial Class GameForm1
         TextBox13.BackColor = SystemColors.HighlightText
         TextBox13.CharacterCasing = CharacterCasing.Upper
         TextBox13.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox13.Location = New Point(455, 152)
+        TextBox13.Location = New Point(316, 139)
         TextBox13.Margin = New Padding(3, 2, 3, 2)
         TextBox13.MaxLength = 1
         TextBox13.Name = "TextBox13"
@@ -636,7 +661,7 @@ Partial Class GameForm1
         TextBox14.BackColor = SystemColors.HighlightText
         TextBox14.CharacterCasing = CharacterCasing.Upper
         TextBox14.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox14.Location = New Point(525, 152)
+        TextBox14.Location = New Point(386, 139)
         TextBox14.Margin = New Padding(3, 2, 3, 2)
         TextBox14.MaxLength = 1
         TextBox14.Name = "TextBox14"
@@ -652,7 +677,7 @@ Partial Class GameForm1
         TextBox15.BackColor = SystemColors.HighlightText
         TextBox15.CharacterCasing = CharacterCasing.Upper
         TextBox15.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox15.Location = New Point(595, 152)
+        TextBox15.Location = New Point(456, 139)
         TextBox15.Margin = New Padding(3, 2, 3, 2)
         TextBox15.MaxLength = 1
         TextBox15.Name = "TextBox15"
@@ -668,7 +693,7 @@ Partial Class GameForm1
         TextBox16.BackColor = SystemColors.HighlightText
         TextBox16.CharacterCasing = CharacterCasing.Upper
         TextBox16.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox16.Location = New Point(315, 210)
+        TextBox16.Location = New Point(176, 197)
         TextBox16.Margin = New Padding(3, 2, 3, 2)
         TextBox16.MaxLength = 1
         TextBox16.Name = "TextBox16"
@@ -684,7 +709,7 @@ Partial Class GameForm1
         TextBox17.BackColor = SystemColors.HighlightText
         TextBox17.CharacterCasing = CharacterCasing.Upper
         TextBox17.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox17.Location = New Point(385, 210)
+        TextBox17.Location = New Point(246, 197)
         TextBox17.Margin = New Padding(3, 2, 3, 2)
         TextBox17.MaxLength = 1
         TextBox17.Name = "TextBox17"
@@ -700,7 +725,7 @@ Partial Class GameForm1
         TextBox18.BackColor = SystemColors.HighlightText
         TextBox18.CharacterCasing = CharacterCasing.Upper
         TextBox18.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox18.Location = New Point(455, 210)
+        TextBox18.Location = New Point(316, 197)
         TextBox18.Margin = New Padding(3, 2, 3, 2)
         TextBox18.MaxLength = 1
         TextBox18.Name = "TextBox18"
@@ -716,7 +741,7 @@ Partial Class GameForm1
         TextBox19.BackColor = SystemColors.HighlightText
         TextBox19.CharacterCasing = CharacterCasing.Upper
         TextBox19.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox19.Location = New Point(525, 210)
+        TextBox19.Location = New Point(386, 197)
         TextBox19.Margin = New Padding(3, 2, 3, 2)
         TextBox19.MaxLength = 1
         TextBox19.Name = "TextBox19"
@@ -732,7 +757,7 @@ Partial Class GameForm1
         TextBox20.BackColor = SystemColors.HighlightText
         TextBox20.CharacterCasing = CharacterCasing.Upper
         TextBox20.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox20.Location = New Point(595, 210)
+        TextBox20.Location = New Point(456, 197)
         TextBox20.Margin = New Padding(3, 2, 3, 2)
         TextBox20.MaxLength = 1
         TextBox20.Name = "TextBox20"
@@ -748,7 +773,7 @@ Partial Class GameForm1
         TextBox21.BackColor = SystemColors.HighlightText
         TextBox21.CharacterCasing = CharacterCasing.Upper
         TextBox21.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox21.Location = New Point(315, 268)
+        TextBox21.Location = New Point(176, 255)
         TextBox21.Margin = New Padding(3, 2, 3, 2)
         TextBox21.MaxLength = 1
         TextBox21.Name = "TextBox21"
@@ -764,7 +789,7 @@ Partial Class GameForm1
         TextBox22.BackColor = SystemColors.HighlightText
         TextBox22.CharacterCasing = CharacterCasing.Upper
         TextBox22.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox22.Location = New Point(385, 268)
+        TextBox22.Location = New Point(246, 255)
         TextBox22.Margin = New Padding(3, 2, 3, 2)
         TextBox22.MaxLength = 1
         TextBox22.Name = "TextBox22"
@@ -780,7 +805,7 @@ Partial Class GameForm1
         TextBox23.BackColor = SystemColors.HighlightText
         TextBox23.CharacterCasing = CharacterCasing.Upper
         TextBox23.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox23.Location = New Point(455, 268)
+        TextBox23.Location = New Point(316, 255)
         TextBox23.Margin = New Padding(3, 2, 3, 2)
         TextBox23.MaxLength = 1
         TextBox23.Name = "TextBox23"
@@ -796,7 +821,7 @@ Partial Class GameForm1
         TextBox24.BackColor = SystemColors.HighlightText
         TextBox24.CharacterCasing = CharacterCasing.Upper
         TextBox24.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox24.Location = New Point(525, 268)
+        TextBox24.Location = New Point(386, 255)
         TextBox24.Margin = New Padding(3, 2, 3, 2)
         TextBox24.MaxLength = 1
         TextBox24.Name = "TextBox24"
@@ -812,7 +837,7 @@ Partial Class GameForm1
         TextBox25.BackColor = SystemColors.HighlightText
         TextBox25.CharacterCasing = CharacterCasing.Upper
         TextBox25.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox25.Location = New Point(595, 268)
+        TextBox25.Location = New Point(456, 255)
         TextBox25.Margin = New Padding(3, 2, 3, 2)
         TextBox25.MaxLength = 1
         TextBox25.Name = "TextBox25"
@@ -922,6 +947,406 @@ Partial Class GameForm1
         KeyboardPanel.TabIndex = 35
         KeyboardPanel.Visible = False
         ' 
+        ' TextBox26
+        ' 
+        TextBox26.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox26.BackColor = SystemColors.HighlightText
+        TextBox26.CharacterCasing = CharacterCasing.Upper
+        TextBox26.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox26.Location = New Point(527, 23)
+        TextBox26.Margin = New Padding(3, 2, 3, 2)
+        TextBox26.MaxLength = 1
+        TextBox26.Name = "TextBox26"
+        TextBox26.ReadOnly = True
+        TextBox26.Size = New Size(69, 54)
+        TextBox26.TabIndex = 26
+        TextBox26.TextAlign = HorizontalAlignment.Center
+        TextBox26.Visible = False
+        ' 
+        ' TextBox27
+        ' 
+        TextBox27.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox27.BackColor = SystemColors.HighlightText
+        TextBox27.CharacterCasing = CharacterCasing.Upper
+        TextBox27.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox27.Location = New Point(597, 23)
+        TextBox27.Margin = New Padding(3, 2, 3, 2)
+        TextBox27.MaxLength = 1
+        TextBox27.Name = "TextBox27"
+        TextBox27.ReadOnly = True
+        TextBox27.Size = New Size(69, 54)
+        TextBox27.TabIndex = 27
+        TextBox27.TextAlign = HorizontalAlignment.Center
+        TextBox27.Visible = False
+        ' 
+        ' TextBox28
+        ' 
+        TextBox28.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox28.BackColor = SystemColors.HighlightText
+        TextBox28.CharacterCasing = CharacterCasing.Upper
+        TextBox28.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox28.Location = New Point(527, 81)
+        TextBox28.Margin = New Padding(3, 2, 3, 2)
+        TextBox28.MaxLength = 1
+        TextBox28.Name = "TextBox28"
+        TextBox28.ReadOnly = True
+        TextBox28.Size = New Size(69, 54)
+        TextBox28.TabIndex = 26
+        TextBox28.TextAlign = HorizontalAlignment.Center
+        TextBox28.Visible = False
+        ' 
+        ' TextBox29
+        ' 
+        TextBox29.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox29.BackColor = SystemColors.HighlightText
+        TextBox29.CharacterCasing = CharacterCasing.Upper
+        TextBox29.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox29.Location = New Point(667, 23)
+        TextBox29.Margin = New Padding(3, 2, 3, 2)
+        TextBox29.MaxLength = 1
+        TextBox29.Name = "TextBox29"
+        TextBox29.ReadOnly = True
+        TextBox29.Size = New Size(69, 54)
+        TextBox29.TabIndex = 28
+        TextBox29.TextAlign = HorizontalAlignment.Center
+        TextBox29.Visible = False
+        ' 
+        ' TextBox30
+        ' 
+        TextBox30.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox30.BackColor = SystemColors.HighlightText
+        TextBox30.CharacterCasing = CharacterCasing.Upper
+        TextBox30.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox30.Location = New Point(527, 139)
+        TextBox30.Margin = New Padding(3, 2, 3, 2)
+        TextBox30.MaxLength = 1
+        TextBox30.Name = "TextBox30"
+        TextBox30.ReadOnly = True
+        TextBox30.Size = New Size(69, 54)
+        TextBox30.TabIndex = 26
+        TextBox30.TextAlign = HorizontalAlignment.Center
+        TextBox30.Visible = False
+        ' 
+        ' TextBox31
+        ' 
+        TextBox31.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox31.BackColor = SystemColors.HighlightText
+        TextBox31.CharacterCasing = CharacterCasing.Upper
+        TextBox31.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox31.Location = New Point(597, 81)
+        TextBox31.Margin = New Padding(3, 2, 3, 2)
+        TextBox31.MaxLength = 1
+        TextBox31.Name = "TextBox31"
+        TextBox31.ReadOnly = True
+        TextBox31.Size = New Size(69, 54)
+        TextBox31.TabIndex = 27
+        TextBox31.TextAlign = HorizontalAlignment.Center
+        TextBox31.Visible = False
+        ' 
+        ' TextBox32
+        ' 
+        TextBox32.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox32.BackColor = SystemColors.HighlightText
+        TextBox32.CharacterCasing = CharacterCasing.Upper
+        TextBox32.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox32.Location = New Point(527, 197)
+        TextBox32.Margin = New Padding(3, 2, 3, 2)
+        TextBox32.MaxLength = 1
+        TextBox32.Name = "TextBox32"
+        TextBox32.ReadOnly = True
+        TextBox32.Size = New Size(69, 54)
+        TextBox32.TabIndex = 26
+        TextBox32.TextAlign = HorizontalAlignment.Center
+        TextBox32.Visible = False
+        ' 
+        ' TextBox33
+        ' 
+        TextBox33.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox33.BackColor = SystemColors.HighlightText
+        TextBox33.CharacterCasing = CharacterCasing.Upper
+        TextBox33.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox33.Location = New Point(737, 23)
+        TextBox33.Margin = New Padding(3, 2, 3, 2)
+        TextBox33.MaxLength = 1
+        TextBox33.Name = "TextBox33"
+        TextBox33.ReadOnly = True
+        TextBox33.Size = New Size(69, 54)
+        TextBox33.TabIndex = 29
+        TextBox33.TextAlign = HorizontalAlignment.Center
+        TextBox33.Visible = False
+        ' 
+        ' TextBox34
+        ' 
+        TextBox34.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox34.BackColor = SystemColors.HighlightText
+        TextBox34.CharacterCasing = CharacterCasing.Upper
+        TextBox34.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox34.Location = New Point(527, 255)
+        TextBox34.Margin = New Padding(3, 2, 3, 2)
+        TextBox34.MaxLength = 1
+        TextBox34.Name = "TextBox34"
+        TextBox34.ReadOnly = True
+        TextBox34.Size = New Size(69, 54)
+        TextBox34.TabIndex = 26
+        TextBox34.TextAlign = HorizontalAlignment.Center
+        TextBox34.Visible = False
+        ' 
+        ' TextBox35
+        ' 
+        TextBox35.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox35.BackColor = SystemColors.HighlightText
+        TextBox35.CharacterCasing = CharacterCasing.Upper
+        TextBox35.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox35.Location = New Point(597, 139)
+        TextBox35.Margin = New Padding(3, 2, 3, 2)
+        TextBox35.MaxLength = 1
+        TextBox35.Name = "TextBox35"
+        TextBox35.ReadOnly = True
+        TextBox35.Size = New Size(69, 54)
+        TextBox35.TabIndex = 27
+        TextBox35.TextAlign = HorizontalAlignment.Center
+        TextBox35.Visible = False
+        ' 
+        ' TextBox36
+        ' 
+        TextBox36.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox36.BackColor = SystemColors.HighlightText
+        TextBox36.CharacterCasing = CharacterCasing.Upper
+        TextBox36.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox36.Location = New Point(667, 81)
+        TextBox36.Margin = New Padding(3, 2, 3, 2)
+        TextBox36.MaxLength = 1
+        TextBox36.Name = "TextBox36"
+        TextBox36.ReadOnly = True
+        TextBox36.Size = New Size(69, 54)
+        TextBox36.TabIndex = 28
+        TextBox36.TextAlign = HorizontalAlignment.Center
+        TextBox36.Visible = False
+        ' 
+        ' TextBox37
+        ' 
+        TextBox37.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox37.BackColor = SystemColors.HighlightText
+        TextBox37.CharacterCasing = CharacterCasing.Upper
+        TextBox37.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox37.Location = New Point(597, 197)
+        TextBox37.Margin = New Padding(3, 2, 3, 2)
+        TextBox37.MaxLength = 1
+        TextBox37.Name = "TextBox37"
+        TextBox37.ReadOnly = True
+        TextBox37.Size = New Size(69, 54)
+        TextBox37.TabIndex = 27
+        TextBox37.TextAlign = HorizontalAlignment.Center
+        TextBox37.Visible = False
+        ' 
+        ' TextBox38
+        ' 
+        TextBox38.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox38.BackColor = SystemColors.HighlightText
+        TextBox38.CharacterCasing = CharacterCasing.Upper
+        TextBox38.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox38.Location = New Point(737, 81)
+        TextBox38.Margin = New Padding(3, 2, 3, 2)
+        TextBox38.MaxLength = 1
+        TextBox38.Name = "TextBox38"
+        TextBox38.ReadOnly = True
+        TextBox38.Size = New Size(69, 54)
+        TextBox38.TabIndex = 29
+        TextBox38.TextAlign = HorizontalAlignment.Center
+        TextBox38.Visible = False
+        ' 
+        ' TextBox39
+        ' 
+        TextBox39.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox39.BackColor = SystemColors.HighlightText
+        TextBox39.CharacterCasing = CharacterCasing.Upper
+        TextBox39.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox39.Location = New Point(597, 255)
+        TextBox39.Margin = New Padding(3, 2, 3, 2)
+        TextBox39.MaxLength = 1
+        TextBox39.Name = "TextBox39"
+        TextBox39.ReadOnly = True
+        TextBox39.Size = New Size(69, 54)
+        TextBox39.TabIndex = 27
+        TextBox39.TextAlign = HorizontalAlignment.Center
+        TextBox39.Visible = False
+        ' 
+        ' TextBox40
+        ' 
+        TextBox40.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox40.BackColor = SystemColors.HighlightText
+        TextBox40.CharacterCasing = CharacterCasing.Upper
+        TextBox40.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox40.Location = New Point(667, 139)
+        TextBox40.Margin = New Padding(3, 2, 3, 2)
+        TextBox40.MaxLength = 1
+        TextBox40.Name = "TextBox40"
+        TextBox40.ReadOnly = True
+        TextBox40.Size = New Size(69, 54)
+        TextBox40.TabIndex = 28
+        TextBox40.TextAlign = HorizontalAlignment.Center
+        TextBox40.Visible = False
+        ' 
+        ' TextBox41
+        ' 
+        TextBox41.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox41.BackColor = SystemColors.HighlightText
+        TextBox41.CharacterCasing = CharacterCasing.Upper
+        TextBox41.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox41.Location = New Point(737, 139)
+        TextBox41.Margin = New Padding(3, 2, 3, 2)
+        TextBox41.MaxLength = 1
+        TextBox41.Name = "TextBox41"
+        TextBox41.ReadOnly = True
+        TextBox41.Size = New Size(69, 54)
+        TextBox41.TabIndex = 29
+        TextBox41.TextAlign = HorizontalAlignment.Center
+        TextBox41.Visible = False
+        ' 
+        ' TextBox42
+        ' 
+        TextBox42.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox42.BackColor = SystemColors.HighlightText
+        TextBox42.CharacterCasing = CharacterCasing.Upper
+        TextBox42.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox42.Location = New Point(667, 197)
+        TextBox42.Margin = New Padding(3, 2, 3, 2)
+        TextBox42.MaxLength = 1
+        TextBox42.Name = "TextBox42"
+        TextBox42.ReadOnly = True
+        TextBox42.Size = New Size(69, 54)
+        TextBox42.TabIndex = 28
+        TextBox42.TextAlign = HorizontalAlignment.Center
+        TextBox42.Visible = False
+        ' 
+        ' TextBox43
+        ' 
+        TextBox43.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox43.BackColor = SystemColors.HighlightText
+        TextBox43.CharacterCasing = CharacterCasing.Upper
+        TextBox43.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox43.Location = New Point(807, 23)
+        TextBox43.Margin = New Padding(3, 2, 3, 2)
+        TextBox43.MaxLength = 1
+        TextBox43.Name = "TextBox43"
+        TextBox43.ReadOnly = True
+        TextBox43.Size = New Size(69, 54)
+        TextBox43.TabIndex = 30
+        TextBox43.TextAlign = HorizontalAlignment.Center
+        TextBox43.Visible = False
+        ' 
+        ' TextBox44
+        ' 
+        TextBox44.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox44.BackColor = SystemColors.HighlightText
+        TextBox44.CharacterCasing = CharacterCasing.Upper
+        TextBox44.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox44.Location = New Point(667, 255)
+        TextBox44.Margin = New Padding(3, 2, 3, 2)
+        TextBox44.MaxLength = 1
+        TextBox44.Name = "TextBox44"
+        TextBox44.ReadOnly = True
+        TextBox44.Size = New Size(69, 54)
+        TextBox44.TabIndex = 28
+        TextBox44.TextAlign = HorizontalAlignment.Center
+        TextBox44.Visible = False
+        ' 
+        ' TextBox45
+        ' 
+        TextBox45.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox45.BackColor = SystemColors.HighlightText
+        TextBox45.CharacterCasing = CharacterCasing.Upper
+        TextBox45.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox45.Location = New Point(737, 197)
+        TextBox45.Margin = New Padding(3, 2, 3, 2)
+        TextBox45.MaxLength = 1
+        TextBox45.Name = "TextBox45"
+        TextBox45.ReadOnly = True
+        TextBox45.Size = New Size(69, 54)
+        TextBox45.TabIndex = 29
+        TextBox45.TextAlign = HorizontalAlignment.Center
+        TextBox45.Visible = False
+        ' 
+        ' TextBox46
+        ' 
+        TextBox46.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox46.BackColor = SystemColors.HighlightText
+        TextBox46.CharacterCasing = CharacterCasing.Upper
+        TextBox46.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox46.Location = New Point(737, 255)
+        TextBox46.Margin = New Padding(3, 2, 3, 2)
+        TextBox46.MaxLength = 1
+        TextBox46.Name = "TextBox46"
+        TextBox46.ReadOnly = True
+        TextBox46.Size = New Size(69, 54)
+        TextBox46.TabIndex = 29
+        TextBox46.TextAlign = HorizontalAlignment.Center
+        TextBox46.Visible = False
+        ' 
+        ' TextBox47
+        ' 
+        TextBox47.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox47.BackColor = SystemColors.HighlightText
+        TextBox47.CharacterCasing = CharacterCasing.Upper
+        TextBox47.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox47.Location = New Point(807, 81)
+        TextBox47.Margin = New Padding(3, 2, 3, 2)
+        TextBox47.MaxLength = 1
+        TextBox47.Name = "TextBox47"
+        TextBox47.ReadOnly = True
+        TextBox47.Size = New Size(69, 54)
+        TextBox47.TabIndex = 30
+        TextBox47.TextAlign = HorizontalAlignment.Center
+        TextBox47.Visible = False
+        ' 
+        ' TextBox48
+        ' 
+        TextBox48.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox48.BackColor = SystemColors.HighlightText
+        TextBox48.CharacterCasing = CharacterCasing.Upper
+        TextBox48.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox48.Location = New Point(807, 139)
+        TextBox48.Margin = New Padding(3, 2, 3, 2)
+        TextBox48.MaxLength = 1
+        TextBox48.Name = "TextBox48"
+        TextBox48.ReadOnly = True
+        TextBox48.Size = New Size(69, 54)
+        TextBox48.TabIndex = 30
+        TextBox48.TextAlign = HorizontalAlignment.Center
+        TextBox48.Visible = False
+        ' 
+        ' TextBox49
+        ' 
+        TextBox49.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox49.BackColor = SystemColors.HighlightText
+        TextBox49.CharacterCasing = CharacterCasing.Upper
+        TextBox49.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox49.Location = New Point(807, 197)
+        TextBox49.Margin = New Padding(3, 2, 3, 2)
+        TextBox49.MaxLength = 1
+        TextBox49.Name = "TextBox49"
+        TextBox49.ReadOnly = True
+        TextBox49.Size = New Size(69, 54)
+        TextBox49.TabIndex = 30
+        TextBox49.TextAlign = HorizontalAlignment.Center
+        TextBox49.Visible = False
+        ' 
+        ' TextBox50
+        ' 
+        TextBox50.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox50.BackColor = SystemColors.HighlightText
+        TextBox50.CharacterCasing = CharacterCasing.Upper
+        TextBox50.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox50.Location = New Point(807, 255)
+        TextBox50.Margin = New Padding(3, 2, 3, 2)
+        TextBox50.MaxLength = 1
+        TextBox50.Name = "TextBox50"
+        TextBox50.ReadOnly = True
+        TextBox50.Size = New Size(69, 54)
+        TextBox50.TabIndex = 30
+        TextBox50.TextAlign = HorizontalAlignment.Center
+        TextBox50.Visible = False
+        ' 
         ' GameForm1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -932,29 +1357,54 @@ Partial Class GameForm1
         Controls.Add(KeyboardPanel)
         Controls.Add(ContinueBtn)
         Controls.Add(Panel1)
+        Controls.Add(TextBox50)
         Controls.Add(TextBox25)
+        Controls.Add(TextBox49)
         Controls.Add(TextBox20)
+        Controls.Add(TextBox48)
         Controls.Add(TextBox15)
+        Controls.Add(TextBox47)
         Controls.Add(TextBox10)
+        Controls.Add(TextBox46)
         Controls.Add(TextBox24)
+        Controls.Add(TextBox45)
         Controls.Add(TextBox19)
+        Controls.Add(TextBox44)
         Controls.Add(TextBox23)
+        Controls.Add(TextBox43)
         Controls.Add(TextBox5)
+        Controls.Add(TextBox42)
         Controls.Add(TextBox18)
+        Controls.Add(TextBox41)
         Controls.Add(TextBox14)
+        Controls.Add(TextBox40)
         Controls.Add(TextBox13)
+        Controls.Add(TextBox39)
         Controls.Add(TextBox22)
+        Controls.Add(TextBox38)
         Controls.Add(TextBox9)
+        Controls.Add(TextBox37)
         Controls.Add(TextBox17)
+        Controls.Add(TextBox36)
+        Controls.Add(TextBox35)
         Controls.Add(TextBox8)
+        Controls.Add(TextBox34)
         Controls.Add(TextBox12)
+        Controls.Add(TextBox33)
         Controls.Add(TextBox21)
+        Controls.Add(TextBox32)
         Controls.Add(TextBox4)
+        Controls.Add(TextBox31)
         Controls.Add(TextBox16)
+        Controls.Add(TextBox30)
         Controls.Add(TextBox7)
+        Controls.Add(TextBox29)
         Controls.Add(TextBox11)
+        Controls.Add(TextBox28)
         Controls.Add(TextBox3)
+        Controls.Add(TextBox27)
         Controls.Add(TextBox6)
+        Controls.Add(TextBox26)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
         Name = "GameForm1"
@@ -1028,4 +1478,29 @@ Partial Class GameForm1
     Friend WithEvents EnterBtn As Button
     Friend WithEvents ContinueBtn As Button
     Friend WithEvents KeyboardPanel As Panel
+    Friend WithEvents TextBox26 As TextBox
+    Friend WithEvents TextBox27 As TextBox
+    Friend WithEvents TextBox28 As TextBox
+    Friend WithEvents TextBox29 As TextBox
+    Friend WithEvents TextBox30 As TextBox
+    Friend WithEvents TextBox31 As TextBox
+    Friend WithEvents TextBox32 As TextBox
+    Friend WithEvents TextBox33 As TextBox
+    Friend WithEvents TextBox34 As TextBox
+    Friend WithEvents TextBox35 As TextBox
+    Friend WithEvents TextBox36 As TextBox
+    Friend WithEvents TextBox37 As TextBox
+    Friend WithEvents TextBox38 As TextBox
+    Friend WithEvents TextBox39 As TextBox
+    Friend WithEvents TextBox40 As TextBox
+    Friend WithEvents TextBox41 As TextBox
+    Friend WithEvents TextBox42 As TextBox
+    Friend WithEvents TextBox43 As TextBox
+    Friend WithEvents TextBox44 As TextBox
+    Friend WithEvents TextBox45 As TextBox
+    Friend WithEvents TextBox46 As TextBox
+    Friend WithEvents TextBox47 As TextBox
+    Friend WithEvents TextBox48 As TextBox
+    Friend WithEvents TextBox49 As TextBox
+    Friend WithEvents TextBox50 As TextBox
 End Class
