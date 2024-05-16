@@ -5,19 +5,23 @@ Public Class TitleForm
     Public user As String
     Public difficulty As Integer = 4
     'PROCEED TO GAME
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button6.Click
         ToggleVis(Panel1)
         ToggleVis(Panel2)
     End Sub
 
     'SEND TO GAMEFORM
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim gForm As New GameForm1()
-        user = TextBox1.Text
-        TextBox1.Text = ""
-        gForm.Show()
-        Button1_Click(sender, e)
-        Me.Hide()
+        If TextBox1.Text = "" Then
+            MessageBox.Show("Username cannot be empty.")
+        Else
+            Dim gForm As New GameForm1()
+            user = TextBox1.Text
+            TextBox1.Text = ""
+            gForm.Show()
+            Button1_Click(sender, e)
+            Me.Hide()
+        End If
     End Sub
 
     'LINK TO GITHUB REPO
@@ -31,8 +35,8 @@ Public Class TitleForm
     End Sub
 
     'EXIT FUNCTION
-    Private Sub Button3_MouseDown(sender As Object, e As MouseEventArgs) Handles Button3.Click
-        Close()
+    Private Sub Button3_MouseDown(sender As Object, e As MouseEventArgs)
+        Close
     End Sub
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

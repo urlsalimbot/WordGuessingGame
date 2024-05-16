@@ -2,24 +2,32 @@
 Imports Newtonsoft.Json.Linq
 
 Public Class GameForm1
+
+    'GRAPHICS
     Public Property buttons As New List(Of Button)
     Public Property textboxes As New List(Of TextBox)
     Public Property redpic As New Dictionary(Of Integer, Object)
     Public Property greenpic As New Dictionary(Of Integer, Object)
     Public Property yellowpic As New Dictionary(Of Integer, Object)
     Public Property normpic As New Dictionary(Of Integer, Object)
+
+    'CONTROL
     Public partofspeech As JArray
     Public definition As JArray
     Public hintcount As Integer = 1
     Public defcount As Integer = 1
 
-    Dim gInstance As GameInstance = New GameInstance
+    Public Sub gInstance_GetWordslist(e As Boolean) Handles gInstance.GetFin
+        ContinueBtn.Visible = e
+    End Sub
+
+    Public WithEvents gInstance As GameInstance
 
     Private Sub GameForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim name As String = TitleForm.user
         Me.Focus()
         InitGameForm()
-        gInstance.GameInstance(Me, TitleForm.difficulty)
+        gInstance = New GameInstance(Me, TitleForm.difficulty)
     End Sub
 
     'Return to mainform
@@ -30,6 +38,8 @@ Public Class GameForm1
             TitleForm.Show()
         End If
     End Sub
+
+
 
     Private Sub InitGameForm()
         redpic.Add(65, My.Resources.RED01)

@@ -6,27 +6,46 @@ Imports System.Net
 Imports Newtonsoft.Json.Linq
 
 Public Class GameInstance
+    'SAVE LOCATION
     Public Property dirpath As String = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\WGG")
+
+    'CONTROL
     Public Property words As New List(Of String)
     Public Property GameOver As Boolean = False
-    Public Property gform As GameForm1
     Public Property guessword As String
-    Public Property myattempt As Integer
+    Public Property gform As GameForm1
+
+    'USER PROPERTIES
     Public Property difficulty As Integer
+    Public Property myattempt As Integer
     Public Property games As Integer = 0
     Public Property win As Boolean = False
 
+    'EVENTS
+    Private Property getwordlist As Boolean
+    Private Property readwordlist As Boolean
 
-    Public Async Sub GameInstance(gameform As GameForm1, diff As Int32)
+    Public Event GetFin(e As Boolean)
 
+    Public Property GetWordslist As Boolean
+        Set(value As Boolean)
+            getwordlist = value
+            MessageBox.Show("Raising Event")
+            RaiseEvent GetFin(getwordlist)
+        End Set
+        Get
+            Return getwordlist
+        End Get
+    End Property
+
+    Public Sub New(ByRef gameform As GameForm1, diff As Integer)
         gform = gameform
         myattempt = 1
         difficulty = diff
-        gform.ContinueBtn.Visible = Await InitGameIns().ConfigureAwait(False)
-
+        InitGameIns()
     End Sub
 
-    Public Async Function InitGameIns() As Task(Of Boolean)
+    Public Async Sub InitGameIns()
 
         Dim filename, filepath As String
 
@@ -35,13 +54,14 @@ Public Class GameInstance
 
         If My.Computer.FileSystem.DirectoryExists(dirpath) = False Then
             System.IO.Directory.CreateDirectory(dirpath)
-            GetWords(filepath)
+            GetWordslist = Await GetWords(filepath)
         Else
             ReadWords(filepath)
-            Return True
+            Threading.Thread.Sleep(500)
+            GetWordslist = True
         End If
 
-    End Function
+    End Sub
 
     Public Sub ReadWords(filepath As String)
         Using read As StreamReader = File.OpenText(filepath)
@@ -51,7 +71,7 @@ Public Class GameInstance
         End Using
     End Sub
 
-    Public Async Sub GetWords(filepath As String)
+    Public Async Function GetWords(filepath As String) As Task(Of Boolean)
         Dim url As String = "https://raw.githubusercontent.com/lorenbrichter/Words/master/Words/en.txt"
         ' Use HttpClient in Using-statement.
         ' ... Use GetAsync to get the page data.
@@ -70,8 +90,9 @@ Public Class GameInstance
             Next
         End Using
         MessageBox.Show("Get Done")
-        InitGameIns()
-    End Sub
+        ReadWords(filepath)
+        Return True
+    End Function
 
     Public Async Sub MainGameLoop()
         If myattempt = 1 Then

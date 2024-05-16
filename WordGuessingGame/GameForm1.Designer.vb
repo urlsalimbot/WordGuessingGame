@@ -849,7 +849,7 @@ Partial Class GameForm1
         ' 
         ' Hint
         ' 
-        Hint.Location = New Point(69, 187)
+        Hint.Location = New Point(51, 187)
         Hint.Name = "Hint"
         Hint.Size = New Size(75, 23)
         Hint.TabIndex = 32
@@ -862,9 +862,9 @@ Partial Class GameForm1
         Panel1.Controls.Add(Partbox)
         Panel1.Controls.Add(definitionBox)
         Panel1.Controls.Add(Hint)
-        Panel1.Location = New Point(12, 210)
+        Panel1.Location = New Point(12, 370)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(220, 215)
+        Panel1.Size = New Size(192, 215)
         Panel1.TabIndex = 33
         Panel1.Visible = False
         ' 
@@ -873,7 +873,7 @@ Partial Class GameForm1
         Partbox.Location = New Point(14, 9)
         Partbox.Name = "Partbox"
         Partbox.ReadOnly = True
-        Partbox.Size = New Size(103, 23)
+        Partbox.Size = New Size(75, 23)
         Partbox.TabIndex = 1
         ' 
         ' definitionBox
@@ -882,7 +882,7 @@ Partial Class GameForm1
         definitionBox.Multiline = True
         definitionBox.Name = "definitionBox"
         definitionBox.ReadOnly = True
-        definitionBox.Size = New Size(190, 143)
+        definitionBox.Size = New Size(162, 143)
         definitionBox.TabIndex = 1
         ' 
         ' EnterBtn
@@ -900,13 +900,15 @@ Partial Class GameForm1
         ' 
         ' ContinueBtn
         ' 
+        ContinueBtn.BackColor = Color.Navy
         ContinueBtn.Font = New Font("Upheaval TT (BRK)", 24F, FontStyle.Regular, GraphicsUnit.Point)
+        ContinueBtn.ForeColor = Color.Azure
         ContinueBtn.Location = New Point(266, 248)
         ContinueBtn.Name = "ContinueBtn"
         ContinueBtn.Size = New Size(456, 67)
         ContinueBtn.TabIndex = 34
         ContinueBtn.Text = "Click to Continue"
-        ContinueBtn.UseVisualStyleBackColor = True
+        ContinueBtn.UseVisualStyleBackColor = False
         ContinueBtn.Visible = False
         ' 
         ' KeyboardPanel
@@ -941,7 +943,7 @@ Partial Class GameForm1
         KeyboardPanel.Controls.Add(BBtn)
         KeyboardPanel.Controls.Add(NBtn)
         KeyboardPanel.Controls.Add(MBtn)
-        KeyboardPanel.Location = New Point(181, 431)
+        KeyboardPanel.Location = New Point(210, 398)
         KeyboardPanel.Name = "KeyboardPanel"
         KeyboardPanel.Size = New Size(758, 170)
         KeyboardPanel.TabIndex = 35

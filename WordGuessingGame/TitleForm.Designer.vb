@@ -36,6 +36,7 @@ Partial Class TitleForm
         Hardrd = New RadioButton()
         Medrd = New RadioButton()
         Easyrd = New RadioButton()
+        Button6 = New Button()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -46,7 +47,7 @@ Partial Class TitleForm
         Button1.BackColor = Color.Navy
         Button1.Cursor = Cursors.Hand
         Button1.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point)
-        Button1.ForeColor = Color.CornflowerBlue
+        Button1.ForeColor = Color.Azure
         Button1.Location = New Point(25, 16)
         Button1.Name = "Button1"
         Button1.Size = New Size(148, 39)
@@ -73,7 +74,7 @@ Partial Class TitleForm
         ' 
         Button3.BackColor = Color.Navy
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button3.ForeColor = Color.CornflowerBlue
+        Button3.ForeColor = Color.Azure
         Button3.Location = New Point(42, 96)
         Button3.Name = "Button3"
         Button3.Size = New Size(116, 32)
@@ -85,7 +86,7 @@ Partial Class TitleForm
         ' 
         Button2.BackColor = Color.Navy
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Button2.ForeColor = Color.CornflowerBlue
+        Button2.ForeColor = Color.Azure
         Button2.Location = New Point(42, 58)
         Button2.Name = "Button2"
         Button2.Size = New Size(116, 32)
@@ -98,7 +99,7 @@ Partial Class TitleForm
         TextBox1.BackColor = Color.Navy
         TextBox1.BorderStyle = BorderStyle.None
         TextBox1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox1.ForeColor = Color.CornflowerBlue
+        TextBox1.ForeColor = Color.Azure
         TextBox1.Location = New Point(37, 16)
         TextBox1.Name = "TextBox1"
         TextBox1.PlaceholderText = "Enter Username"
@@ -109,7 +110,7 @@ Partial Class TitleForm
         ' 
         Button4.BackColor = Color.MidnightBlue
         Button4.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
-        Button4.ForeColor = Color.CornflowerBlue
+        Button4.ForeColor = Color.Azure
         Button4.Location = New Point(48, 54)
         Button4.Name = "Button4"
         Button4.Size = New Size(148, 49)
@@ -121,7 +122,7 @@ Partial Class TitleForm
         ' 
         Button5.BackColor = Color.MidnightBlue
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button5.ForeColor = Color.CornflowerBlue
+        Button5.ForeColor = Color.Azure
         Button5.Location = New Point(48, 109)
         Button5.Name = "Button5"
         Button5.Size = New Size(148, 30)
@@ -203,6 +204,19 @@ Partial Class TitleForm
         Easyrd.Text = "Easy"
         Easyrd.UseVisualStyleBackColor = True
         ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.Navy
+        Button6.Cursor = Cursors.Hand
+        Button6.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point)
+        Button6.ForeColor = Color.Azure
+        Button6.Location = New Point(684, 394)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(148, 39)
+        Button6.TabIndex = 7
+        Button6.Text = "High Score"
+        Button6.UseVisualStyleBackColor = False
+        ' 
         ' TitleForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -211,10 +225,11 @@ Partial Class TitleForm
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(899, 494)
+        Controls.Add(Button6)
         Controls.Add(Panel3)
-        Controls.Add(Panel2)
         Controls.Add(LinkLabel1)
         Controls.Add(Panel1)
+        Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "TitleForm"
         RightToLeft = RightToLeft.No
@@ -243,5 +258,6 @@ Partial Class TitleForm
     Friend WithEvents Hardrd As RadioButton
     Friend WithEvents Medrd As RadioButton
     Friend WithEvents Easyrd As RadioButton
+    Friend WithEvents Button6 As Button
 
 End Class
