@@ -11,7 +11,7 @@
  - Santos, Lady Allyssa Marice
 
 > To-Do:
-- [ ] Implement user interface
+- [x] Implement user interface
 - [x] Implement game logic
 - [x] Implement word selection logic
 - [x] Implement API call for word checking

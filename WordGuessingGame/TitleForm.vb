@@ -2,10 +2,12 @@
 
 Public Class TitleForm
 
-    Public user As String
-    Public difficulty As Integer = 4
+    Public Property user As String
+    Public Property difficulty As Integer = 4
+
     'PROCEED TO GAME
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button5.Click
+
         ToggleVis(Panel1)
         ToggleVis(Panel2)
     End Sub
@@ -15,12 +17,13 @@ Public Class TitleForm
         If TextBox1.Text = "" Then
             MessageBox.Show("Username cannot be empty.")
         Else
-            Dim gForm As New GameForm1()
+            Dim gForm As New GameForm1
             user = TextBox1.Text
             TextBox1.Text = ""
             gForm.Show()
             Button1_Click(sender, e)
             Me.Hide()
+
         End If
     End Sub
 
@@ -30,13 +33,13 @@ Public Class TitleForm
     End Sub
 
     'RETURN TO MAIN MENU
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Button1_Click(sender, e)
-    End Sub
+    'Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    '    Button1_Click(sender, e)
+    'End Sub
 
     'EXIT FUNCTION
-    Private Sub Button3_MouseDown(sender As Object, e As MouseEventArgs)
-        Close
+    Private Sub Button3_Click(sender As Object, e As MouseEventArgs) Handles Button3.Click
+        Me.Close()
     End Sub
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -60,7 +63,8 @@ Public Class TitleForm
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
+        Dim lb As New Leaderboard(Me)
+        lb.Show()
     End Sub
 End Class
 

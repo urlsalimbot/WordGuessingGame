@@ -4,6 +4,7 @@ Imports System.Net.Http
 Imports System.IO
 Imports System.Net
 Imports Newtonsoft.Json.Linq
+Imports Newtonsoft.Json
 
 Public Class GameInstance
     'SAVE LOCATION
@@ -16,7 +17,6 @@ Public Class GameInstance
     Public Property gform As GameForm1
 
     'USER PROPERTIES
-    Public Property user As String
     Public Property difficulty As Integer
     Public Property myattempt As Integer
     Public Property games As Integer = 0
@@ -30,7 +30,6 @@ Public Class GameInstance
     Public Property ReadWordslist As Boolean
         Set(value As Boolean)
             readwordlist = value
-            MessageBox.Show("Raising Event")
             RaiseEvent ReadFin(readwordlist)
         End Set
         Get
@@ -40,10 +39,12 @@ Public Class GameInstance
 
     'CONSTRUCTOR
     Public Sub New(ByRef gameform As GameForm1, diff As Integer)
+
         gform = gameform
         myattempt = 1
         difficulty = diff
         InitGameIns()
+
     End Sub
 
     Public Sub gInstance_GetWordslist(e As Boolean) Handles Me.ReadFin
@@ -58,12 +59,13 @@ Public Class GameInstance
         filename = "words.txt"
         filepath = System.IO.Path.Combine(dirpath, filename)
 
-        If My.Computer.FileSystem.DirectoryExists(dirpath) Then
+        If My.Computer.FileSystem.DirectoryExists(dirpath) And IO.File.Exists(filepath) Then
             ReadWords(filepath)
             ReadWordslist = True
         Else
             System.IO.Directory.CreateDirectory(dirpath)
             ReadWordslist = Await GetWords(filepath)
+
         End If
 
     End Sub
@@ -104,6 +106,7 @@ Public Class GameInstance
         Return True
     End Function
 
+    'MainGameLoop
     Public Async Sub MainGameLoop()
 
         If myattempt = 1 Then
@@ -119,6 +122,28 @@ Public Class GameInstance
 
     End Sub
 
+    'Exit Game and Save stats
+    Public Sub ExitGame()
+
+        Dim player As New Player(gform.username)
+        Dim score As Integer
+        Select Case difficulty
+            Case 6
+                score = 500 * games * 2
+            Case 8
+                score = 500 * games * 3
+            Case Else
+                score = 500 * games
+        End Select
+        player._score = score
+        player._gamesplayed = games
+        player._dateplayed = DateTime.Now
+
+        SerializeLB(player)
+
+    End Sub
+
+    'Checker 
     Public Sub Checker(ans As String)
         Dim index As Integer
 
@@ -180,7 +205,7 @@ Public Class GameInstance
         Dim rnd = New Random()
         Dim gameword = words(rnd.Next(0, words.Count))
 
-        If gameword.Length > difficulty Then
+        If (gameword.Length < (difficulty - 2)) Or (gameword.Length > (difficulty + 1)) Then
             Return Nothing
         End If
 

@@ -3,6 +3,9 @@ Imports Newtonsoft.Json.Linq
 
 Public Class GameForm1
 
+    'USERNAME
+    Public Property username As String
+
     'GRAPHICS
     Public Property Buttons As New List(Of Button)
     Public Property textboxes As New List(Of TextBox)
@@ -22,16 +25,27 @@ Public Class GameForm1
     Public WithEvents gInstance As GameInstance
 
     Private Sub GameForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim name As String = TitleForm.user
+        username = TitleForm.user
         Me.Focus()
         InitGameForm()
         gInstance = New GameInstance(Me, TitleForm.difficulty)
+    End Sub
+
+
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
     End Sub
 
     'Return to mainform
     Private Sub GameForm1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         e.Cancel = Not ExitProg()
         If Not e.Cancel Then
+            gInstance.ExitGame()
             gInstance = Nothing
             TitleForm.Show()
         End If

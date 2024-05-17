@@ -1,4 +1,11 @@
-﻿Module Helper
+﻿Imports Newtonsoft.Json
+
+Module Helper
+
+    Public Property dirpath As String = System.IO.Path.Combine(My.Computer.FileSystem.SpecialDirectories.MyDocuments + "\WGG")
+    Public Property filename As String = "leaderboard.json"
+    Public Property filepath As String = System.IO.Path.Combine(dirpath, filename)
+    Public Property leaderboard As New List(Of Player)
 
     Public Sub ToggleVis(item As Control)
         item.Visible = Not item.Visible
@@ -25,7 +32,7 @@
         Next
     End Sub
 
-   Public Sub clearDisp(items As List(Of TextBox))
+    Public Sub clearDisp(items As List(Of TextBox))
         For Each item In items
             item.Visible = False
             item.Text = ""
@@ -109,4 +116,39 @@
             End If
         Next
     End Sub
+
+    Public Function LoadLB() As List(Of Player)
+        If My.Computer.FileSystem.DirectoryExists(dirpath) Then
+            If System.IO.File.Exists(filepath) Then
+                Dim file As String = IO.File.ReadAllText(filepath)
+                If file = Nothing Then
+                    Return Nothing
+                End If
+                Dim res As New List(Of Player)
+                res = JsonConvert.DeserializeObject(Of List(Of Player))(file)
+                leaderboard = res
+            End If
+        Else
+            System.IO.Directory.CreateDirectory(dirpath)
+            System.IO.File.Create(filepath)
+        End If
+        Return leaderboard
+    End Function
+
+    Public Sub SerializeLB(ByRef lastplayer As Player)
+        If My.Computer.FileSystem.DirectoryExists(dirpath) Then
+            If System.IO.File.Exists(filepath) Then
+                LoadLB()
+                leaderboard.Add(lastplayer)
+                Dim save As String = JsonConvert.SerializeObject(leaderboard)
+                Dim file As IO.StreamWriter
+                file = My.Computer.FileSystem.OpenTextFileWriter(filepath, False)
+                file.WriteLine(save)
+                file.Close()
+
+            End If
+        End If
+    End Sub
+
+
 End Module

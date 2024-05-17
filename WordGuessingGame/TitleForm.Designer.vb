@@ -101,6 +101,7 @@ Partial Class TitleForm
         TextBox1.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox1.ForeColor = Color.Azure
         TextBox1.Location = New Point(37, 16)
+        TextBox1.MaxLength = 16
         TextBox1.Name = "TextBox1"
         TextBox1.PlaceholderText = "Enter Username"
         TextBox1.Size = New Size(170, 25)
@@ -228,8 +229,8 @@ Partial Class TitleForm
         Controls.Add(Button6)
         Controls.Add(Panel3)
         Controls.Add(LinkLabel1)
-        Controls.Add(Panel1)
         Controls.Add(Panel2)
+        Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "TitleForm"
         RightToLeft = RightToLeft.No

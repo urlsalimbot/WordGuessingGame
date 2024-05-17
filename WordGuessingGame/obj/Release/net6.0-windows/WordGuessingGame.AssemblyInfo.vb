@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("WordGuessingGame"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0c64ec4429021a21b7f4de0311d2f14a252790c"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a35dcef2926a28c5d463e4b4a8cc8685a9cde013"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("WordGuessingGame"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("WordGuessingGame"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
