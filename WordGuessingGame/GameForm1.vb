@@ -4,7 +4,7 @@ Imports Newtonsoft.Json.Linq
 Public Class GameForm1
 
     'GRAPHICS
-    Public Property buttons As New List(Of Button)
+    Public Property Buttons As New List(Of Button)
     Public Property textboxes As New List(Of TextBox)
     Public Property redpic As New Dictionary(Of Integer, Object)
     Public Property greenpic As New Dictionary(Of Integer, Object)
@@ -17,9 +17,7 @@ Public Class GameForm1
     Public hintcount As Integer = 1
     Public defcount As Integer = 1
 
-    Public Sub gInstance_GetWordslist(e As Boolean) Handles gInstance.GetFin
-        ContinueBtn.Visible = e
-    End Sub
+
 
     Public WithEvents gInstance As GameInstance
 
@@ -146,32 +144,32 @@ Public Class GameForm1
         yellowpic.Add(88, My.Resources.YELLOW24)
         yellowpic.Add(89, My.Resources.YELLOW25)
         yellowpic.Add(90, My.Resources.YELLOW26)
-        buttons.Add(ABtn)
-        buttons.Add(BBtn)
-        buttons.Add(CBtn)
-        buttons.Add(DBtn)
-        buttons.Add(EBtn)
-        buttons.Add(FBtn)
-        buttons.Add(GBtn)
-        buttons.Add(HBtn)
-        buttons.Add(IBtn)
-        buttons.Add(JBtn)
-        buttons.Add(KBtn)
-        buttons.Add(LBtn)
-        buttons.Add(MBtn)
-        buttons.Add(NBtn)
-        buttons.Add(OBtn)
-        buttons.Add(PBtn)
-        buttons.Add(QBtn)
-        buttons.Add(RBtn)
-        buttons.Add(SBtn)
-        buttons.Add(TBtn)
-        buttons.Add(UBtn)
-        buttons.Add(VBtn)
-        buttons.Add(WBtn)
-        buttons.Add(XBtn)
-        buttons.Add(YBtn)
-        buttons.Add(ZBtn)
+        Buttons.Add(ABtn)
+        Buttons.Add(BBtn)
+        Buttons.Add(CBtn)
+        Buttons.Add(DBtn)
+        Buttons.Add(EBtn)
+        Buttons.Add(FBtn)
+        Buttons.Add(GBtn)
+        Buttons.Add(HBtn)
+        Buttons.Add(IBtn)
+        Buttons.Add(JBtn)
+        Buttons.Add(KBtn)
+        Buttons.Add(LBtn)
+        Buttons.Add(MBtn)
+        Buttons.Add(NBtn)
+        Buttons.Add(OBtn)
+        Buttons.Add(PBtn)
+        Buttons.Add(QBtn)
+        Buttons.Add(RBtn)
+        Buttons.Add(SBtn)
+        Buttons.Add(TBtn)
+        Buttons.Add(UBtn)
+        Buttons.Add(VBtn)
+        Buttons.Add(WBtn)
+        Buttons.Add(XBtn)
+        Buttons.Add(YBtn)
+        Buttons.Add(ZBtn)
         textboxes.Add(TextBox1)
         textboxes.Add(TextBox2)
         textboxes.Add(TextBox3)
@@ -365,9 +363,9 @@ Public Class GameForm1
     Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
         If gInstance.guessword <> Nothing Then
             If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gInstance.guessword.Length Then
-                kbShowWrong(buttons, MainInptBox.Text.ToUpper, redpic)
-                kbShowMiss(buttons, gInstance.guessword.ToUpper, MainInptBox.Text.ToUpper, yellowpic)
-                kbShowCorr(buttons, gInstance.guessword.ToUpper, MainInptBox.Text.ToUpper, greenpic)
+                kbShowWrong(Buttons, MainInptBox.Text.ToUpper, redpic)
+                kbShowMiss(Buttons, gInstance.guessword.ToUpper, MainInptBox.Text.ToUpper, yellowpic)
+                kbShowCorr(Buttons, gInstance.guessword.ToUpper, MainInptBox.Text.ToUpper, greenpic)
                 gInstance.Checker(MainInptBox.Text)
                 gInstance.AttemptCounter(MainInptBox.Text)
 
@@ -387,20 +385,15 @@ Public Class GameForm1
         Partbox.Text = partofspeech(hintcount - 1)("partOfSpeech")
         definitionBox.Text = partofspeech(hintcount - 1)("definitions")(defcount - 1)("definition")
 
-        If defcount <> defdepth Then
-            defcount += 1
-        End If
-
         If defcount = defdepth Then
+            If hintcount = hintdepth Then
+                hintcount = 1
+            ElseIf hintcount < hintdepth Then
+                hintcount += 1
+            End If
             defcount = 1
-        End If
-
-        If hintcount < hintdepth Then
-            hintcount += 1
-        End If
-
-        If hintcount = hintdepth Then
-            hintcount = 1
+        Else
+            defcount += 1
         End If
 
     End Sub

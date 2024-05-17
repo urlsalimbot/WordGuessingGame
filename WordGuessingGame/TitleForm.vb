@@ -5,7 +5,7 @@ Public Class TitleForm
     Public user As String
     Public difficulty As Integer = 4
     'PROCEED TO GAME
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button6.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ToggleVis(Panel1)
         ToggleVis(Panel2)
     End Sub
@@ -57,6 +57,10 @@ Public Class TitleForm
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ToggleVis(Panel3)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
     End Sub
 End Class
 

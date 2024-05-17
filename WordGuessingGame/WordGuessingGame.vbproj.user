@@ -4,6 +4,9 @@
     <Compile Update="GameForm1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Leaderboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TitleForm.vb">
       <SubType>Form</SubType>
     </Compile>
