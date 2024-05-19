@@ -15,7 +15,7 @@
 - [x] Implement game logic
 - [x] Implement word selection logic
 - [x] Implement API call for word checking
-- [ ] Debug and Polish
+- [x] Debug and Polish
 
 > NOTES
 - api for word-checking by https://dictionaryapi.dev/
