@@ -15,6 +15,7 @@ Public Class GameForm1
     Public Property normpic As New Dictionary(Of Integer, Object)
 
     'CONTROL
+    Private gword As String
     Public partofspeech As JArray
     Public definition As JArray
     Public hintcount As Integer = 1
@@ -31,16 +32,6 @@ Public Class GameForm1
         gInstance = New GameInstance(Me, TitleForm.difficulty)
     End Sub
 
-
-    Public Sub New()
-
-        ' This call is required by the designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-
-    End Sub
-
     'Return to mainform
     Private Sub GameForm1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         e.Cancel = Not ExitProg()
@@ -51,7 +42,11 @@ Public Class GameForm1
         End If
     End Sub
 
-
+    Public Sub PickedWordSet(ByVal e As String) Handles gInstance.WordPicked
+        gword = e
+        MainInptBox.Text = ""
+        MainInptBox.MaxLength = gword.Length
+    End Sub
 
     Private Sub InitGameForm()
         redpic.Add(65, My.Resources.RED01)
@@ -239,6 +234,11 @@ Public Class GameForm1
     'FOCUS TEXTBox
     Private Sub MainInptBox_Leave(sender As Object, e As EventArgs) Handles MainInptBox.Leave
         MainInptBox.Focus()
+        If gword <> Nothing Then
+            If MainInptBox.Text.Length > gword.Length Then
+                MainInptBox.Text = MainInptBox.Text.Substring(0, gword.Length)
+            End If
+        End If
         MainInptBox.Select(MainInptBox.Text.Length, 0)
     End Sub
 
@@ -375,11 +375,11 @@ Public Class GameForm1
     'END OF ONSCREEN KEYBOARD
 
     Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
-        If gInstance.guessword <> Nothing Then
-            If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gInstance.guessword.Length Then
+        If gword <> Nothing Then
+            If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gword.Length Then
                 kbShowWrong(Buttons, MainInptBox.Text.ToUpper, redpic)
-                kbShowMiss(Buttons, gInstance.guessword.ToUpper, MainInptBox.Text.ToUpper, yellowpic)
-                kbShowCorr(Buttons, gInstance.guessword.ToUpper, MainInptBox.Text.ToUpper, greenpic)
+                kbShowMiss(Buttons, gword.ToUpper, MainInptBox.Text.ToUpper, yellowpic)
+                kbShowCorr(Buttons, gword.ToUpper, MainInptBox.Text.ToUpper, greenpic)
                 gInstance.Checker(MainInptBox.Text)
                 gInstance.AttemptCounter(MainInptBox.Text)
 
@@ -414,8 +414,8 @@ Public Class GameForm1
 
     'Display Ans in individual textboxes
     Private Sub MainInptBox_TextChanged(sender As Object, e As EventArgs) Handles MainInptBox.TextChanged
-        If gInstance.guessword <> Nothing Then
-            dispText(textboxes, MainInptBox.Text, gInstance.myattempt, gInstance.guessword.Length)
+        If gword <> Nothing Then
+            dispText(textboxes, MainInptBox.Text, gInstance.myattempt, gword.Length)
         End If
     End Sub
 

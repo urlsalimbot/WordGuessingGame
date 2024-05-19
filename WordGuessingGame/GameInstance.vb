@@ -1,10 +1,9 @@
-﻿Option Strict Off
+﻿Option Strict On
 
 Imports System.Net.Http
 Imports System.IO
 Imports System.Net
 Imports Newtonsoft.Json.Linq
-Imports Newtonsoft.Json
 
 Public Class GameInstance
     'SAVE LOCATION
@@ -13,7 +12,7 @@ Public Class GameInstance
     'CONTROL
     Public Property words As New List(Of String)
     Public Property GameOver As Boolean = False
-    Public Property guessword As String
+
     Public Property gform As GameForm1
 
     'USER PROPERTIES
@@ -24,8 +23,10 @@ Public Class GameInstance
 
     'EVENTS
     Private Property readwordlist As Boolean
+    Private Property guessword As String
 
     Public Event ReadFin(e As Boolean)
+    Public Event WordPicked(e As String)
 
     Public Property ReadWordslist As Boolean
         Set(value As Boolean)
@@ -34,6 +35,17 @@ Public Class GameInstance
         End Set
         Get
             Return readwordlist
+        End Get
+    End Property
+    Public Property PickedWord As String
+        Set(value As String)
+            guessword = value
+            If guessword <> Nothing Then
+                RaiseEvent WordPicked(guessword)
+            End If
+        End Set
+        Get
+            Return guessword
         End Get
     End Property
 
@@ -111,13 +123,12 @@ Public Class GameInstance
 
         If myattempt = 1 Then
             While guessword = Nothing
-                guessword = Await WordPicker()
+                PickedWord = Await WordPicker()
             End While
-            gform.MainInptBox.MaxLength = guessword.Length
         End If
 
         gform.SuspendLayout()
-        gameDisp(gform.textboxes, guessword, myattempt, gform.Size.Width)
+        gameDisp(gform.textboxes, PickedWord, myattempt, gform.Size.Width)
         gform.ResumeLayout()
 
     End Sub
