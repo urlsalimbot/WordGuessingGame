@@ -396,23 +396,24 @@ Public Class GameForm1
     Private Sub Hint_Click(sender As Object, e As EventArgs) Handles Hint.Click
         'MessageBox.Show(partofspeech.Count)
         'MessageBox.Show(partofspeech(0)("definitions").Count)
-        Dim hintdepth As Int16 = partofspeech.Count
-        Dim defdepth As Int16 = partofspeech(hintcount - 1)("definitions").Count
+        If partofspeech IsNot Nothing Then
+            Dim hintdepth As Int16 = partofspeech.Count
+            Dim defdepth As Int16 = partofspeech(hintcount - 1)("definitions").Count
 
-        Partbox.Text = partofspeech(hintcount - 1)("partOfSpeech")
-        definitionBox.Text = partofspeech(hintcount - 1)("definitions")(defcount - 1)("definition")
+            Partbox.Text = partofspeech(hintcount - 1)("partOfSpeech")
+            definitionBox.Text = partofspeech(hintcount - 1)("definitions")(defcount - 1)("definition")
 
-        If defcount = defdepth Then
-            If hintcount = hintdepth Then
-                hintcount = 1
-            ElseIf hintcount < hintdepth Then
-                hintcount += 1
+            If defcount = defdepth Then
+                If hintcount = hintdepth Then
+                    hintcount = 1
+                ElseIf hintcount < hintdepth Then
+                    hintcount += 1
+                End If
+                defcount = 1
+            Else
+                defcount += 1
             End If
-            defcount = 1
-        Else
-            defcount += 1
         End If
-
     End Sub
 
     'Display Ans in individual textboxes
