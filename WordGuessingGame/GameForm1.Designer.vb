@@ -509,9 +509,9 @@ Partial Class GameForm1
         MainInptBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         MainInptBox.BackColor = SystemColors.Window
         MainInptBox.CharacterCasing = CharacterCasing.Lower
-        MainInptBox.Location = New Point(564, 122)
+        MainInptBox.Location = New Point(656, 122)
         MainInptBox.Name = "MainInptBox"
-        MainInptBox.Size = New Size(102, 23)
+        MainInptBox.Size = New Size(0, 23)
         MainInptBox.TabIndex = 0
         ' 
         ' BackSpcButton

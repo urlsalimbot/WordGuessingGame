@@ -42,6 +42,8 @@ Public Class GameForm1
         End If
     End Sub
 
+
+	'Event catcher for pickedword
     Public Sub PickedWordSet(ByVal e As String) Handles gInstance.WordPicked
         gword = e
         MainInptBox.Text = ""
@@ -374,6 +376,7 @@ Public Class GameForm1
     End Sub
     'END OF ONSCREEN KEYBOARD
 
+	'Entering user answer
     Private Sub MainInptBox_KeyDown(sender As Object, e As KeyEventArgs) Handles MainInptBox.KeyDown
         If gword <> Nothing Then
             If e.KeyCode = Keys.Enter And MainInptBox.Text.Length = gword.Length Then
@@ -419,10 +422,12 @@ Public Class GameForm1
         End If
     End Sub
 
+	'binding onscreen enter key to maininputbox
     Private Sub EnterBtn_Click(sender As Object, e As EventArgs) Handles EnterBtn.Click
         MainInptBox_KeyDown(sender, New KeyEventArgs(Keys.Enter))
     End Sub
 
+	'Buffer Screen Button
     Private Sub ContinueBtn_Click(sender As Object, e As EventArgs) Handles ContinueBtn.Click
         gInstance.MainGameLoop()
         Panel1.Visible = True
@@ -431,6 +436,7 @@ Public Class GameForm1
         ContinueBtn.Visible = False
     End Sub
 
+	'onscreen backspace key
     Private Sub BackSpcButton_Click(sender As Object, e As EventArgs) Handles BackSpcButton.Click
         If MainInptBox.Text <> "" Then
             MainInptBox.Text = MainInptBox.Text.Substring(0, MainInptBox.Text.Length - 1)

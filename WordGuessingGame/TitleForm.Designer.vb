@@ -231,7 +231,7 @@ Partial Class TitleForm
         Controls.Add(LinkLabel1)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
-        FormBorderStyle = FormBorderStyle.FixedSingle
+        FormBorderStyle = FormBorderStyle.FixedDialog
         Name = "TitleForm"
         RightToLeft = RightToLeft.No
         StartPosition = FormStartPosition.CenterScreen

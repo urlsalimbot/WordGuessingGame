@@ -118,16 +118,16 @@ Module Helper
     End Sub
 
     Public Function LoadLB() As List(Of Player)
-        If My.Computer.FileSystem.DirectoryExists(dirpath) Then
-            If System.IO.File.Exists(filepath) Then
-                Dim file As String = IO.File.ReadAllText(filepath)
-                If file = Nothing Then
-                    Return Nothing
-                End If
-                Dim res As New List(Of Player)
-                res = JsonConvert.DeserializeObject(Of List(Of Player))(file)
-                leaderboard = res
+        If My.Computer.FileSystem.DirectoryExists(dirpath) And System.IO.File.Exists(filepath) Then
+
+            Dim file As String = IO.File.ReadAllText(filepath)
+            If file = Nothing Then
+                Return Nothing
             End If
+            Dim res As New List(Of Player)
+            res = JsonConvert.DeserializeObject(Of List(Of Player))(file)
+            leaderboard = res
+
         Else
             System.IO.Directory.CreateDirectory(dirpath)
             System.IO.File.Create(filepath)

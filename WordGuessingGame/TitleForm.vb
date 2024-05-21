@@ -38,8 +38,8 @@ Public Class TitleForm
     'End Sub
 
     'EXIT FUNCTION
-    Private Sub Button3_Click(sender As Object, e As MouseEventArgs) Handles Button3.Click
-        Me.Close()
+    Private Sub Button3_Click(sender As Object, e As MouseEventArgs)
+        Close()
     End Sub
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -65,6 +65,10 @@ Public Class TitleForm
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Dim lb As New Leaderboard(Me)
         lb.Show()
+    End Sub
+
+    Private Sub TitleForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadLB()
     End Sub
 End Class
 

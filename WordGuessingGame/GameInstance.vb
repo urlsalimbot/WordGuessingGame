@@ -113,7 +113,7 @@ Public Class GameInstance
             Next
 
         End Using
-        MessageBox.Show("Get Done")
+        'MessageBox.Show("Get Done")
         ReadWords(filepath)
         Return True
     End Function
